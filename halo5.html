@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <head>
+    <style type="text/css">
+    	h1 {
+        text-align:center;
+    		font-style:italic;
+    		font-family: Arial;
+    		font-synthesis: 
+    	}
+      td {
+        font-family: Arial;
+        font-style:bold;
+        vertical-align: top;
+      }
+      
+      #halo {
+
+        position: absolute;
+        top: 50px;
+        left: 0px;
+      }
+
+
+      #streamers{
+        position:absolute;
+        top: 558px;
+        left:10px;
+
+      }
+      #synopsis{
+        position:absolute;
+        top: 358px;
+        left:10px;
+      }
+
+      #synoptext{
+        position:absolute;
+        top: 410px;
+        left: 15px;
+        height: 0px;
+      }
+
+      #halotitle{
+        position:relative;
+        right: 80px;
+        bottom:10px;
+
+      }
+
+
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  #nav{
+    float: left;
+  }
+
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #nav a:hover {
+    background-color: #111;
+  }
+  #gamestuff{
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+  }
+
+  aside {
+
+    display: block;
+  }
+  #video2{
+    position: absolute;
+    left: 600px;
+    top: 675px;
+  }
+ 
+  #videos{
+    position: relative;
+
+    left: 100px;
+    top: 500px;
+  }
+
+  #streamid{
+
+    position: relative;
+    left: 275px;
+    top: 505px;
+  }
+  
+
+  #sidetab{
+    position: absolute;
+    right: 50px;
+  }
+
+  #gametable{
+    position: absolute;
+    left: 410px;
+    bottom: 400px;
+  }
+
+  
+
+  #topstreamers{
+
+    position: absolute;
+    right: 50px;
+    bottom: -400px;
+  }
+  #streamheader{
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  #streamtable{
+      position: relative;
+      left: -50px;
+    
+  }
+
+  #streamers{
+    position: absolute;
+    left: 500px;
+  }
+
+  #streamheader{
+
+    color: white;
+  }
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-content{
+  position: relative;
+  top: 100px;
+}
+
+
+
+
+
+
+
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <ul id = "navbar">
+      <li id = "nav"><a class = "active" href="#home">Home</a></li>
+      <li id = "nav"><a href = "#Genres">Genres</a></li>
+      <li id = "nav"><a href = "#Games">Games</a></li>
+      <li id = "nav"><a href = "#Streamers">Streamers</a></li>
+    </ul>
+    <h1 id = "halotitle"><u>Halo 5: Guardians</u></h1>
+      <img id = "halo" src="halo5.jpg", alt ="Halo 5: Guardians" style ="float:left;bottom:350px;width:404px;height:308px;">
+
+
+        
+    <h2 id = "synopsis"><u>Synopsis</u></h2>
+    <p id = "synoptext"><font size = "4">Peace is shattered when colony worlds are unexpectedly attacked.</br>But when humanity's greatest hero goes missing, a new Spartan is<br>tasked with hunting the Master Chief and solving a mystery that<br>threatens the entire galaxy.</font></p>
+    
+
+    <table id = "gametable" cellspacing="10">
+      <tr>
+        <td>Release Date:</td>
+        <td>October 27, 2015 </td>
+      </tr>
+      <tr>
+        <td>Studio:</td>
+        <td>343 Industries </td>
+      </tr>
+      <tr>
+        <td>Genre:</td>
+        <td>Shooter </td>
+      </tr>
+      <tr>
+        <td>Platforms:</td>
+        <td>Xbox One </td>
+      </tr>
+      <tr>
+        <td>Rating:</td>
+        <td>79 out of 100 </td>
+      </tr>
+    </table>
+
+    
+
+  <h2 id = "streamers"><u>Live Streams</u></h2>
+
+  
+  <table id ="streamtable">
+
+
+    <tr id = "vid">
+    <td>
+
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24790229072"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "Lxthul", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24790229072", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24788003312"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "wonderboyhalo", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24788003312", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+
+
+
+    </tr>
+
+    <tr id = "vid">
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="66252977"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "mean_venommlg", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("66252977", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24791995712"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "MrcoLeK", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24791995712", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    </tr>
+
+    </table>
+
+    <div id ="topstreamers">
+    <table id ="toplist" cellspacing="20">
+      <th id = "streamheader">
+        Top Live Streamers
+      </th>
+      <th id = "streamheader">
+        Followers
+      </th>
+      <tr>
+      <td id = "streamheader">Lxthul</td>
+      <td id = "streamheader">44,232</td>
+      </tr>
+      <tr>
+      <td id = "streamheader">WonderboyHalo</td>
+      <td id = "streamheader">1,955</td>
+      </tr>
+
+      <tr>
+      <td id = "streamheader">Mean_VenomMLG</td>
+      <td id = "streamheader">1,271</td>
+      </tr>
+      <tr>
+      <td id = "streamheader">McroLek</td>
+      <td id = "streamheader">875</td>
+      </tr>
+
+      </table>
+      <a id = "twitchlink" href="https://www.twitch.tv">
+      <img id = "twitch" src="twitch.png" style="width: 300px;bottom: 200px;">
+      </a>
+      </div>
+
+
+      
+
+  <img id = "backimage" src="haloimg1.jpg" style="width:100%">
+ 
+
+
+
+
+
+
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="haloimg2.jpg" style="width:100%">
+  <img class="mySlides" src="haloimg3.jpg" style="width:100%">
+  <img class="mySlides" src="haloimg4.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
