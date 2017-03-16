@@ -1,8 +1,8 @@
 body {
-    background-color: #E3E5FE;
+    background-color: #FFFFFF;
 }
 h1 {
-    color: blue;
+    color: #9B6BDF;
 	text-align: center;
 	font-family: sans-serif;
 }
@@ -38,7 +38,7 @@ li a:hover {
 }
 
 p {
-    color: blue;
+    color: #000000;
 	font-family: sans-serif;
 }
 
