@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <head>
+    <style type="text/css">
+
+    html{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+      body{
+        top: auto;
+        background-image: url("solidcolor.jpg");
+        margin: 0 auto;
+
+      }
+
+      #navbar{
+
+        background-color: #dddddd
+      }
+    	h1 {
+        text-align:center;
+    		font-style:italic;
+    		font-family: Arial;
+    		font-synthesis: 
+    	}
+      td {
+        font-family: Arial;
+        font-style:bold;
+        vertical-align: top;
+      }
+      
+      #gameimg {
+
+        position: absolute;
+        top: 50px;
+        left: 0px;
+      }
+
+
+      #streamers{
+        position:absolute;
+        top: 558px;
+        left:10px;
+        text-transform: uppercase;
+        font-family: "Poppins",serif;
+
+      }
+      #synopsis{
+        position:absolute;
+
+        top: 50px;
+        left:410px;
+      }
+
+      #synoptext{
+        position:absolute;
+        top: 90px;
+        left: 415px;
+        padding-right: 6cm;
+        text-align: left;
+      }
+
+      #gametitle{
+        position:absolute;
+        right: 950px;
+        top:350px;
+        font-weight: 900;
+
+
+      }
+
+
+
+
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  #nav{
+    float: left;
+  }
+
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #nav a:hover {
+    background-color: #111;
+  }
+  #gamestuff{
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+  }
+
+  aside {
+
+    display: block;
+  }
+  #video2{
+    position: absolute;
+    left: 600px;
+    top: 675px;
+  }
+ 
+  #videos{
+    position: relative;
+
+    left: 100px;
+    top: 500px;
+  }
+
+
+  #streamid{
+
+    position: relative;
+    left: 275px;
+    top: 505px;
+  }
+  
+
+  #sidetab{
+    position: absolute;
+    right: 50px;
+  }
+
+  #gametable{
+    position: absolute;
+    left: 1100px;
+    bottom: 265px;
+    white-space: normal;
+    width: 246px;
+  }
+  #gametable td{
+
+  width: 100%;
+  word-wrap: break-word;
+  
+}
+
+  
+
+  #topstreamers{
+
+    position: absolute;
+    left: 930px;
+    top: 500px;
+    white-space: normal;
+  }
+  #streamheader{
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  #streamtable{
+      position: absolute;
+      right:500px;
+      bottom: 250px;
+      white-space: normal;
+    
+  }
+  #morestreams{
+    position: absolute;
+    bottom:-300px;
+    right: 400px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #streamers{
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 450px;
+
+    font-weight: 900;
+  }
+
+  
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-content,.w3-content{
+
+  position: absolute;
+  top: 1200px;
+  left: 80px;
+
+}
+
+
+
+
+#images{
+  font-family: sans-serif;
+  position: absolute;
+  top: 1100px;
+  left:10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#about{
+
+  position: relative;
+  bottom: 400px;
+  left: 500px;
+  
+}
+#vertline{
+  position: absolute;
+  right: 200px;
+
+}
+
+#vertline1{
+
+  position: absolute;
+  right: 370px;
+  top: 500px;
+}
+
+#vertline2{
+  position: absolute;
+  top: 450px;
+  left: 0px;
+}
+
+#cat{
+
+  font-weight: bold;
+}
+#twitch{
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+
+#review{
+  position: absolute;
+  top: 1600px;
+  left: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#gamereview{
+  position: absolute;
+  top: 1700px;
+  left: 30px;
+  padding-right: 11cm;
+  display: inline;
+}
+#author{
+  position: absolute;
+  top:1650px;
+  left: 30px;
+}
+
+#twitter{
+  position: absolute;
+  top: 1200px;
+  width: 300px;
+  right: 20px;
+
+}
+#reviewtxt{
+  background-color: white;
+}
+
+
+  </style>
+  </head>
+
+  <body scroll = "no" style="overflow: hidden">
+
+    <ul id = "navbar">
+      <li id = "nav"><a class = "active" href="#home">Home</a></li>
+      <li id = "nav"><a href = "#Genres">Genres</a></li>
+      <li id = "nav"><a href = "#Games">Games</a></li>
+      <li id = "nav"><a href = "#Streamers">Streamers</a></li>
+    </ul>
+    <h1 id = "gametitle">FIFA 17</h1>
+      <img id = "gameimg" src="fifa.jpg", alt ="FIFA 17" style ="float:left;bottom:350px;width:404px;height:308px;">
+
+
+
+    <h3 id = "synopsis">About This Game</h3>
+    <p id = "synoptext"><font size = "2">For the first time ever in FIFA, live your story on and off the pitch as the Premier League’s next rising star, Alex Hunter. Play on any club in the Premier league, for authentic managers and alongside some of the best players on the planet. Experience brand new worlds in FIFA 17, all while navigating your way through the emotional highs and lows of The Journey.</font></p>
+    
+
+   <table id = "gametable" cellspacing="10">
+      <tr>
+        <td id = "cat">Release Date:</td>
+       </tr>
+      <tr>  
+        <td>September 27, 2016 </td>
+      </tr>
+      <tr>
+        <td id = "cat">Studio:</td>
+      </tr>
+      <tr>
+        <td>EA Sports </td>
+      </tr>
+      <tr>
+        <td id = "cat">Genre:</td>
+      </tr>
+      <tr>
+        <td>Sport </td>
+    </tr>
+      <tr>
+        <td id = "cat">Platforms:</td>
+      </tr>
+      <tr>  
+        <td>Xbox 360,PS3,Xbox One,PS4,PC </td>
+      </tr>
+      <tr>
+        <td id = "cat">Rating:</td>
+      </tr>
+       <tr> 
+        <td>80 out of 90 </td>
+      </tr>
+    </table>
+ 
+<div id = "vertline" style="width:1px;height:400px;background-color:black"></div> 
+
+
+
+
+    
+
+  <h2 id = "streamers"><font color=rgb(52,55,59) size="5">Live Streams</font></h2>
+
+
+
+  
+
+  
+      
+
+  <table id ="streamtable">
+
+
+    <tr id = "vid">
+    <td>
+
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24824184400"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "dryomax38", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24824184400", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24823032544"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "jtunesgaming", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24823032544", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+
+
+
+    </tr>
+
+    <tr id = "vid">
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24825230608"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "khalil922", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24825230608", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="49303276"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "Nick28T", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("49303276", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    </tr>
+
+    </table>
+    
+    <h4 id ='morestreams'>More streamers</h4>
+
+
+    <div id = "vertline1" style="width:1px;height:1100px;background-color:black"></div> 
+    <div id = "vertline2" style="width:1280px;height:1px;background-color:black"></div> 
+
+
+
+
+    <div id ="topstreamers">
+    <table id ="toplist" cellspacing="20">
+      <th id = "streamheader">
+        Top Live Streamers
+      </th>
+      <th id = "streamheader">
+        Followers
+      </th>
+      <tr>
+      <td id = "streamheader">Nick28T</td>
+      <td id = "streamheader">644,381</td>
+      
+      </tr>
+      <tr>
+      <td id = "streamheader">DrYoMax38</td>
+      <td id = "streamheader">105,041</td>
+      
+      </tr>
+
+      <tr>
+      <td id = "streamheader">JtunesGaming</td>
+      <td id = "streamheader">20798</td>
+      
+      </tr>
+      <tr>
+      <td id = "streamheader">Khalil922</td>
+      <td id = "streamheader">462</td>
+      </tr>
+
+      </table>
+      
+      <img id = "twitch" src="twitch.png" style="width: 300px;bottom: 200px;">
+      
+      </div>
+
+     
+
+
+
+
+
+
+
+
+<div class="w3-content w3-display-container" style="max-width:900px">
+  <img class="mySlides" src="fifa1.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="fifa2.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="fifa3.png" style="width:800px;height: 400px;">
+  
+
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+    
+
+
+
+
+
+  <h2 id = "images"><font color=rgb(52,55,59) size="5">Images</font></h2>
+
+<div id ="twitter">
+<h3 id ="tweets" style="position:absolute;right:110px;top:-50px;font-family: sans-serif;font-weight: 900;text-transform: uppercase;">Tweets</h3>
+<a class="twitter-timeline" href="https://twitter.com/hashtag/FIFA17" data-widget-id="843299233528762368">#FIFA17 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+
+
+
+  <h2 id = "review"><font color=rgb(52,55,59) size="5">Game Review</font></h2>
+  <h1 id='author'>By Chris Schilling</h1>
+  <div id ="reviewtxt" style="text-align: left;">
+  <p id = 'gamereview'>FIFA 17’s headline feature is The Journey, a story about a prodigious young talent attempting to make a name for himself in the Premier League. It’s a microcosm of everything that’s good and bad about FIFA – peerless presentation surrounding a match engine that’s an improvement on last year, but still needs work – and yet it’s the most fun I’ve had with the series for a good few seasons. Perhaps more importantly, it’s a welcome reminder of the personal stories at the heart of a sport (and a series) that, in recent times, has felt more concerned with its corporate identity. It’s not easy to find ways to surprise people in an annualised game, but this is a very pleasant one.<br><br>
+
+The story of likeable 17-year-old Alex Hunter and his rise from unvarnished academy product to bright young starlet follows a conventional path – not quite rags to riches, but close – though it’s affectingly told, even if FIFA 17’s PEGI rating ensures that it’s a rather airbrushed take on the modern game. Still, the setbacks and insults sting – on his debut as a substitute the opposition fans taunt him with a chant of “who are ya?” while you’ll attract social media criticism from supporters and fellow professionals (at one stage, an embittered ex-teammate hashtags you as a #benchwarmer). Naturally, this only made me all the more determined to succeed.<br><br>
+
+As someone who has been horrified by the steady marginalisation of this great football institution, Hunter’s passion for the FA Cup (driven by a family legacy, as per sports movie tradition) struck a powerful chord with me, and I shared his frustration at being considered too young to feature in a blood-and-thunder cup tie. When Swansea, my chosen team, finally gave him his chance, I was determined that Hunter (and I) would take it – and we did. As he slotted in his third goal the crowd began chanting his name before launching into a full-throated version of Hymns and Arias, and I’m not too proud to say I got a little choked up.<br><br>
+
+It’s sentimental, but appropriately so – football fans seem especially prone to outbursts of emotion, from full-blown weeping at relegations to misty-eyed reminiscences of “the good old days”. The Journey also represents the fripperies of the modern game well, as you’d expect – from post-match interviews with dialogue responses that can affect your standing with your manager, teammates, and supporters, to a choice of branded boots for your first sponsorship deal. If the excessive branding is a bit of a turn-off, it’s also quite authentic. Otherwise, The Journey is surprisingly down to earth. Hunter’s more impressed by his achievements on the pitch than what they earn him off it, and there’s a particularly lovely moment where he gets his first full start and experiences a sudden rush of nervous pride at the realisation that he’s going to kick off the game. Aided by a terrific Atticus Ross score, which is emotive without feeling manipulative, The Journey follows its familiar storyline with real conviction.<br><br>
+
+t functions quite beautifully as a tutorial, too. Though it might seem unlikely to have a striker so regularly tasked with defensive drills, by covering all facets of the game you become a better player along with Hunter. You can simulate the sessions if you want to skip them, but if you do you’re less likely to improve and you’ll usually be awarded a lower grade – which might not help if you need to impress the manager after a 6/10 display in the previous game. It’s a valuable message for any youngsters playing the game, espousing the need for hard work to succeed. Hunter might eventually boast a lavish city-centre apartment when he finally hits the big time, but I felt like he’d really earned it.<br><br>
+
+It’s worth pointing out that while you can contribute to Hunter’s journey, your progress is bound to the needs of the story. In the early stages, I regularly fulfilled the manager’s expectations even during limited substitute appearances, but I still found myself watching the game from the bench and eventually being shipped out on loan. Sometimes, the demands for bonus achievements are entirely unreasonable – trailing 3-0 to Man City with less than half an hour left, I was somehow expected to achieve five shots on target and come away with at least a draw.<br><br>
+
+That’s particularly difficult given the ability of your AI opponents to retain possession for several minutes at a time thanks to changes to FIFA’s physics making it easier to shield the ball. When I earned a place as a regular starter, in the vast majority of games I’d have less than 40% possession; that makes it realistically tough to make a name for yourself in one sense, but even if you make the most of your few chances it’s still frustrating to see so little of the ball. It perhaps says something that you’re given the option to play as a team rather than just controlling Hunter – and after a few games playing that way I felt much more involved and less irritated by teammates’ errors. There’s nothing worse than being penalised for a ‘bad call for a pass’ when the pass itself was inaccurate.<br><br>
+
+The grading is questionable elsewhere, too. While jostling with a defender, I found myself losing points for apparently conceding possession three times, but wasn’t rewarded for regaining it as I finally sprinted clear. Perfectly good shots that are well blocked by smart defending are classed as ‘poor’. During one narrow victory, I quite deliberately played the ball off a defender to earn a corner and relieve some of the pressure my team had been under; the manager’s comments after the game chided me for conceding possession.<br><br>
+
+EA Sports attempts to take the sting out of that by having AI players occasionally make glaring mistakes, but the result is that the quality of the opposition veers from Barcelona to Barnet and back again in the space of a minute. They might be difficult to win possession from, but they’re often easy to exploit with more direct play. In one game, I won 3-0 with 32% possession, having watched my opponent play keep-ball in midfield for the final 20 minutes. Tellingly, I found commentator Martin Tyler repeat his assertion that you don’t need to dominate the ball to win a game after every other game I played.<br><br>
+
+But while FIFA still doesn’t do enough to distinguish the playstyle of individual teams, there are some signs of improvement over last year’s game. For example, I noticed a particular difference in style when playing Leicester City: they took more risks, moved the ball quicker, and played more direct football, making for much more exciting, dynamic matches. In one thrilling moment, as Jamie Vardy hared past my back line, I brought a defender across, putting him under just enough pressure to force him to rush his shot, which whistled over the crossbar. It’s the most authentic FIFA has felt to me in quite a while.<br><br>
+
+Pace, having been nerfed last year, is back to being slightly overpowered, though with PES arguably taking it a shade too far the other way it’s refreshing to have the ability to outsprint full-backs. For all that extra burst of speed, though, I found responsiveness to still be an issue – it’s anyone’s guess whether you’ll manage to get a shot away before a defender closes in. Tweaks have been made to off-the-ball runs but the execution is uneven – teammates will try to move into more intelligent positions to receive the ball, but at times this means running directly across you. The player-selection algorithm also needs work, and flat passing can be bizarrely wayward – more than once, I’ve watched in dismay as a short five-yard pass has been interpreted as a command to hoof the ball out of play. Crosses, meanwhile, sometimes feel more like underarm throws into the box, with the inevitable interception greeted almost every time with the same line from Tyler: “Well, the ball deserved perhaps a better response from his teammates in the middle.<br><br>
+
+For all the adjustments and additions that don’t quite work, you can hardly accuse EA Sports of not trying. Some might argue that the new systems for set-pieces and penalties are changes for change’s sake. But while I did wonder if having to adjust your position in the run-up to penalties might be a needless complication of what should be a simple process, I’m sure plenty will appreciate the greater nuance – and, admittedly, it does add to the pressure. All told, there’s still plenty of room for improvement, but the on-pitch action is an advance on last year.<br><br>
+
+And if the new Frostbite engine hasn’t had a tangible effect on the way FIFA plays, it certainly has on the way it looks. The broad, round-shouldered players of last year are gone, replaced by models that look much more like actual human beings. With better likenesses, including all 20 Premier League managers, in visual terms FIFA 17 is a clear step ahead of its biggest rival.<br><br>
+
+Elsewhere, there’s such a sprawl of modes and features that it’s impossible to cover them all in detail - suffice to say that FIFA gets more comprehensive and overwhelming every year. Themed challenges are your main incentive to keep coming back to the ever compulsive Ultimate Team mode, with new ones set to be introduced over the course of the football season. There’s a new FUT Champions mode, too, which tasks you with scoring enough points to qualify for a weekend league, success in which can earn you in-game prizes. Career mode, meanwhile, offers more comprehensive club management options while letting you create an avatar for your manager so you can prowl the touchline and respond to events on the field.<br><br></p>
+
+</div>
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

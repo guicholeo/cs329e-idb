@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <head>
+    <style type="text/css">
+
+    html{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+      body{
+        top: auto;
+        background-image: url("solidcolor.jpg");
+        margin: 0 auto;
+
+      }
+
+      #navbar{
+
+        background-color: #dddddd
+      }
+    	h1 {
+        text-align:center;
+    		font-style:italic;
+    		font-family: Arial;
+    		font-synthesis: 
+    	}
+      td {
+        font-family: Arial;
+        font-style:bold;
+        vertical-align: top;
+      }
+      
+      #fifa {
+
+        position: absolute;
+        top: 50px;
+        left: 0px;
+      }
+
+
+      #streamers{
+        position:absolute;
+        top: 558px;
+        left:10px;
+        text-transform: uppercase;
+        font-family: "Poppins",serif;
+
+      }
+      #synopsis{
+        position:absolute;
+
+        top: 50px;
+        left:410px;
+      }
+
+      #synoptext{
+        position:absolute;
+        top: 90px;
+        left: 415px;
+        padding-right: 6cm;
+        text-align: left;
+      }
+
+      #gametitle{
+        position:absolute;
+        right: 950px;
+        top:350px;
+        font-weight: 900;
+
+
+      }
+
+
+
+
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  #nav{
+    float: left;
+  }
+
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #nav a:hover {
+    background-color: #111;
+  }
+  #gamestuff{
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+  }
+
+  aside {
+
+    display: block;
+  }
+  #video2{
+    position: absolute;
+    left: 600px;
+    top: 675px;
+  }
+ 
+  #videos{
+    position: relative;
+
+    left: 100px;
+    top: 500px;
+  }
+
+
+  #streamid{
+
+    position: relative;
+    left: 275px;
+    top: 505px;
+  }
+  
+
+  #sidetab{
+    position: absolute;
+    right: 50px;
+  }
+
+  #gametable{
+    position: absolute;
+    left: 1100px;
+    bottom: 265px;
+    white-space: normal;
+    width: 246px;
+  }
+  #gametable td{
+
+  width: 100%;
+  word-wrap: break-word;
+  
+}
+
+  
+
+  #topstreamers{
+
+    position: absolute;
+    left: 930px;
+    top: 500px;
+    white-space: normal;
+  }
+  #streamheader{
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  #streamtable{
+      position: absolute;
+      right:500px;
+      bottom: 250px;
+      white-space: normal;
+    
+  }
+  #morestreams{
+    position: absolute;
+    bottom:-300px;
+    right: 400px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #streamers{
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 450px;
+
+    font-weight: 900;
+  }
+
+  
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-content,.w3-content{
+
+  position: absolute;
+  top: 1200px;
+  left: 80px;
+
+}
+
+
+
+
+#images{
+  font-family: sans-serif;
+  position: absolute;
+  top: 1100px;
+  left:10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#about{
+
+  position: relative;
+  bottom: 400px;
+  left: 500px;
+  
+}
+#vertline{
+  position: absolute;
+  right: 200px;
+
+}
+
+#vertline1{
+
+  position: absolute;
+  right: 370px;
+  top: 500px;
+}
+
+#vertline2{
+  position: absolute;
+  top: 450px;
+  left: 0px;
+}
+
+#cat{
+
+  font-weight: bold;
+}
+#twitch{
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+
+#review{
+  position: absolute;
+  top: 1600px;
+  left: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#gamereview{
+  position: absolute;
+  top: 1700px;
+  left: 30px;
+  padding-right: 11cm;
+  display: inline;
+}
+#author{
+  position: absolute;
+  top:1650px;
+  left: 30px;
+}
+
+#twitter{
+  position: absolute;
+  top: 1200px;
+  width: 300px;
+  right: 20px;
+
+}
+#reviewtxt{
+  background-color: white;
+}
+
+
+  </style>
+  </head>
+
+  <body scroll = "no" style="overflow: hidden">
+
+    <ul id = "navbar">
+      <li id = "nav"><a class = "active" href="#home">Home</a></li>
+      <li id = "nav"><a href = "#Genres">Genres</a></li>
+      <li id = "nav"><a href = "#Games">Games</a></li>
+      <li id = "nav"><a href = "#Streamers">Streamers</a></li>
+    </ul>
+    <h1 id = "gametitle">Overwatch</h1>
+      <img id = "gameimg" src="overwatch.jpg", alt ="FIFA 17" style ="float:left;bottom:350px;width:404px;height:308px;">
+
+
+
+    <h3 id = "synopsis">About This Game</h3>
+    <p id = "synoptext"><font size = "2">In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory.
+In Overwatch, heroes do battle in diverse locations around the world. From the technological marvel of Numbani to the manufacturing powerhouse of Volskaya, each map has a unique layout and specific win conditions that your team must meet in order to secure victory.</font></p>
+    
+
+   <table id = "gametable" cellspacing="10">
+      <tr>
+        <td id = "cat">Release Date:</td>
+       </tr>
+      <tr>  
+        <td>May 24, 2016 </td>
+      </tr>
+      <tr>
+        <td id = "cat">Studio:</td>
+      </tr>
+      <tr>
+        <td>Blizzard Entertainment </td>
+      </tr>
+      <tr>
+        <td id = "cat">Genre:</td>
+      </tr>
+      <tr>
+        <td>Shooter </td>
+    </tr>
+      <tr>
+        <td id = "cat">Platforms:</td>
+      </tr>
+      <tr>  
+        <td>Xbox One,PS4,PC </td>
+      </tr>
+      <tr>
+        <td id = "cat">Rating:</td>
+      </tr>
+       <tr> 
+        <td>84 out of 90 </td>
+      </tr>
+    </table>
+ 
+<div id = "vertline" style="width:1px;height:400px;background-color:black"></div> 
+
+
+
+
+    
+
+  <h2 id = "streamers"><font color=rgb(52,55,59) size="5">Live Streams</font></h2>
+
+
+
+  
+
+  
+      
+
+  <table id ="streamtable">
+
+
+    <tr id = "vid">
+    <td>
+
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="27945625"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "curse", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("27945625", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24825834144"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "spreeow", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24825834144", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+
+    </script>
+    </div>
+    </td>
+
+
+
+    </tr>
+
+    <tr id = "vid">
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="106961925"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "ch1ckenkun", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("106961925", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    <td>
+    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="24826751104"></div>
+    <script type="text/javascript">
+    var options = {
+        width: 400,
+        height: 200,
+        channel: "em1nentd3ath", 
+        //video: "{VIDEO_ID}"       
+    };
+    var player = new Twitch.Player("24826751104", options);
+    player.setVolume(0.5);
+    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+
+    
+     </script>
+    </div>
+    </td>
+    </tr>
+
+    </table>
+    
+    <h4 id ='morestreams'>More streamers</h4>
+
+
+    <div id = "vertline1" style="width:1px;height:1100px;background-color:black"></div> 
+    <div id = "vertline2" style="width:1280px;height:1px;background-color:black"></div> 
+
+
+
+
+    <div id ="topstreamers">
+    <table id ="toplist" cellspacing="20">
+      <th id = "streamheader">
+        Top Live Streamers
+      </th>
+      <th id = "streamheader">
+        Followers
+      </th>
+    
+      
+
+      <tr>
+      <td id = "streamheader">Ch1ckenKun</td>
+      <td id = "streamheader">36,008</td>
+      
+      </tr>
+      <tr>
+      <td id = "streamheader">Curse</td>
+      <td id = "streamheader">27,750</td>
+      
+      </tr>
+      <tr>
+      <td id = "streamheader">spreeow</td>
+      <td id = "streamheader">11,733</td>
+      
+      </tr>
+      <tr>
+      <td id = "streamheader">em1nentd3ath</td>
+      <td id = "streamheader">75</td>
+      </tr>
+
+      </table>
+      
+      <img id = "twitch" src="twitch.png" style="width: 300px;bottom: 200px;">
+      
+      </div>
+
+     
+
+
+
+
+
+
+
+
+<div class="w3-content w3-display-container" style="max-width:900px">
+  <img class="mySlides" src="overwatch1.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="overwatch2.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="overwatch3.png" style="width:800px;height: 400px;">
+  <img class="mySlides" src="overwatch4.jpg" style="width:800px;height: 400px;">
+  
+
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    
+
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+    
+
+
+
+
+
+  <h2 id = "images"><font color=rgb(52,55,59) size="5">Images</font></h2>
+
+<div id ="twitter">
+<h3 id ="tweets" style="position:absolute;right:110px;top:-50px;font-family: sans-serif;font-weight: 900;text-transform: uppercase;">Tweets</h3>
+<a class="twitter-timeline" href="https://twitter.com/hashtag/Overwatch" data-widget-id="843324922869006336">#Overwatch Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+
+
+
+  <h2 id = "review"><font color=rgb(52,55,59) size="5">Game Review</font></h2>
+  <h1 id='author'>By Vince Ingenito</h1>
+  <div id ="reviewtxt" style="text-align: left;">
+  <p id = 'gamereview'>Overwatch exists at an intersection between design and artistry, a crossroad at which pure tactile joy meets refined, intelligent design to create a rare spark of magic. As a 6v6 multiplayer, objective-based shooter, it finds accessibility not by lowering the skill ceiling, but by broadening the definition of skill. The person with deadshot aim is no more valuable than the person with the decision-making ability to know when a well-timed ability will turn an engagement, or the person with the map-sense to find the optimal locations to place sentry turrets. While it didn't exactly drown me in options, maps, and modes, it’s blessed with a multitude of tactical layers, and none of them ever came between me and my enjoyment of its intense, swirling teamfights, and thrilling overtime comebacks.<br><br>
+
+
+  Overwatch does a great many things well, but above all else, its success is built on the backs of its many excellent characters. It’s fitting that the main menu is dominated by one of them at all times; their diverse appearances, origins, and personalities are all laid bare with every pose they strike. Reinhardt’s rocket hammer lands on his shoulder with a meaty clank that invokes a broadsword resting against a medieval knight’s plate armor, and Tracer’s jovial smile is just briefly interrupted by a rebellious bang that slides across her face, tempting her to blow it back into place before re-addressing the camera and blinking all over the place. There’s an intelligent gorilla scientist, a lithe, blue-skinned assassin, and a cybernetic, zen-practicing healer too. It speaks volumes that the one character that adheres to well-worn shooter tropes feels like the odd man out here. They’re all so different that you’d imagine them looking silly standing next to one another, but through careful, subtle visual cues baked into their equipment and attire, they manage to appear as if they share a common world, even if they all hail from different corners of it.<br><br>
+
+  This diversity continues to bear out when you pick a hero and hit the battlefield with them. Though the 21 characters (all of whom are unlocked from the start) are roughly grouped into one of four “roles,” no two feel alike. The robotic, transforming Bastion and the anarchic, explosive-tossing Junkrat are both technically Defenders, but they couldn’t play any more differently from one another. The former looks for a cozy spot overlooking a key choke point and transforms into a minigun turret to run point defense; the latter plays an area-denial game by lobbing timed grenades over long distances, which then sit on the ground blinking angrily, as if to say “go somewhere else” to encroaching enemies before exploding. This strong sense of differentiation is important because it keeps team composition strategies from devolving into simple formulas. No, two Tanks, two Supports, and two Attackers is not the magic solution for a winning team. You have to look much deeper – and when you do, the true beauty of Overwatch’s gameplay shines through.<br><br>
+
+  One of the surprising keys to surfacing these nuances is its refusal to offer up crutches to lean on. With very few arguable exceptions, no character is focused solely around one catch-all gun or skill to the extent that you can find success by using it alone. Tracer’s dual machine-pistols have a high rate of fire but poor accuracy, a short clip, and middling damage if you aren’t scoring headshots. Genji’s shurikens are highly damaging and boast unerring accuracy, but their slow rate of fire and long travel time can make hitting a small moving target difficult. Almost every primary weapon fits this mold: they’re useful, and in the right situation quite powerful, but never versatile enough to be a security blanket to constantly cling to. Not only do these little details help differentiate characters, they pushed me to explore their other abilities in search of success. <br><br>
+
+  And once I started looking more closely, I couldn’t stop discovering new things. Revisiting Junkrat’s toolset, he doesn’t have a single standard, reliable gun to just directly engage an enemy in front of him. Sure, he could skip grenades along the ground, leading his target as best he can, but even if you were good enough to reliably win one-on-one firefights this way, you wouldn’t be realizing his full potential.<br><br>
+
+At face value his other two skills – Steel Trap and Concussion Mine – seem straightforward. One immobilizes enemies that wander into it, the other blows them sky-high when triggered. In practice though, they can be so much more. Steel Trap can be an escape tool, allowing you to disengage from fights with faster enemies trying to get in your face. Its positional alert upon being triggered allows it to double as an early warning system too, letting you know that someone on the other team is attempting to flank your defenses and holding them there long enough for you to respond. Or, plant a Concussion Mine on top of a Steel Trap and just detonate it when you see it triggered while you’re off somewhere else peppering the objective with grenades. You can even use Concussion Mine as a regular old grenade by tossing it at a group of enemies and detonating it manually as it gets there. Perhaps most amusingly, you can detonate it under yourself to rocket-jump up to otherwise-inaccessible areas. Just two abilities on one character opens up all those possibilities, and as you might imagine, once you get 12 characters scrapping over objectives, using their abilities to help and hurt one another, further layers of tactical nuance begin to unfurl.<br><br>
+
+For example: On her own, Pharah can be a major headache by hurling herself high into the air and hovering there while raining rocket-propelled death down on opposing teams from angles that render both cover and positioning moot. But with Mercy the winged medic tending to her, Pharah becomes a whole different kind of problem. Mercy’s Guardian Angel ability allows her to swoop toward any ally in range, even ones up in the sky. Combined with her ability to slow her descent with her wings, she's the only character that can follow Pharah wherever she goes. So you end up with a dynamic duo flying all over the place – the one shoving rockets down people's throats while the other switches between healing her up and buffing her already substantial damage output as needed. <br><br>
+
+Overwatch is rich with synergies like this: Reinhardt and Lucio, Zarya and Reaper, Torbjorn and Symmetra…there's no shortage of opportunities for keen, coordinated play, and when you reach a point where you feel comfortable switching your character on the fly in the middle of a match to capitalize on weak enemy team composition, you feel like a tactical genius.<br><br>
+
+You could spend many hours playing Overwatch before getting to that point by properly wrapping your brain around all the little intricacies it has tucked away behind its approachable veneer, but you certainly don't need to just to have a good time with it. Just trying out different characters, popping off their abilities, and moving through their world feels almost indescribably right, and it's all because of tiny, almost imperceptible details. The lid on Junkrat's grenade launcher flaps and clanks about with his every move, Lucio's movement has just the slightest touch of inertia, so you actually feel like you're skating when you play him. Zenyatta's reload animation might be my favorite; I never got tired of watching him open his arms to materialize a new set of orbs before clasping them together with a satisfying, metallic thud. It's a small thing, sure, but the sum of these minute details is that almost every action, even the ones you repeat again and again, feel just a little bit magical.<br><br>
+
+Overwatch’s 12 maps are similarly flush with luxuriant details, and they also play a big role in extracting further depth out of the cast’s toolsets. The oppressive first chokepoint on Hanamura begs to have static defenses like Torbjorn’s turret or Symmetra’s sentries built around it, and for attackers with the right mobility skills (see Pharah and Mercy above) the long gap between the left side of the first and second capture point becomes a tantalizing opportunity to flank the defenders before they can reset themselves. Payload-escort maps like Route 66 provide high ground on either side of the attackers route, setting up paranoia-inducing ambush scenarios where Winston’s spherical Shell Barrier becomes invaluable for protection against threats that could be coming from several angles at once. This adds another interesting layer of strategizing and decision making when coming up with team compositions. You aren’t just thinking about how your character will work in the context of your team, but also about what opportunities any given map provides, and how you can exploit them. <br><br>
+
+Every map is directly tied to a specific objective type, so their construction is well-tailored to the action at hand. You never get that disjointed feeling of playing capture the flag on a team deathmatch map, like you might in other multiplayer shooters where maps have to accommodate a variety of modes. The upsides are subtle, but significant. Maps are focused without ever feeling constricted; there’s never any question about where you’re headed or how to get there, because every flanking path and side door eventually puts you where you need to be. In this way, Overwatch’s map designs allow you to choose your vector of engagement without risking you getting lost where the action isn’t happening. The result is zero wasted time; you’re always in the fight, never wondering where it is or how to get there.<br><br>
+
+
+Tying modes to maps in this one-to-one fashion has a small downside too though: Overwatch doesn’t have a ton of different modes to switch things up like most other games of its kind do. This isn’t Halo where most maps support various team sizes, objectives, and a slew of different modified rules. There’s only one way to play on Volskaya Industries: it will always be attack the first point, then attack the second. This lack of customization allows for finely tuned action, but also cuts into the overall breadth and variety of the experience when compared to other modern multiplayer games. <br><br>
+
+But like its characters, Overwatch’s maps are filled with nuances that will take time and repetition to learn, and not just from a mechanical standpoint. Bits of story and world-building can be found throughout the beautifully conceived environments. Movie posters in the spawn room of one map reveal that the mech-piloting pro-gamer D.Va’s real name is Hana Song, and that she had a movie career as well. Another map has a row of arcade machines, and if you happen to be playing as Genji, the cyber-ninja might start reminiscing about how many hours of his “misspent youth” he burned away playing there. Sometimes characters who have a past and don’t like each other find themselves on the same team, and you’ll hear about it. Overwatch takes just about every possible opportunity to make its cast and locales seem like people and places rather than puppets and scenery.<br><br>
+
+In terms of features, Overwatch is just a bit thin, but it meets most of the basic expectations of a multiplayer shooter and in some ways, exceeds them. Its impressive stat-tracking, per-character control mapping, and accessibility options stand out. It also does a great job of identifying and surfacing good play to teammates and opponents through a novel commendation system and a sweet “Play of the Game” highlight reel. Matchmaking is swift and reliable, and the cosmetic unlockables are surprisingly charming and come at a pretty decent pace without paying for extra loot packs. That said, I dug the characters' stock designs so much, I didn't want to stray too far from them anyway.
+
+<br><br></p>
+
+</div>
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
