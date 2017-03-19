@@ -1,0 +1,261 @@
+<html>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+    <head>
+        <style type="text/css">
+            /* UNIVERSAL */
+            body,h1,h2,h3,h4,h5 {
+                font-family: "Poppins", sans-serif;
+                padding-bottom: 0;
+            }
+            
+            ul {
+                list-style-type: none;
+            }
+            
+            .new_section {
+                margin-top: 25px;
+                margin-left: 20px;
+                margin-bottom: 25px;
+            }
+            
+            /* NAVIGATION BAR */
+            #navbar {
+                list-style-type: none;
+                background-color: #333;
+                margin-bottom: 30px;
+                padding: 0;
+                overflow: hidden;
+              }
+            #navbar_item {
+                text-decoration: none;
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+            }
+            .navbar_link:hover {
+                color: #2ecc71;
+            }
+            
+            /* TOP INFO */
+            #propic {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            #banner_heading {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #banner_subheading {
+                padding-top: 0px;
+                font-size: 25px;
+                opacity: 0.8;
+                font-weight: 600;
+            }
+            #streamer_tbl {
+                float: left;
+                height: 100%;
+                overflow: hidden;
+            }
+            th.item_lbl {
+                width: 100px;
+                color: darkslategrey;
+                font-weight: 400;
+                font-size: .9em;
+                text-align: left;
+                padding: 5px 10px 5px 5px;
+                border: none;
+            }
+            
+            /* VIDEO SECTION */
+            .video_item {
+                height: "180";
+                width: "320";
+                padding-right: 20px;
+                float: left;
+            }
+            
+            /* STREAMED GAMES */
+            .game_item {
+                float: left;
+                max-width: 360px;
+            }
+            .game_item_table {
+                max-height: 175px;
+            }
+            .game_image {
+                max-width: 132px;
+                max-height: 175px;
+            }
+            .game_info_table {
+                height: 100%;
+                overflow: hidden;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .game_data_line {
+                font-size: 15px;
+            }
+            
+            /* SPACE AT BOTTOM */
+            #space_at_bottom {
+                height: 100px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <!-- NAVIGATION BAR -->
+        <ul id = "navbar">
+            <li id = "navbar_item"><a class = "navbar_link" href="#home">Home</a></li>
+            <li id = "navbar_item"><a class = "navbar_link" href = "#Genres">Genres</a></li>
+            <li id = "navbar_item"><a class = "navbar_link" href = "#Games">Games</a></li>
+            <li id = "navbar_item"><a class = "navbar_link" href = "#Streamers">Streamers</a></li>
+        </ul>
+        
+        <!-- TOP PROFILE -->
+        <table>
+            <tr>
+                <td>
+                    <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/lxthul-profile_image-1dab2c8d587e72b3-300x300.jpeg">
+                </td>
+                <td>
+                    <h1 id="banner heading">LxthuL</h1>
+                    <h2 id="banner_subheading">44,990 Followers</h2>
+                    <table id="streamer_tbl">
+                        <tr>
+                            <th class="item_lbl">Bio:</th>
+                            <td>Hello, I'm Tony (Tj) Campbell, I go by the alias Lethul in the competitive gaming world. Other names I go by are LxthuL (twitter and Twitch) and LethuL (Xbox Live.) I have won 13 Tournaments totaling over $340,000 dollars prize money.</td>
+                        </tr>
+                        <tr>
+                            <th class="item_lbl">Preferred Genres:</th>
+                            <td>Shooter, RPG</td>
+                        </tr>
+                        <tr>
+                            <th class="item_lbl">Streaming Now?:</th>
+                            <td>[See stream below]</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <!-- LIVE STREAM -->
+        <div class="new_section">
+            <h3 id="Live Streams banner">Live Streams</h3>
+            <hr>
+            <div id="live_video">
+                <iframe
+                    src="http://player.twitch.tv/?channel=lxthul&muted=true"
+                    height="360"
+                    width="640"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        
+        <!-- PAST VIDEOS -->
+        <div class="new_section">
+            <h3 id="Past Videos banner">Past Videos</h3>
+            <hr>
+            <ul class="video_list">
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v129656327&autoplay=false"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v129419252&autoplay=false" 
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v129398618&autoplay=false" 
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+            <a href="https://www.twitch.tv/lxthul/videos/all">and 108 more at Twitch.com...</a>
+        </div>
+        
+        <!-- STREAMED GAMES -->
+        <div class="new_section">
+            <h3>Streamed Games</h3>
+            <hr>
+            <ul id="games_list">
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/rzjnrhuv5rozj52g9aq3.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">Halo 5: Guardians</li>
+                                    <li class="game_data_line">27th Oct, 2015</li>
+                                    <li class="game_data_line">Xbox One</li>
+                                    <li class="game_data_line">Shooter</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/kuwu7uppnixr5c5f7bz5.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">H1Z1: King of the Hill</li>
+                                    <li class="game_data_line">20th Sep, 2016</li>
+                                    <li class="game_data_line">PC (Microsoft Windows)</li>
+                                    <li class="game_data_line">Role-Playing (RPG)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/wprikj6ydxigxadbt2ld.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">Resident Evil 7: biohazard</li>
+                                    <li class="game_data_line">24th Jan, 2017</li>
+                                    <li class="game_data_line">PlayStation4, Xbox One, PC (Microsoft Windows) </li>
+                                    <li class="game_data_line">Adventure</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+        </div>
+        
+        <div id="space_at_bottom"></div>
+    </body>
+
+</html>
