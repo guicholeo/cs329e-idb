@@ -34,6 +34,12 @@ body {
 	text-align:center;
 }
 
+#imgGameName {
+	text-align: center;
+	font-weight: lighter;
+	font-style: italic;
+}
+
 #desc {
 	float:left;
 	width: 50%;
@@ -47,21 +53,17 @@ body {
 
 .container1 {
 	width: 100%;
-	height: 210px;
 
 }
 
 .genreGames {
-	float: left;
-	width: 100%;
-    
-	padding-left: 10px;
-	
+	width: 90%;
+	padding-left: 10%; 
+
 }
 
 
 .gridImg {
-
 	float: left;
 	padding-top: 5px;
 	padding-right: 10px;
@@ -71,5 +73,6 @@ th {
 	text-align: left;
 }
 img {
-	
+	width: 198px;
+	height: 228.75px;
 }
