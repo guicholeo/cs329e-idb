@@ -31,37 +31,28 @@
       
       #fifa {
 
-        position: absolute;
         top: 50px;
         left: 0px;
       }
 
 
       #streamers{
-        position:absolute;
         top: 558px;
         left:10px;
         text-transform: uppercase;
         font-family: "Poppins",serif;
 
       }
-      #synopsis{
-        position:absolute;
-
-        top: 50px;
-        left:410px;
+      #aboutgame{
+        float: 
       }
 
       #synoptext{
-        position:absolute;
-        top: 90px;
-        left: 415px;
+        
         padding-right: 6cm;
-        text-align: left;
       }
 
       #gametitle{
-        position:absolute;
         right: 950px;
         top:350px;
         font-weight: 900;
@@ -95,7 +86,6 @@
     background-color: #111;
   }
   #gamestuff{
-    position: relative;
     left: 200px;
     bottom: 20px;
   }
@@ -105,13 +95,11 @@
     display: block;
   }
   #video2{
-    position: absolute;
     left: 600px;
     top: 675px;
   }
  
   #videos{
-    position: relative;
 
     left: 100px;
     top: 500px;
@@ -132,11 +120,8 @@
   }
 
   #gametable{
-    position: absolute;
-    left: 1100px;
-    bottom: 265px;
-    white-space: normal;
-    width: 246px;
+    float: right;
+
   }
   #gametable td{
 
@@ -149,7 +134,6 @@
 
   #topstreamers{
 
-    position: absolute;
     left: 930px;
     top: 500px;
     white-space: normal;
@@ -160,14 +144,12 @@
   }
 
   #streamtable{
-      position: absolute;
       right:500px;
       bottom: 250px;
       white-space: normal;
     
   }
   #morestreams{
-    position: absolute;
     bottom:-300px;
     right: 400px;
     font-weight: 900;
@@ -189,7 +171,6 @@
 .w3-badge {height:13px;width:13px;padding:0}
 .w3-content,.w3-content{
 
-  position: absolute;
   top: 1200px;
   left: 80px;
 
@@ -209,26 +190,22 @@
 
 #about{
 
-  position: relative;
   bottom: 400px;
   left: 500px;
   
 }
 #vertline{
-  position: absolute;
   right: 200px;
 
 }
 
 #vertline1{
 
-  position: absolute;
   right: 370px;
   top: 500px;
 }
 
 #vertline2{
-  position: absolute;
   top: 450px;
   left: 0px;
 }
@@ -238,33 +215,28 @@
   font-weight: bold;
 }
 #twitch{
-  position: relative;
   left: 10px;
   top: 30px;
 }
 
 #review{
-  position: absolute;
   top: 1600px;
   left: 10px;
   font-weight: 900;
   text-transform: uppercase;
 }
 #gamereview{
-  position: absolute;
   top: 1700px;
   left: 30px;
   padding-right: 11cm;
   display: inline;
 }
 #author{
-  position: absolute;
   top:1650px;
   left: 30px;
 }
 
 #twitter{
-  position: absolute;
   top: 1200px;
   width: 300px;
   right: 20px;
@@ -274,6 +246,10 @@
   background-color: white;
 }
 
+#gameimg{
+
+  margin-right: 20px;
+}
 
   </style>
   </head>
@@ -286,15 +262,20 @@
       <li id = "nav"><a href = "#Games">Games</a></li>
       <li id = "nav"><a href = "#Streamers">Streamers</a></li>
     </ul>
-    <h1 id = "gametitle">Overwatch</h1>
-      <img id = "gameimg" src="images/overwatch.jpg", alt ="FIFA 17" style ="float:left;bottom:350px;width:404px;height:308px;">
 
-
+    <table id ="firstblock">
+    <tr>
+    <td>
+    <img id = "gameimg" src="images/overwatch.jpg", alt ="FIFA 17" style ="float:left;bottom:350px;width:404px;height:308px;">
+    </td>
+    <td>
 
     <h3 id = "synopsis">About This Game</h3>
+
     <p id = "synoptext"><font size = "2">In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory.
 In Overwatch, heroes do battle in diverse locations around the world. From the technological marvel of Numbani to the manufacturing powerhouse of Volskaya, each map has a unique layout and specific win conditions that your team must meet in order to secure victory.</font></p>
-    
+  </td>
+  <td>
 
    <table id = "gametable" cellspacing="10">
       <tr>
@@ -328,6 +309,9 @@ In Overwatch, heroes do battle in diverse locations around the world. From the t
         <td>84 out of 90 </td>
       </tr>
     </table>
+   </td>
+   </tr>
+   </table> 
  
 <div id = "vertline" style="width:1px;height:400px;background-color:black"></div> 
 
