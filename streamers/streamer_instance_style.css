@@ -81,15 +81,15 @@ th.item_lbl {
     max-width: 360px;
 }
 .game_item_table {
-    max-height: 175px;
+    height: 175px;
 }
 .game_image {
-    max-width: 132px;
-    max-height: 175px;
+    width: 132px;
+    height: 175px;
 }
 .game_info_table {
-    height: 100%;
-    overflow: hidden;
+    height: 175px;
+    /*overflow: hidden;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
