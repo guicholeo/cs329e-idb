@@ -67,8 +67,9 @@ body {
 	padding-right: 10px;
 
 }
-th {
-	text-align: left;
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
 }
 img {
 	
