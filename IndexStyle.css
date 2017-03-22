@@ -17,8 +17,8 @@ function ShowHiddenText() {
 	display: none;
 	font-size:14px;
 	position:absolute;
-	left:50%;
-	top:25%;
+	left:700px;
+	top:160px;
 	width:25%;
 	text-align: left;
 	font-size: 18px;
