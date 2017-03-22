@@ -1,3 +1,4 @@
+/* Nav Bar*/
 #navbar {
 	list-style-type: none;
 	margin: 0;
@@ -30,7 +31,7 @@ body {
  	margin: 0;
 }
 
-#genreName, #imgGameName,#games {
+#genreName {
 	text-align:center;
 }
 
@@ -40,28 +41,43 @@ body {
 	font-style: italic;
 }
 
+.container1 {
+	width: 93%;
+	padding-left: 7%;
+}
+
 #desc {
-	float:left;
-	width: 50%;
-	padding: 10px;
+	
+	width: 80%;
+
 }
 
 #genreStreams {
-	width: 48%;
-	float: right;
-}
-
-.container1 {
-	width: 100%;
+	width: 90%;
 
 }
+
+#streamers {
+	float:left;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+#topstreamerl {
+	float: left;
+	font-size: 12px;
+}
+#topstreamerr {
+	float: right; 
+	font-size: 12px;
+}
+
 
 .genreGames {
 	width: 90%;
-	padding-left: 10%; 
+
 
 }
-
 
 .gridImg {
 	float: left;
@@ -76,3 +92,7 @@ img {
 	width: 198px;
 	height: 228.75px;
 }
+p {
+	margin: 0;
+}
+
