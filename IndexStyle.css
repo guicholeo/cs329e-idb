@@ -1,3 +1,38 @@
+function ShowHiddenText() {
+    document.getElementById("HiddenTextContainer").style.display = "block";
+}
+
+#streamer {
+	color:#000000;
+	text-align:center;
+}
+
+#streamer:hover {
+	color:#A575C0;
+}
+
+#streamer-info {
+	color: #000000;
+	border: 1px;
+	width:250px;
+	height:250px;
+	float:right;
+	display: none;
+	font-size:14px;
+	margin-right:50px;
+	margin-bottom:0px;
+	position:absolute;
+	left:700px;
+	top:24%;
+	width:25%;
+	text-align: left;
+	font-size: 18px;
+}
+
+#streamer:hover #streamer-info {
+	
+	display:block;
+}
 #navbar {
 	list-style-type: none;
 	margin: 0;
