@@ -1,0 +1,258 @@
+ body{
+        height: auto;
+      }
+html{
+  background: url("images/background.jpg");
+}
+      #navbar{
+
+        background-color: #dddddd
+      }
+    	h1 {
+    		
+    		font-family: Poppins;
+    		font-synthesis: 
+    	}
+      td {
+        font-family: Arial;
+        font-style:bold;
+        vertical-align: top;
+      }
+      
+      #fifa {
+
+        top: 50px;
+        left: 0px;
+      }
+
+
+      #streamers{
+        top: 558px;
+        left:10px;
+        text-transform: uppercase;
+        font-family: "Poppins",serif;
+
+      }
+     
+
+      #synoptext{
+        
+        padding-right: 1cm;
+      }
+
+      #gametitle{
+        right: 950px;
+        top:350px;
+        font-weight: 900;
+
+
+      }
+
+
+
+
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  #nav{
+    float: left;
+  }
+
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #nav a:hover {
+    background-color: #111;
+  }
+  #gamestuff{
+    left: 200px;
+    bottom: 20px;
+  }
+
+  
+  #streamheader{
+
+    border-bottom: 2px solid #000000;
+  }
+
+
+  aside {
+
+    display: block;
+  }
+  #video2{
+    left: 600px;
+    top: 675px;
+  }
+ 
+  #videos{
+
+    left: 100px;
+    top: 500px;
+  }
+
+
+  #streamid{
+
+    position: relative;
+    left: 275px;
+    top: 505px;
+  }
+  
+
+  #sidetab{
+    position: absolute;
+    right: 50px;
+  }
+
+  #gametable{
+    border-left: 1px solid black;
+    max-width: 200px;
+    width: 150px;
+    padding-left:10px;
+  }
+  #gametable td{
+
+  width: 100%;
+  word-wrap: break-word;
+  
+}
+
+  
+
+  #topstreamers{
+
+    float: right;
+  }
+  #streamhead{
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  #streamtable{
+      margin-right: 1px;
+    
+  }
+  #morestreams{
+    bottom:-300px;
+    right: 400px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #streamers{
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 450px;
+
+    font-weight: 900;
+  }
+
+  
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
+
+
+#images{
+  font-family: sans-serif;
+  position: absolute;
+  top: 1100px;
+  left:10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#about{
+
+  bottom: 400px;
+  left: 500px;
+  
+}
+#vertline{
+  right: 200px;
+
+}
+
+#vertline1{
+
+  right: 370px;
+  top: 500px;
+}
+
+#vertline2{
+  top: 450px;
+  left: 0px;
+}
+
+#cat{
+
+  font-weight: bold;
+}
+#twitch{
+  
+
+}
+
+#review{
+  
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#gamereview{
+  
+  display: inline;
+}
+#author{
+  top:1650px;
+  left: 30px;
+}
+
+#twitter{
+  padding-left: 150px;
+
+}
+#reviewtxt{
+  background-color: white;
+}
+
+#gameimg{
+
+  margin-right: 20px;
+}
+
+#firstblock{
+  margin-bottom: 50px;
+}
+
+#secondblock{
+
+  margin-bottom: 50px;
+}
+
+
+
+#thirdblock{
+  margin-bottom: 70px;
+}
+
+
+#toplist{
+
+  padding-left: 10px;
+}
+
+  </style>

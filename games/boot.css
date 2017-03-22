@@ -1,0 +1,268 @@
+    .col-sm-2{
+      position: relative;
+      bottom: 20px;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1600px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    
+    
+
+    #gameimg{
+      padding-right: 10px;
+      position: relative;
+      bottom: 20px;
+      right: 20px;
+    }
+
+
+      #navbar{
+
+        background-color: #dddddd
+      }
+      h1 {
+        
+        font-family: Poppins;
+        font-synthesis: 
+      }
+      td {
+        font-family: Arial;
+        font-style:bold;
+        vertical-align: top;
+      }
+      
+      #fifa {
+
+        top: 50px;
+        left: 0px;
+      }
+
+
+      #streamers{
+        top: 558px;
+        left:10px;
+        text-transform: uppercase;
+        font-family: "Poppins",serif;
+
+      }
+     
+
+      #synoptext{
+        
+        padding-right: 1cm;
+      }
+
+      #gametitle{
+        right: 950px;
+        top:350px;
+        font-weight: 900;
+
+
+      }
+
+
+
+
+    
+  #gamestuff{
+    left: 200px;
+    bottom: 20px;
+  }
+
+  
+  #streamheader{
+
+    border-bottom: 2px solid #000000;
+  }
+
+
+  aside {
+
+    display: block;
+  }
+  #video2{
+    left: 600px;
+    top: 675px;
+  }
+ 
+  #videos{
+
+    left: 100px;
+    top: 500px;
+  }
+
+
+  #streamid{
+
+    position: relative;
+    left: 275px;
+    top: 505px;
+  }
+  
+
+  #sidetab{
+    position: absolute;
+    right: 50px;
+  }
+
+  #gametable{
+    border-left: 1px solid black;
+    max-width: 200px;
+    width: 150px;
+    padding-left:10px;
+  }
+  #gametable td{
+
+  width: 100%;
+  word-wrap: break-word;
+  
+}
+
+  
+
+  #topstreamers{
+
+    float: right;
+  }
+  #streamhead{
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  #streamtable{
+      margin-right: 1px;
+    
+  }
+  #morestreams{
+    bottom:-300px;
+    right: 400px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #streamers{
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 450px;
+
+    font-weight: 900;
+  }
+
+  
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
+
+
+#images{
+  font-family: sans-serif;
+  position: absolute;
+  top: 1100px;
+  left:10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#about{
+
+  bottom: 400px;
+  left: 500px;
+  
+}
+#vertline{
+  right: 200px;
+
+}
+
+#vertline1{
+
+  right: 370px;
+  top: 500px;
+}
+
+#vertline2{
+  top: 450px;
+  left: 0px;
+}
+
+#cat{
+
+  font-weight: bold;
+}
+#twitch{
+  
+
+}
+
+#review{
+  
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#gamereview{
+  
+  display: inline;
+}
+#author{
+  top:1650px;
+  left: 30px;
+}
+
+#twitter{
+
+}
+#reviewtxt{
+  background-color: white;
+}
+
+#gameimg{
+
+  margin-right: 20px;
+}
+
+#firstblock{
+  margin-bottom: 50px;
+}
+
+#secondblock{
+
+  margin-bottom: 50px;
+}
+
+
+
+#thirdblock{
+  margin-bottom: 70px;
+}
+
+
+#toplist{
+
+  padding-left: 10px;
+}
+
+  

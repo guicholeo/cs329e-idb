@@ -1,358 +1,84 @@
 <!DOCTYPE html>
-<html> 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<html lang="en">
+<head>
+  <title>Halo 5: Guardians</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="boot.css" type="text/css">
 
-  <head>
-    <style type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
-    html{
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-      body{
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
-        background-image: url("images/solidcolor.jpg");
-        margin: 0 auto;
-
-      }
-
-      #navbar{
-
-        background-color: #dddddd
-      }
-    	h1 {
-        text-align:center;
-    		font-style:italic;
-    		font-family: Arial;
-    		font-synthesis: 
-    	}
-      td {
-        font-family: Arial;
-        font-style:bold;
-        vertical-align: top;
-      }
-      
-      #halo {
-
-        position: absolute;
-        top: 50px;
-        left: 0px;
-      }
-
-
-      #streamers{
-        position:absolute;
-        top: 558px;
-        left:10px;
-        text-transform: uppercase;
-        font-family: "Poppins",serif;
-
-      }
-      #synopsis{
-        position:absolute;
-
-        top: 50px;
-        left:410px;
-      }
-
-      #synoptext{
-        position:absolute;
-        top: 90px;
-        left: 415px;
-        padding-right: 5cm;
-        text-align: left;
-      }
-
-      #gameimg{
-        position:absolute;
-        right: 950px;
-        top:350px;
-        font-weight: 900;
-
-
-      }
-
-
-
-
-    #navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  #nav{
-    float: left;
-  }
-
-  #nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  #nav a:hover {
-    background-color: #111;
-  }
-  #gamestuff{
-    position: relative;
-    left: 200px;
-    bottom: 20px;
-  }
-
-  aside {
-
-    display: block;
-  }
-  #video2{
-    position: absolute;
-    left: 600px;
-    top: 675px;
-  }
- 
-  #videos{
-    position: relative;
-
-    left: 100px;
-    top: 500px;
-  }
-
-
-  #streamid{
-
-    position: relative;
-    left: 275px;
-    top: 505px;
-  }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-
-  #sidetab{
-    position: absolute;
-    right: 50px;
-  }
-
-  #gametable{
-    position: absolute;
-    left: 1100px;
-    bottom: 265px;
-    white-space: normal;
-    width: 246px;
-  }
-  #gametable td{
-
-  width: 100%;
-  word-wrap: break-word;
   
-}
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Streamers</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <table>
+        <tr>
+        <td>
+            <img id = "gameimg" src="images/halo5.jpg", alt ="Halo5" style ="float:left;width:228px;height:200px;">
+        </td>
+        </tr>
+        </table>
+        <table style="width: 175px;">
+          
+        <th style="text-align: center;font-size: 150%">Halo 5: Guardians</th>
+        </table>
+        
+        
+       
 
-  #topstreamers{
-
-    position: absolute;
-    left: 930px;
-    top: 500px;
-    white-space: normal;
-  }
-  #streamheader{
-
-    border-bottom: 2px solid #ddd;
-  }
-
-  #streamtable{
-      position: absolute;
-      right:500px;
-      bottom: 250px;
-      white-space: normal;
-    
-  }
-  #morestreams{
-    position: absolute;
-    bottom:-300px;
-    right: 400px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  #streamers{
-    font-family: sans-serif;
-    position: absolute;
-    left: 10px;
-    top: 450px;
-
-    font-weight: 900;
-  }
-
-  
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-.w3-content,.w3-content{
-
-  position: absolute;
-  top: 1200px;
-  left: 80px;
-
-}
-
-
-
-
-#images{
-  font-family: sans-serif;
-  position: absolute;
-  top: 1100px;
-  left:10px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-#about{
-
-  position: relative;
-  bottom: 400px;
-  left: 500px;
-  
-}
-#vertline{
-  position: absolute;
-  right: 200px;
-
-}
-
-#vertline1{
-
-  position: absolute;
-  right: 370px;
-  top: 500px;
-}
-
-#vertline2{
-  position: absolute;
-  top: 450px;
-  left: 0px;
-}
-
-#cat{
-
-  font-weight: bold;
-}
-#twitch{
-  position: relative;
-  left: 10px;
-  top: 30px;
-}
-
-#review{
-  position: absolute;
-  top: 1600px;
-  left: 10px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-#gamereview{
-  position: absolute;
-  top: 1700px;
-  left: 30px;
-  padding-right: 11cm;
-  display: inline;
-}
-#author{
-  position: absolute;
-  top:1650px;
-  left: 30px;
-}
-
-#twitter{
-  position: absolute;
-  top: 1200px;
-  width: 300px;
-  right: 20px;
-
-}
-#reviewtxt{
-  background-color: white;
-}
-
-
-  </style>
-  </head>
-
-  <body scroll = "no" style="overflow: hidden">
-
-    <ul id = "navbar">
-      <li id = "nav"><a class = "active" href="#home">Home</a></li>
-      <li id = "nav"><a href = "#Genres">Genres</a></li>
-      <li id = "nav"><a href = "#Games">Games</a></li>
-      <li id = "nav"><a href = "#Streamers">Streamers</a></li>
-    </ul>
-    <h1 id = "gameimg">Halo 5: Guardians</h1>
-      <img id = "halo" src="images/halo5.jpg", alt ="Halo 5: Guardians" style ="float:left;bottom:350px;width:404px;height:308px;">
-
-
-
-    <h3 id = "synopsis">About This Game</h3>
-    <p id = "synoptext"><font size = "2">Peace is shattered when colony worlds are unexpectedly attacked.</br>But when humanity's greatest hero goes missing, a new Spartan is tasked with hunting the Master Chief and solving a mystery that threatens the entire galaxy.</font></p>
-    
-
-   <table id = "gametable" cellspacing="10">
-      <tr>
-        <td id = "cat">Release Date:</td>
-       </tr>
-      <tr>  
-        <td>October 27, 2015 </td>
-      </tr>
-      <tr>
-        <td id = "cat">Studio:</td>
-      </tr>
-      <tr>
-        <td>343 Industries </td>
-      </tr>
-      <tr>
-        <td id = "cat">Genre:</td>
-      </tr>
-      <tr>
-        <td>Shooter </td>
-    </tr>
-      <tr>
-        <td id = "cat">Platforms:</td>
-      </tr>
-      <tr>  
-        <td>Xbox One </td>
-      </tr>
-      <tr>
-        <td id = "cat">Rating:</td>
-      </tr>
-       <tr> 
-        <td>79 out of 90 </td>
-      </tr>
-    </table>
- 
-<div id = "vertline" style="width:1px;height:400px;background-color:black"></div> 
-
-
-
-
-    
-
-  <h2 id = "streamers"><font color=rgb(52,55,59) size="5">Live Streams</font></h2>
-
-
-
-  
-
-  
       
 
-  <table id ="streamtable">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>About Game</h1>
+      <p>Peace is shattered when colony worlds are unexpectedly attacked. But when humanity's greatest hero goes missing, a new Spartan is tasked with hunting the Master Chief and solving a mystery that threatens the entire galaxy.Peace is shattered when colony worlds are unexpectedly attacked.</p>
+      <hr>
+      <table id = "secondblock">
+      <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Live Streams</th>
+  
 
+      <tr>
+      <td>
+
+    <table id ="streamtable">
 
     <tr id = "vid">
     <td>
 
-    <div id = "videos" style="width: 400px;">
     <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
     <div id="24790229072"></div>
     <script type="text/javascript">
@@ -371,7 +97,7 @@
     </div>
     </td>
     <td>
-    <div id = "videos" style="width: 400px;">
+    
     <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
     <div id="24788003312"></div>
     <script type="text/javascript">
@@ -387,16 +113,13 @@
 
 
     </script>
-    </div>
-    </td>
-
-
-
+    
     </tr>
 
     <tr id = "vid">
     <td>
-    <div id = "videos" style="width: 400px;">
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="106961925"></div>
     <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
     <div id="66252977"></div>
     <script type="text/javascript">
@@ -412,10 +135,9 @@
 
     
      </script>
-    </div>
+   
     </td>
     <td>
-    <div id = "videos" style="width: 400px;">
     <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
     <div id="24791995712"></div>
     <script type="text/javascript">
@@ -431,62 +153,39 @@
 
     
      </script>
-    </div>
     </td>
     </tr>
-
     </table>
+    </td>
+    </tr>
+    <tr>
+    <td align="right"><a href="#morestreamers">More streamers</a></td>
+    </tr>
+    </table>
+
+
+    <table style="margin-bottom:50px;">
     
-    <h4 id ='morestreams'>More streamers</h4>
+    <th style="text-align: center; font-size:200%;color:black; font-family: Poppins;">Tweets/Trailer</th>
+    <tr>
+    <td>
+  <div id ="twitter">
+  <a class="twitter-timeline" href="https://twitter.com/hashtag/Halo5" data-widget-id="843235374235336704">#Halo5 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+  </td>
+  <td>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Rh_NXwqFvHc" frameborder="0" allowfullscreen></iframe>
+  </td>
+  </tr>
+</table>
+
+    <table id = "thirdblock">
+<th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images<hr></th>
 
 
-    <div id = "vertline1" style="width:1px;height:1100px;background-color:black"></div> 
-    <div id = "vertline2" style="width:1280px;height:1px;background-color:black"></div> 
-
-
-
-
-    <div id ="topstreamers">
-    <table id ="toplist" cellspacing="20">
-      <th id = "streamheader">
-        Top Live Streamers
-      </th>
-      <th id = "streamheader">
-        Followers
-      </th>
-      <tr>
-      <td id = "streamheader">Lxthul</td>
-      <td id = "streamheader">44,232</td>
-      </tr>
-      <tr>
-      <td id = "streamheader">WonderboyHalo</td>
-      <td id = "streamheader">1,955</td>
-      </tr>
-
-      <tr>
-      <td id = "streamheader">Mean_VenomMLG</td>
-      <td id = "streamheader">1,271</td>
-      </tr>
-      <tr>
-      <td id = "streamheader">McroLek</td>
-      <td id = "streamheader">875</td>
-      </tr>
-
-      </table>
-      
-      <img id = "twitch" src="images/twitch.png" style="width: 300px;bottom: 200px;">
-      
-      </div>
-
-     
-
-
-
-
-
-
-
-
+<tr>
+<td>
 <div class="w3-content w3-display-container" style="max-width:900px">
   <img class="mySlides" src="images/haloimg2.jpg" style="width:800px;height: 400px;">
   <img class="mySlides" src="images/haloimg3.jpg" style="width:800px;height: 400px;">
@@ -543,75 +242,120 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 </script>
+
+
     
+</td>
+</tr>
+</table>
+</div>
 
 
+    <div class="col-sm-2 sidenav">
+        <table style="width:175px;height: 300px;margin-bottom: 50px;">
+        <th style="text-align: center;"><u>Game information<u></th>
+        <tr>
+        <td><b>Release Date:</b></td>
+        </tr>
+        <tr>
+          <td>
+            October 27,2015
+          </td>
+        </tr>
+        <tr>
+        <td><b>Studio:</b></td>
+        </tr>
+        <tr>
+          <td>
+            343 Industries
+          </td>
+        </tr>
+        <tr>
+        <td><b>Genre:</b></td>
+        </tr>
+        <tr>
+          <td>
+          <a href="../genres/shooter.html">
+            Shooter
+          </a>
+          </td>
+        </tr>
+        <tr>
+        <td><b>Platform(s):</b></td>
+        </tr>
+        <tr>
+          <td>
+            Xbox One
+          </td>
+        </tr>
+        <tr>
+        <td><b>Rating:</b></td>
+        </tr>
+        <tr>
+          <td>
+            79 
+          </td>
+        </tr>
+        
+        </table>
+        <table style="width: 175px;margin-bottom: 50px;">
+        <th style="text-align: center;"> <u>Live Streamers </u></th>
+        <tr>
+        <td>
+        <table style="right:1px;width: 175px;height: 200px;">
+        <th style="text-align: center;">Name</th>
+        <th style="text-align: center;">Fans</th>
+        <tr>
+        <td><a href="../streamers/streamer_lxthul.html">Lxthul</a></td>
+        <td>44,232</td>
+        </tr>
 
+        <tr>
+        <td><a href="../streamers/streamer_wonderboyhalo.html">WonderboyHalo</a></td>
+        <td>1,955</td>
+        </tr>
 
+        <tr>
+        <td>Mean_VenomMLG</td>
+        <td>1,271</td>
+        </tr>
 
-  <h2 id = "images"><font color=rgb(52,55,59) size="5">Images</font></h2>
+        <tr>
+        <td>McroLek</td>
+        <td>875</td>
+        </tr>
+        <tr>
+        <td style="text-align: right;"><a href="#more">
+        more
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
 
-<div id ="twitter">
-<h3 id ="tweets" style="position:absolute;right:110px;top:-50px;font-family: sans-serif;font-weight: 900;text-transform: uppercase;">Tweets</h3>
-<a class="twitter-timeline" href="https://twitter.com/hashtag/Halo5" data-widget-id="843235374235336704">#Halo5 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <table style="width: 175px;">
+        <th style="text-align:center;"> Game Review:</th>
+        <tr>
+        <td>
+        <a href="http://www.ign.com/articles/2015/10/26/halo-5-guardians-review"><img src="images/ign.jpg" width="100px;height100px;"></a>
+        </td>
+        </tr>
+        </table>
+
+    </div>
+  </div>
 </div>
 
 
 
 
-  <h2 id = "review"><font color=rgb(52,55,59) size="5">Game Review</font></h2>
-  <h1 id='author'>By Jeff Gerstmann</h1>
-  <div id ="reviewtxt" style="text-align: left;">
-  <p id = 'gamereview'>Now that we're five games into the core Halo series, it's high time that we started learning a little bit more about the man inside the space marine armor and the computer lady who frequently lives in his head, don't you think? The Halo games have always been careful to mete out those parts of the story and the interplay between the Master Chief and Cortana in tight supply (unless you wanted to go deep and get into the out-of-game fiction, of course). Halo 4 got a little more direct with things, and Halo 5: Guardians continues that trend by largely focusing Cortana, who left the Master Chief's head during the previous game and is still potentially out there... somewhere. The game and the story surrounding it has its issues, but it's a great-looking Xbox One game that adds some neat new ideas to the multiplayer.<br><br>
-
-The marketing for Halo 5 has been decidedly deceptive in the way it focuses things on a conflict between the AWOL Master Chief and the Spartan tasked with hunting the Chief down, Locke. Each rolls with a crew of soldiers on to their respective missions and you might think that the story itself is about this conflict. But this ends up being more of a framing device. Much like Halo 2 has you swapping back and forth between Chief and the Covenant's Arbiter, Halo 5 has you swap between Master Chief's team and Locke's team. The problem there is that Locke's mission is to find the Master Chief, while Master Chief is chasing down things that actually matter. After a few early levels that make Locke's side of things seem more interesting than they are, the game quickly settles into a rhythm where I was following the Master Chief storyline pretty closely, but Locke's missions feel like busywork, like combat for the sake of combat. Like padding. Those missions are still engaging in the same way that Halo's action usually is, but I just wanted to skip over that to find out what the Master Chief is up to.<br><br>
-
-The campaign is structured a lot like previous Halo games, though the game has a couple of combat-free areas that show up between a few missions. This gives you the opportunity to walk around an area and listen in on conversations before walking up to the person who sends you on your next mission, but there isn't much to do in these areas other than, ya know, walk up to the person who sends you on your next mission. It feels like something that should have either been a larger, more meaningful inclusion or something that should've just been cut out and replaced with two lines of dialogue at the start of the next area. The game has its trademark vehicle sequences, but these areas don't feel as large and expansive as they have in the past. The Scorpion tank moment almost feels obligatory, like someone piped up and said "wait, we can't make a Halo game if we don't have a part where you drive that tank, right?" Beyond that you make your way from one objective to the next, shooting Covenant and Prometheans as you go. The meaningful campaign difference this time around comes from your comrades.<br><br>
-
-Previously, Cortana was present as a way to include dialogue in a game that would otherwise be about a man in power armor, silently gunning down hundreds of aliens. The back and forth between your friendly computer lady and the gruff super soldier let you know what you were doing and why. With Cortana's whereabouts being a bit murkier this time around, the game instead builds squads of four unique characters, who can play off of each other and tell each other things like "hey, those guys teleported through that ice wall up ahead" to let you, the player, know that it's time to shoulder charge through that ice wall in front of you to proceed. The characters themselves are largely faceless and lifeless, especially on the Master Chief side. They're there to make the game's co-op mode make sense (instead of crudely giving you four Master Chiefs), to provide some combat barks, and to get you back up when you fall. Halo 5 has a "down but not out" system, and you can press the X button when you fall to command one of your teammates to come revive you. That's something that makes the normal difficulty easier than it's ever been, because the enemy AI is frequently too low-minded to shoot down the Spartans who are attempting to revive you, making you damn near invincible. Harder difficulties prevent this from working as frequently, so charging ahead of your posse and getting gunned down is more or less a guaranteed reset to the previous checkpoint.<br><br>
-
-Having three additional shooters with you, even when you're playing alone, changes the dynamic a little bit. You can tap up on the D-pad to order your crew to focus fire on a target or move to a specific location. They'll even revive each other, if you can't be bothered. But they don't quite do the fighting for you, either. It feels like they'll soften up some targets, but the game definitely wants players to do the heavy lifting. Also, you'll probably catch them in some dumb situations. Occasionally, when you order your troops to focus on a target, one will reply that they're busy shooting something else. One time I ordered Buck to fire on a turret, he shouted back "gotta deal with this first," and then I turned around to see him firing his weapon into a wall. Cool moves, man. I never did like Buck.<br><br>
-
-The online co-op, as you might expect, makes the whole experience a bit more exciting, since you're working together with other living creatures. Players have to choose a character before the session begins, and only the player playing as the leader (Locke or the Master Chief) can give squad orders.<br><br>
 
 
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
 
-I ended up really enjoying the campaign, even if I feel like it has some occasionally severe pacing issues. The combat is satisfying, whether you're charging through on normal to feel like some kind of unkillable maniac or taking it more slowly on a higher setting. The Locke side of things could have been more satisfying, though, even if it gets where it needs to be by the end of the tale. Speaking of the end of Halo 5, there isn't much resolution there. It's like someone sat down, played the previous Halo trilogy, and forgot that the conclusion of Halo 2 was impossibly frustrating in its day. So they made that. We'll just have to wait a short three years for Halo 6, I guess. While we're talking about the campaign, I should note that there's no splitscreen option in Halo 5, which is almost surely a disappointment to people who liked playing Halo that way.<br><br>
-
-That carries over to the competitive side, which is broken down into something that more closely resembles traditional Halo multiplayer in the Arena mode. There's also a new Warzone mode, which adds a bunch of AI enemies and additional victory conditions to a larger, more sweeping experience.<br><br>
-
-Arena is primarily set up as a four-on-four mode, for the most part, but the rules here can change as the developer decides to mix up the various multiplayer playlists after release. But multiplayer is where your new movement abilities--also present in the campaign--really come into their own. The combatants are all equipped with a tiny jet boost, which can be used to quickly dash in any direction, even if you're in midair. You can perform a boosted slide, and you can run all you like. After running for a bit, you can perform an exciting shoulder charge that knocks enemies back with a satisfying impact. Halo 5 lets you aim down the sights of every weapon, and doing this in the air engages a brief hover mode, letting you line up shots or, more likely, serving you up to the enemy on a silver platter since you're just sort of hovering there, waiting to be gunned down. That hover can also lead to a ground <br><br>
-
-
-The multitude of variants found throughout the multiplayer side of things has long been one of Halo's strengths. Halo 5 goes a different way, instead focusing on a handful of core modes. Standards like capture the flag and team deathmatch (OK, fine, "slayer") are present. You can play a zone capture mode called Strongholds, too. But things like King of the Hill or Oddball are missing. Big Team Battle isn't here, and neither is the Forge map editing feature, though the developers have confirmed plans to bring those back in a post-launch patch. The included multiplayer in the arena mode is fast-paced and fun, but it's surprising how inflexible it is compared to, say, Halo 3.<br><br>
-
-Perhaps most of the multiplayer efforts went into the new Warzone mode, which is a 12-on-12 battle across larger maps. The basic variant of Warzone has the teams capturing outposts and earning points for their team along the way. This mode has AI enemies to contend with, as well. These often-named enemies spawn on a countdown timer and give a good number of points to the team that takes them down. Later on, when legendary variants of these enemies start spawning, the points given for a kill can totally swing the final outcome in dramatic fashion. So the game becomes a mix of capturing points, defending points, and occasionally breaking off a few players to go handle the AI enemies for bonus points (or, at least, to deny the enemy that same bonus). It's a thrilling upgrade to the standard style of Halo multiplayer, but also one that comes with a caveat or two of its own.<br><br>
-
-The lead caveat here is the new REQ system, a card-and-pack-based set of features that figure into this mode heavily. For playing multiplayer, you'll earn REQ points. These points can be spent on card packs, which come in bronze, silver, and gold variants. The packs can include permanent unlocks, like cosmetic upgrades and basic weapons, or they can include Titanfall-style burn cards that, as a Warzone match continues, let you spawn in with more powerful gear. So if you want to spawn in with a Banshee so you can fly overhead and try to contain the enemy in a location with its powerful lasers, you'll essentially burn a card (as well as some in-game energy, which builds and levels up over the course of a Warzone match) to make that happen. Want a Spartan Laser? You'll need a card first. So this adds a consideration as to when is the right moment to use these cards and, ideally, help ensure a positive outcome for your team. This means that teams that are getting smashed out of the gate have zero reason to bring out the big guns, since they'll want to save their rarer cards for a closer match. Or teams that might normally try to push an advantage could slow down on card usage, to ensure they'll have some to use the next time they play. The additional out-of-match considerations that the single-use cards bring are an unwelcome addition. The ability to call in bigger guns and gear over the course of a match could have been handled differently. That said, you earn quite a few REQ points by simply playing the game, and additional card packs are granted to you when you level up, so it seems unlikely that you'll ever be completely out of things to deploy.<br><br>
-
-The higher-end card packs, of course, can also be purchased with real money. This stinks up the joint a little bit and makes you feel like the opposing team could have just bought a bunch of gold packs to call in the best stuff at the end of a match, rather than relying solely on their skill. Does the idea of paid consumables destroy Warzone? No, absolutely not. But even when I was playing pre-release, a day or two prior to paid cards being available, the whole thing felt a bit... icky. By assigning a real-world value to these cards, the decision to use them starts to have ramifications beyond simply activating an in-game item. That additional "layer of strategy," if you will, doesn't add to the experience. That, combined with there only being a few Warzone maps (and no custom games option for the Warzone maps) means that I'll probably spend more time in the Arena section of the multiplayer.<br><br>
-
-Across the board, Halo 5 presents itself quite well. The game runs at a great frame rate that smooths out the action and helps make it look great. There's some "adaptive resolution" trickery happening behind the scenes to make that frame rate stick up around 60 frames per second, but that only led to one or two spots where I felt like I noticed an aspect of the screen looking grungier than it should. It's a neat trick, one that other games might want to consider down the line. It's a great-looking game, and certainly among the platform's very best to date. The audio is also quite good, with explosions and gunfire that make you feel like you're in the middle of a battle. Very crisp sound effects, overall. The music is also nice, blending Halo's signature chants with more modern-sounding compositions.<br><br>
-
-That frame rate, specifically, goes a long way. Halo 5 looks great and plays very, very well. It even tells a pretty decent story along the way. It's just surprising that many of the weirder multiplayer modes that come to mind when you think of what Halo has done over the years are straight-up missing. And Warzone has some really great ideas about how to present Halo multiplayer on a new scale, but the sometimes-confusing REQ system subtracts more than it adds to that part of the game. There will certainly be some players who find that the specific omissions in Halo 5 are extremely disappointing, and you'll see a rough edge or two, but all in all there's a fantastic big-budget shooter in Halo 5 with lots to see and enough multiplayer options to keep you going for quite some time.</p>
-
-</div>
-
-
-
-
-
-  </body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
