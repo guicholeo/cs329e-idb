@@ -13,17 +13,12 @@ function ShowHiddenText() {
 
 #streamer-info {
 	color: #000000;
-	border: 1px;
-	width:250px;
-	height:250px;
 	float:right;
 	display: none;
 	font-size:14px;
-	margin-right:50px;
-	margin-bottom:0px;
 	position:absolute;
-	left:700px;
-	top:24%;
+	left:50%;
+	top:25%;
 	width:25%;
 	text-align: left;
 	font-size: 18px;
