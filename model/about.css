@@ -1,6 +1,11 @@
+#maincontainer{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%
+}
+
 #memberContainer {
-	width: 90%;
-	padding-left: 10%;
+	width: 100%;
 }
 
 #imguser {
@@ -13,9 +18,10 @@
 #user {
 	width:25%;
 	padding: 0;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	margin-right: 20px;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 #userbio {
@@ -23,26 +29,56 @@
 
 }
 
+
 #name{
 	text-align: center;
 	font-style: italic;
 	font-weight: 600;
 }
 
-#responsabilities {
-	margin-top: 3px;
+
+
+#res {
+	text-align: center;
 }
 
 #respon {
-	margin-top: 5px;
+	margin-top: 10px;
 	text-align: center;
-	font-style: italic;
 	font-weight: 600;
 
 }
+#singletool {
+	width:15%;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
 
+#imgtool {
+	width: 90px;
+	height: 90px;
+}
+
+#toolname {
+	text-align: center;
+	padding-bottom: 3px;
+}
+
+
+hr {
+	border-top: 1px solid #eee;
+}
 
 body {
 	width: 100%;
 
+}
+
+h4{
+	font-weight: lighter;
+}
+
+a {
+	 text-decoration:  none;
 }
