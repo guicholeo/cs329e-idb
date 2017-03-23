@@ -1,6 +1,6 @@
     .col-sm-2{
       position: relative;
-      bottom: 20px;
+      top:0px;
     }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -263,6 +263,29 @@
 #toplist{
 
   padding-left: 10px;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#nav{
+  float: left;
+}
+
+#nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  background-color: #111;
 }
 
   
