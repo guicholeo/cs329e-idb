@@ -17,26 +17,7 @@ ul {
     margin-bottom: 25px;
 }
 
-/* NAVIGATION BAR
-#navbar {
-    list-style-type: none;
-    background-color: #333;
-    margin-bottom: 30px;
-    padding: 0;
-    overflow: hidden;
-  }
-#navbar_item {
-    text-decoration: none;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-}
-.navbar_link:hover {
-    color: #2ecc71;
-}*/
-
+/* NAVIGATION BAR */
 #navbar {
     list-style-type: none;
     margin: 0;
@@ -91,8 +72,6 @@ th.item_lbl {
 
 /* VIDEO SECTION */
 .video_item {
-    height: "180";
-    width: "320";
     padding-right: 20px;
     float: left;
 }
