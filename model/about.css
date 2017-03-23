@@ -1,0 +1,32 @@
+#memberContainer {
+	width: 90%;
+	padding-left: 10%;
+}
+
+#imguser {
+
+	width: 200px;
+	height: 200px;
+	border-radius: 130px;
+}
+
+#user {
+	width:20%;
+	padding: 0;
+	border: 2px solid red;
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+#userbio {
+	text-align: center;
+
+}
+
+
+
+body {
+	width: 100%;
+
+}
