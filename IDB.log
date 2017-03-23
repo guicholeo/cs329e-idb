@@ -1,0 +1,389 @@
+commit 96c520abe43b12bcea37f63e390c641dec77206d
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 13:08:43 2017 -0500
+
+    file path error resolved on streamer's table page
+
+commit 1c47f7cab8aa6b5d9afa66be57314f7890aa0d9c
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 00:32:48 2017 -0500
+
+    Added halo 5 to games table
+
+commit 3a94185190d439ba3467e1ea1c1658ff71110c45
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 22:47:29 2017 -0500
+
+    added image to about page
+
+commit 3f737ff0bcf9cdfb1519eee0d8f3b88f74f178b6
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Wed Mar 22 20:58:52 2017 -0500
+
+    sldkfj
+
+commit 3423b20a4532cd0d4e63fa5a1930564120709503
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 20:41:31 2017 -0500
+
+    edits to about page
+
+commit 108759327f920eba02c6d6670a4add9dc9bdbb7b
+Author: Luis Sanchez <leo@wireless-10-147-94-167.public.utexas.edu>
+Date:   Wed Mar 22 20:27:51 2017 -0500
+
+    updated about page
+
+commit 06486adeca9966e4493a5cf2b905c929a42c616a
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Wed Mar 22 20:22:04 2017 -0500
+
+    Fixed small issues
+
+commit 3e0e0aecbae85ed9cb3ceb52b5314c6a689c087d
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 19:59:11 2017 -0500
+
+    about page edit
+
+commit f0f3f94b474aa118f1efb35b3a80ed63f3295ba3
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Wed Mar 22 19:54:42 2017 -0500
+
+    Added my ugly mug to the About page img source
+
+commit 3128a9eab7f07666fd632d0c23a4686690e8b35b
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Wed Mar 22 19:51:13 2017 -0500
+
+    adjusted video size
+
+commit 2755939b4f408641aeceb4ca6b031e9e926cfcca
+Author: Luis Sanchez <leo@wireless-10-147-94-167.public.utexas.edu>
+Date:   Wed Mar 22 19:47:14 2017 -0500
+
+    fixed nav var name, and image id tag
+
+commit f595eb9a960873fdd64c1c134544874d5864b918
+Author: Luis Sanchez <leo@wireless-10-147-94-167.public.utexas.edu>
+Date:   Wed Mar 22 19:45:37 2017 -0500
+
+    added about page
+    
+    closes #14
+
+commit 374749bee4c3d3ae3fdc77e7c5d33a316312fb71
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 19:33:19 2017 -0500
+
+    linked games pages to appropriate pages
+
+commit e57de6912db412cec1bbc709a4dd93957ab4b8ef
+Author: Jairo Portillo <Portillo.jairojr@gmail.com>
+Date:   Wed Mar 22 19:31:41 2017 -0500
+
+    Added Curse
+
+commit 4ae8a7408fc2c32b4b896a7e99f7901a00458f3f
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Wed Mar 22 19:16:42 2017 -0500
+
+    added Fallout 4
+
+commit 913236a5c804bd80c76f3003ecc45a1de932c718
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Wed Mar 22 19:11:17 2017 -0500
+
+    Resized videos to be actually usable sizes
+
+commit da576251ad88fda0d4e605f990fe7b85646b6cff
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Wed Mar 22 19:09:48 2017 -0500
+
+    Added Streamers and Links
+
+commit f6b50fb068b9bbf84509129df568bee286ab1e01
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Wed Mar 22 19:01:07 2017 -0500
+
+    correcting image link
+
+commit ef236e6b556c91789c9c220bda6632903769f1a8
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Wed Mar 22 18:57:28 2017 -0500
+
+    updated index yet again
+
+commit 04e971de4dd829cbbbe807cbbd036a578ac06571
+Author: Luis Sanchez <leo@wireless-10-147-94-167.public.utexas.edu>
+Date:   Wed Mar 22 18:49:56 2017 -0500
+
+    fixed the body, head tag
+
+commit 6f2654fe9ef1c6711742ea91a0acd85ce8b4fc68
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 18:46:13 2017 -0500
+
+    added changes to game pages
+
+commit baf6646a8053617d2a855d9f2674c7aeb1f3feb3
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Wed Mar 22 18:38:33 2017 -0500
+
+    Made navbar consistent with others'
+
+commit 03770ef2fd8f99abadb641bb0737e7c974ec19e5
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Wed Mar 22 18:33:14 2017 -0500
+
+    fix please
+
+commit e5e79c7f713a3fd2929336d00951666517d7b07d
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Wed Mar 22 18:30:07 2017 -0500
+
+    trying to fix position problem
+
+commit bd014e823e7ce8a1031d08153288b0cd587e1c40
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 18:29:45 2017 -0500
+
+    changes to game pages
+
+commit f9068218ea8fd3b12410133827111080ebc9639a
+Author: Luis Sanchez <leo@wireless-10-147-94-167.public.utexas.edu>
+Date:   Wed Mar 22 18:26:48 2017 -0500
+
+    edited link for home and added seperator between divs
+
+commit 8f1ac9a9e18f8612bd377a6fe4b4a9b1f70235a7
+Author: Luis Sanchez <leo@wireless-10-148-171-136.public.utexas.edu>
+Date:   Wed Mar 22 17:32:00 2017 -0500
+
+    edited genre pages and edited nav links
+
+commit 16f9e84b8191ce1bdc2a38c4b16d81692d23f6b6
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 22 00:44:44 2017 -0500
+
+    changes to all my game pages. Hopefully these don't mess up when you guys open up your screens. Used a new boootstrap template
+
+commit 787ee021d559a163b944b1ea5c1de05550fe7a67
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Tue Mar 21 23:03:19 2017 -0500
+
+    updated index css and html page
+
+commit 37287e93138baf20beae81a8a355eb6ac37d23ad
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Tue Mar 21 19:33:36 2017 -0500
+
+    updated index again and added background wallpaper check it
+
+commit a7446c7c42957b9f4ea1a51a3b4ee573426cb82f
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Tue Mar 21 14:36:26 2017 -0500
+
+    Added links to some pages
+
+commit 8a758e5ac66dcbc0e3bc2fce39f3dd9253fb6847
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Mon Mar 20 20:41:38 2017 -0500
+
+    updated index.html and IndexStyle.css
+
+commit 6c56d314707e41006b6980035ea0edfef52f7b24
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Mon Mar 20 20:33:17 2017 -0500
+
+    overwatch changes
+
+commit 36ee0574c21b5221b0cc3922ec349e6f1a7c7c1a
+Author: nc22349 <nathan.caldwell@utexas.edu>
+Date:   Mon Mar 20 20:32:00 2017 -0500
+
+    Create CNAME closes #5 closes #6
+
+commit f8280aa72bfe05a57fd38ae0adbe10d9a12b766e
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Mon Mar 20 20:21:21 2017 -0500
+
+    Added a streamer for fallout 4, added links, and standardized image size in the Streamed Games section
+
+commit bad27efdbfe63884fda76101a3c9c30cfb89468b
+Author: Luis Sanchez <leo@wireless-10-147-196-32.public.utexas.edu>
+Date:   Mon Mar 20 20:06:17 2017 -0500
+
+    added 3rd genre static page, linked games and streamers
+    
+    closes #13
+
+commit b07e73a2c532032a0c5b6b4e3dcd07f42ba438c4
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Mon Mar 20 19:54:20 2017 -0500
+
+    Added Breif Descriptions
+
+commit d9e7dcf95062a84bd2b12f00a9dee74c86e0720a
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Mon Mar 20 19:44:16 2017 -0500
+
+    Genre and Games
+    
+    Tables added to both pages and table formatting added to css
+
+commit b78a243fb3451eb8c31be20a9643a13f9a487bab
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Mon Mar 20 19:29:48 2017 -0500
+
+    overwatch changes
+
+commit a5bbf55d18fcac5a75a83ac946f3b0e6eed90fd6
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Mon Mar 20 19:18:42 2017 -0500
+
+    overwatch changes
+
+commit 11642f12d44daec9d6db1f759821a76a448623e0
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Mon Mar 20 19:13:28 2017 -0500
+
+    Added table to genre
+
+commit 92c365cd645f104481d18d3732ebfd2c9a9c56e0
+Merge: 20aaf78 25c3a21
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Mon Mar 20 18:58:27 2017 -0500
+
+    Merge branch 'master' of https://github.com/leosanchez16/cs329e-idb
+
+commit 20aaf7853154b31285068f56995e7cd459a81b83
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Mon Mar 20 18:57:06 2017 -0500
+
+    updated model and index pages
+
+commit 25c3a21810f561565781ddf228da63e6b2d3e2d8
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Mon Mar 20 18:45:45 2017 -0500
+
+    overwatch.html changes
+
+commit a3b2af5438005713ee868be706d1d1f16d37fad8
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Mon Mar 20 18:09:49 2017 -0500
+
+    deleted streamer_curse.html from main repo
+
+commit e4fd2ebdfc58f658528db88eabd3ed835e9eeacd
+Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
+Date:   Mon Mar 20 18:06:44 2017 -0500
+
+    Moved streamer_curse.html to a folder for my streamer files
+
+commit a672aaaa93152272adebdffb4fc3b1673ac99d5e
+Author: Luis Sanchez <leo@wireless-10-147-196-32.public.utexas.edu>
+Date:   Mon Mar 20 18:04:06 2017 -0500
+
+    added static pages to folders, added 1st, 2nd genre static page
+    
+    closes #11, closes #12
+
+commit 6791fa985fa42bd53d9d1e391cae7783db5b81e8
+Author: JPortillo00 <portillo.jairojr@gmail.com>
+Date:   Sun Mar 19 15:43:23 2017 -0500
+
+    Added some more html pages
+    
+    Added the frames of the other pages for the splash paged using the style
+    ding used
+
+commit e0e0b4ecb00a5343c24ac1727751834baa4e0cce
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Sun Mar 19 00:22:37 2017 -0500
+
+    file change
+
+commit 48a75f1c9e5d3351913c5ec3ea014fe7747bfc55
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Sun Mar 19 00:19:35 2017 -0500
+
+    added changes plus an images folder
+
+commit 00086b846b81fe1876b5bade52144ded5221406d
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Sun Mar 19 00:07:17 2017 -0500
+
+    Halo 5,Overwatch, and FIFA 17 html documents. Links between pages still needs to be implemented but we'll do that once we meet up as a group
+
+commit 802a4c2c8ff803f6bffa174c91fbe452df7e356d
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Sat Mar 18 22:45:43 2017 -0500
+
+    Separated CSS into a streamer-instance stylesheet
+
+commit aa0c2d517188ace84a5d3751b1cb0477ee7b61d8
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Sat Mar 18 22:25:28 2017 -0500
+
+    booyakasha 4th streamer
+
+commit 86d25c5e71fac87b66b2d986d13c2bff5f90e4b9
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Sat Mar 18 22:08:43 2017 -0500
+
+    Added a third streamer. one more to go
+
+commit 7347abdd7239e17243cf1163a4850d160eab2726
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Sat Mar 18 21:43:30 2017 -0500
+
+    Added a second streamer index
+
+commit e9bc5317cde47460f117b0a845927e008a9d6dcc
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Sat Mar 18 21:34:26 2017 -0500
+
+    Added a streamer index
+
+commit 7a801231ec8989e615a0c53607e25c9c843f5856
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Thu Mar 16 18:44:25 2017 -0500
+
+    attached id to each model
+
+commit 39da121d4b973e5cc7b63c3f82af3b97578f059e
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Thu Mar 16 18:16:04 2017 -0500
+
+    changed to white background
+
+commit e67f219b8380e7b0f3ed14b82bf6a9ea567f4d38
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Thu Mar 16 17:49:23 2017 -0500
+
+    adding blank webpages
+
+commit d2fe15dc728b12885118d1e2725eca639f9797a9
+Author: Dingkun Zhang <dingkzhang@utexas.edu>
+Date:   Thu Mar 16 17:47:52 2017 -0500
+
+    adding blank about page
+
+commit de7350766197e3b816b2e4ec447827cbeebbd474
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 16 14:33:47 2017 -0500
+
+    halo5 html
+
+commit 3ab85344fae93eaea0a5b5c92894929641c852b3
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Wed Mar 15 09:41:28 2017 -0500
+
+    Twitch api python script
+
+commit 1e99b302ba43d203fa9abb54cf2a799deb684ad8
+Author: leosanchez16 <leosanchez16@utexas.edu>
+Date:   Fri Mar 10 12:39:49 2017 -0600
+
+    Initial commit
