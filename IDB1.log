@@ -1,3 +1,81 @@
+commit 337e517548b1e9a7415a5cf3a8a93dd780c81d14
+Author: Luis Sanchez <leo@Luiss-MacBook-Pro.local>
+Date:   Thu Mar 23 20:50:39 2017 -0500
+
+    added number of commits to about page
+
+commit 94d809a8c97ece35d705a9dec243320916ea30d7
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Thu Mar 23 20:23:47 2017 -0500
+
+    cropped
+
+commit c12bd5e8cc5352917bf1977ffa1841aaea5aaa30
+Author: nc22349 <nathan.caldwell@utexas.edu>
+Date:   Thu Mar 23 20:18:14 2017 -0500
+
+    too small in wiki
+
+commit 4a8fdc2b10be51bdb2fed7b5c78378d959169d9f
+Author: nc22349 <nathan.caldwell@utexas.edu>
+Date:   Thu Mar 23 20:18:03 2017 -0500
+
+    didn't resize in wiki
+
+commit fed664f3b1021ca74ec0732c287e857f55936758
+Author: Nathan Caldwell <neutronnate@Nathan-Caldwells-MacBook-Pro.local>
+Date:   Thu Mar 23 20:17:00 2017 -0500
+
+    A replacement diagram; text size larger
+
+commit b661321ed84333291b9504bc6c184709deb37746
+Author: nc22349 <nathan.caldwell@utexas.edu>
+Date:   Thu Mar 23 19:38:23 2017 -0500
+
+    Trying to blow up img on wiki's structure page
+
+commit 0ddd143974ef46c08cf17fcb241eff6b9657cedd
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 19:32:38 2017 -0500
+
+    gitignore empty file
+
+commit baddd267b6cbc3594898a5b009703c63027c3c6d
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 18:48:03 2017 -0500
+
+    changed team name in about page
+
+commit 1469fd4151c119f9c977d765eb16bef548d579ac
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 18:45:55 2017 -0500
+
+    changes to about page including name
+
+commit 398b8d8c547092638f7bba6decdff71556a7b601
+Author: Luis Sanchez <leo@wireless-10-146-189-238.public.utexas.edu>
+Date:   Thu Mar 23 16:36:50 2017 -0500
+
+    edited about page, uploaded more images
+
+commit 1242f67823249f201ab99c8e7590940aea11dddc
+Author: nc22349 <nathan.caldwell@utexas.edu>
+Date:   Thu Mar 23 15:29:02 2017 -0500
+
+    Add JP's diagram so I can link to it in Wiki
+
+commit a122f3431e2c7882614395115d30942c0e494cd9
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 15:18:19 2017 -0500
+
+    edits to about page
+
+commit 801fbe9dccd166fd2915b2ec9aea8a29278237f8
+Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
+Date:   Thu Mar 23 15:07:28 2017 -0500
+
+    IDB1.log created and pushed
+
 commit eb44612d0bc0f29a0f3b198b067013dab21286b3
 Author: WiLdCaT F8n32 <jeanpierrenjockii@utexas.edu>
 Date:   Thu Mar 23 15:05:32 2017 -0500
