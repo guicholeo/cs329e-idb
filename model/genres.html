@@ -1,26 +1,39 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="ModelStyle.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script type="text/javascript" src="dtable.js"></script>
+    <script type="text/javascript" src="dtable1.js"></script>
+    <script type="text/javascript" src="dtable2.js"></script>
+
 <title> Genres </title>
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
-    <nav id="nav_bar"></nav>
-    <script src="../navigation%20bar/nav_bar_script.js"></script>
-    
-<table>
-  <tr>
-    <th>Genre</th>
+	<ul id = "navbar">
+		<li id = "nav"><a href ="../index.html">Streamer Surf</a></li>
+		<li id = "nav"><a href ="streamers.html">Streamers</a></li>
+		<li id = "nav"><a href ="games.html">Games</a></li>
+		<li id = "nav"><a href ="genres.html">Genres</a></li>
+		<li id = "nav" style="float:right;"><a href = "about.html">About</a></li>
+	</ul>
+<div id = "tab" style="margin-left: 125px;margin-right: 10px; margin-top: 50px;font-family: sans-serif;max-width: 1000px;">
+  <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
+        <thead>
+            <tr>
+   <th>Genre</th>
     <th>Description</th> 
     <th>Most popular game</th>
     <th>Number of Streamers</th>
     <th>Most Popular Streamer</th>
   </tr>
-  <tr>
+
+        </thead>
+        
+        <tbody>
+        <tr>
     <td><a href = "../genres/sports.html">Sports</a></td>
     <td>Simulate Sports</td> 
     <td><a href = "../games/fifa.html">FIFA 17</a></td>
@@ -41,7 +54,17 @@
     <td> 4 </td>
     <td>Ch1ckenKun</td>
   </tr>
-</table>
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+
+    </script>
+
+  </div>
 
 </body>
 </html> 

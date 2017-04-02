@@ -1,28 +1,44 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="ModelStyle.css">
+	 <link rel="stylesheet" type= "text/css" href="ModelStyle.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <script type="text/javascript" src="dtable.js"></script>
+    <script type="text/javascript" src="dtable1.js"></script>
+    <script type="text/javascript" src="dtable2.js"></script>
 
 	
 <title> Games </title>
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
-    <nav id="nav_bar"></nav>
-    <script src="../navigation%20bar/nav_bar_script.js"></script>
+	<ul id = "navbar">
+		<li id = "nav"><a href ="../index.html">Streamer Surf</a></li>
+		<li id = "nav"><a href ="streamers.html">Streamers</a></li>
+		<li id = "nav"><a href ="games.html">Games</a></li>
+		<li id = "nav"><a href ="genres.html">Genres</a></li>
+		<li id = "nav" style="float:right;"><a href = "about.html">About</a></li>
+	</ul>
 
-	<table>
-  <tr>
+	
+
+  <div id = "tab" style="margin-left: 125px;margin-right: 10px; margin-top: 50px;font-family: sans-serif;max-width: 1000px;">
+  <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
+        <thead>
+            <tr>
     <th>Game</th>
     <th>Genre</th> 
     <th>Rating</th>
-    <th>Number of Streamers</th>
+    <th>Number of Live Streamers</th>
     <th>Studio</th>
   </tr>
-  <tr>
+
+        </thead>
+        
+        <tbody>
+        <tr>
     <td><a href = "../games/halo5.html">Halo 5: Guardians</a></td>
     <td><a href = "../genres/shooter.html">Shooter</a></td>    
     <td> 79 out of 100</td>
@@ -30,7 +46,38 @@
     <td><a href = "https://www.halowaypoint.com/en-us">343 Industries</a></td>
   </tr>
   <tr>
-  	<td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../genres/sports.html">Sports</a></td>    
+    <td> 80 out of 100</td>
+    <td> 4 </td>
+    <td><a href = "https://www.ea.com/">EA Studios</a></td>
+  </tr>
+  <tr>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../genres/sports.html">Sports</a></td>    
+    <td> 80 out of 100</td>
+    <td> 4 </td>
+    <td><a href = "https://www.ea.com/">EA Studios</a></td>
+  </tr><tr>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../genres/sports.html">Sports</a></td>    
+    <td> 80 out of 100</td>
+    <td> 4 </td>
+    <td><a href = "https://www.ea.com/">EA Studios</a></td>
+  </tr><tr>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../genres/sports.html">Sports</a></td>    
+    <td> 80 out of 100</td>
+    <td> 4 </td>
+    <td><a href = "https://www.ea.com/">EA Studios</a></td>
+  </tr><tr>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
+    <td><a href = "../genres/sports.html">Sports</a></td>    
+    <td> 80 out of 100</td>
+    <td> 4 </td>
+    <td><a href = "https://www.ea.com/">EA Studios</a></td>
+  </tr><tr>
+    <td><a href = "../games/fifa.html">FIFA 17</a></td>
     <td><a href = "../genres/sports.html">Sports</a></td>    
     <td> 80 out of 100</td>
     <td> 4 </td>
@@ -50,7 +97,17 @@
     <td> 4 </td>
     <td><a href = "https://bethesda.net/en/dashboard">Bethseda</a></td>
   </tr>
-	</table>
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+
+    </script>
+
+  </div>
 
 </body>
 </html>
