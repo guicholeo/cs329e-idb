@@ -1,78 +1,7 @@
-#maincontainer{
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%
-}
-
-#memberContainer {
-	width: 100%;
-}
-
-#imguser {
-
-	width: 200px;
-	height: 200px;
-	border-radius: 130px;
-}
-
-#user {
-	width:25%;
-	padding: 0;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
-	margin-top: 25px;
-}
-
-#userbio {
-	text-align: center;
-
-}
-
-
-#name{
-	text-align: center;
-	font-style: italic;
-	font-weight: 600;
-}
-
-
-
-#res {
-	text-align: center;
-}
-
-#respon {
-	margin-top: 10px;
-	text-align: center;
-	font-weight: 600;
-
-}
-#singletool {
-	width:15%;
-	padding: 0;
-	display: inline-block;
-	vertical-align: top;
-}
-
-#imgtool {
-	width: 90px;
-	height: 90px;
-}
-
-#toolname {
-	text-align: center;
-	padding-bottom: 3px;
-}
-
+/* UNIVERSAL */
 
 hr {
 	border-top: 1px solid #eee;
-}
-
-body {
-	width: 100%;
-
 }
 
 h4{
@@ -81,4 +10,68 @@ h4{
 
 a {
 	 text-decoration:  none;
+}
+
+/* USER INFORMATION */
+
+.user {
+	width:25%;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+.imguser {
+	width: 200px;
+	height: 200px;
+	border-radius: 130px;
+}
+
+.user p {
+    text-align: center;
+}
+
+.user_name a {
+	font-style: italic;
+	font-weight: 600;
+    color: black;
+}
+
+.respon {
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+/* STATS AND TOOLS (CONTAINER) */
+
+.section_container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+/* TOOLS */
+#tools_list {
+    list-style-type: none;
+}
+
+.single_tool {
+	width:15%;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.single_tool p {
+	text-align: center;
+	padding-bottom: 3px;
+}
+
+.single_tool img {
+	width: 90px;
+	height: 90px;
 }

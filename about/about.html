@@ -1,101 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>About</title>
-  <link rel="stylesheet" href="../genres/genreStyle.css" type="text/css">
-  <link rel="stylesheet" href="about.css" type="text/css">
-  <!--about css should be with main css or its own?-->
-  </head>
-  <body>
-
-    <!-- NAVIGATION BAR -->
-    <nav id="nav_bar"></nav>
-    <script src="../navigation%20bar/nav_bar_script.js"></script>
-    <!-- end nav bar -->
+    <link rel="stylesheet" href="../genres/genreStyle.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+    </head>
+  
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav id="nav_bar"></nav>
+        <script src="../navigation%20bar/nav_bar_script.js"></script>
       
-    <h1 id="genreName">Fantastic Five</h1> <!--Replace with Photoshop Image-->
-    <div id="maincontainer">
-      <div id="memberContainer">
-      	<center><div id="user">
-      		<center><img src="images/leo.jpeg" id="imguser"></center>
-          <p id="name">Luis Sanchez</p>
-      		<p id="userbio">I am senior Math major. I enjoy playing soccer, running, and watching Netflix.</p>
-      		<p id="respon">Major Responsibilities:</p>
-          <p id="res">Genre Page Designs</p>
-          <p id="res">About Page</p>
-      	</div>
-       	<div id="user">
-      		<center><img src="images/jp.jpg" id="imguser"></center>
-          <p id="name">Jean-Pierre Njock II</p>
-      		<p id="userbio">I'm a senior Math major graduating this semester. In my freetime I enjoy playing video games, watching twitch, and watching/playing sports.</p>
-      		<p id="respon">Major Responsibilities:</p>
-          <p id="res">Game Page Designs</p>
-          <p id="res">Model Diagrams</p>
-      	</div>
-      	<div id="user">
-      		<center><img src="images/25311713.jpg" id="imguser"></center>
-          <p id="name">Nathan Caldwell</p>
-      		<p id="userbio">I am a senior English major with professional experience in technical writing. I like to play piano, listen to music, and hang out with friends.</p>
-      		<p id="respon">Major Responsibilities:</p>
-          <p id="res">Streamer Instance Pages</p>
-          <p id="res"><a href= " https://github.com/leosanchez16/cs329e-idb/wiki" > Initial Technical Report</a></p>
+        <!-- TEAM MEMBERS -->
+        <h1 id="genreName">Fantastic Five</h1>
 
-      	</div>
-      	<div id="user">
-      		<center><img src="images/dingkun.jpg" id="imguser"></center>
-          <p id="name">Dingkun Zhang</p>
-      		<p id="userbio">Hey, I'm Ding and I'm a senior in Mechanical Engineering. I like cute girls and videogames.</p>
-      		<p id="respon">Major Responsibilities:</p>
-          <p id="res">Splash Page Design</p>
+        <div id="users_container">
+            <center>
+                <div class="user">
+                    <center><img src="images/leo.jpeg" class="imguser"></center>
+                    <p class="user_name"><a href="https://github.com/leosanchez16">Luis Sanchez</a></p>
+                    <p>I am senior Math major. I enjoy playing soccer, running, and watching Netflix.</p>
+                    <p class="respon">Major Responsibilities:</p>
+                    <p>Genre Page Designs</p>
+                    <p>About Page</p>
+                 </div>
 
-      	</div>
-      	<div id="user">
-      		<center><img src="images/jairo.png" id="imguser" ></center>
-          <p id="name">Jairo Portillo</p>
-      		<p id="userbio">I am a senior Physics Major. I love Overwatch and teams that actually cooperate. Better shape up or ..... DIE! DIE! DIE!</p>
-      		<p id="respon">Major Responsibilities:</p>
-          <p id="res">Model Pages Design</p>
-      	</div>
-        </center>
-      </div>
-        <h1 id="stats">Stats</h1>
-        <hr>
-        <h4>Total # of Commits: 78</h4>
-        <h4>Total # of Issues: 22</h4>
-        <h4><a href ="https://github.com/leosanchez16/cs329e-idb/issues" > GitHub Issue Tracker</a> | <a href="https://github.com/leosanchez16/cs329e-idb/">GitHub Repo</a> | <a href="https://github.com/leosanchez16/cs329e-idb/wiki">Github Wiki</a></h4>
-       <h1 id="stats">Tools</h1>
-      <hr>
-      <div id="tools">
-        <div id="singletool">
-          <p id="toolname">Github</p>
-          <center><img src="images/github.png" id="imgtool"></center>
-        </div>
-        <div id="singletool">
-          <p id="toolname">HTML 5</p>
-          <center><img src="images/html5.png" id="imgtool"></center>
-        </div>
-        <div id="singletool">
-          <p id="toolname">CSS 3</p>
-          <center><img src="images/css3.png" id="imgtool"></center>
-        </div>
-        <div id="singletool">
-          <p id="toolname">Javascript</p>
-          <center><img src="images/javascript.png" id="imgtool"></center>
-        </div>
-        <div id="singletool">
-          <p id="toolname">Bootstrap</p>
-          <center><img src="images/bootstrap.jpg" id="imgtool"></center>
-        </div>
-        <div id="singletool">
-          <p id="toolname">Slack</p>
-          <center><img src="images/slack.png" id="imgtool"></center>
-        </div>
-      </div>
+                <div class="user">
+                    <center><img src="images/jp.jpg" class="imguser"></center>
+                    <p class="user_name"><a href="https://github.com/JN9765">Jean-Pierre Njock II</a></p>
+                    <p>I'm a senior Math major graduating this semester. In my free time I enjoy playing video games, watching Twitch, and watching/playing sports.</p>
+                    <p class="respon">Major Responsibilities:</p>
+                    <p>Game Page Designs</p>
+                    <p>Model Diagrams</p>
+                 </div>
 
-    </div>
- 
+                 <div class="user">
+                     <center><img src="images/25311713.jpg" class="imguser"></center>
+                     <p class="user_name"><a href="https://github.com/nc22349">Nathan Caldwell</a></p>
+                     <p>I am a senior English major with professional experience in technical writing. I like to play piano, listen to music, and hang out with friends.</p>
+                     <p class="respon">Major Responsibilities:</p>
+                     <p>Streamer Page Designs</p>
+                     <p><a href= "https://github.com/leosanchez16/cs329e-idb/wiki">Technical Report</a></p>
+                </div>
 
+                <div class="user">
+                    <center><img src="images/dingkun.jpg" class="imguser"></center>
+                    <p class="user_name"><a href="https://github.com/Dingkzhang">Dingkun Zhang</a></p>
+                    <p>Hey, I'm Ding and I'm a senior in Mechanical Engineering. I like cute girls and video games.</p>
+                    <p class="respon">Major Responsibilities:</p>
+                    <p>Splash Page Design</p>
+                </div>
 
-  </body>
+                <div class="user">
+                    <center><img src="images/jairo.png" class="imguser"></center>
+                    <p class="user_name"><a href="https://github.com/JPortillo00">Jairo Portillo</a></p>
+                    <p>I am a senior Physics Major. I love Overwatch and teams that actually cooperate. Better shape up or ..... DIE! DIE! DIE!</p>
+                    <p class="respon">Major Responsibilities:</p>
+                    <p>Model Page Designs</p>
+                 </div>
+            </center>
+        </div>
+            
+        <!-- STATS SECTION -->
+        <div class="section_container">
+            <h1>Stats</h1>
+            <hr>
+            <h4>Total # of Commits: 78</h4>
+            <h4>Total # of Issues: 22</h4>
+            <h4>
+                <a href ="https://github.com/leosanchez16/cs329e-idb/issues" > GitHub Issue Tracker</a> | <a href="https://github.com/leosanchez16/cs329e-idb/">GitHub Repo</a> | <a href="https://github.com/leosanchez16/cs329e-idb/wiki">Github Wiki</a>
+            </h4>
+        </div>
+        
+        <!-- TOOLS SECTION -->
+        <div class="section_container">
+            <h1>Tools</h1>
+            <hr>
+            <ul id="tools_list">
+                <li class="single_tool">
+                    <p>Github</p>
+                    <center><img src="images/github.png"></center>
+                </li>
+            
+                <li class="single_tool">
+                    <p>HTML 5</p>
+                    <center><img src="images/html5.png"></center>
+                </li>
+            
+                <li class="single_tool">
+                    <p>CSS 3</p>
+                    <center><img src="images/css3.png"></center>
+                </li>
+            
+                <li class="single_tool">
+                    <p>Javascript</p>
+                    <center><img src="images/javascript.png"></center>
+                </li>
+                
+                <li class="single_tool">
+                    <p>Bootstrap</p>
+                    <center><img src="images/bootstrap.jpg"></center>
+                </li>
+                
+                <li class="single_tool">
+                    <p>Slack</p>
+                    <center><img src="images/slack.png"></center>
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
