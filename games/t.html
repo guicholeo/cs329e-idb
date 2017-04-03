@@ -19,6 +19,9 @@
     <li id = "nav"><a href ="../model/genres.html">Genres</a></li>
     <li id = "nav" style="float:right;"><a href = "../about/about.html">About</a></li>
   </ul>
+
+
+
 <div id = "tab" style="margin-left: 125px;margin-right: 10px; margin-top: 50px;font-family: sans-serif;max-width: 1000px;">
   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
         <thead>
@@ -28,6 +31,7 @@
     <th>Number of Live Viewers</th> 
     <th>Number of Followers</th>
     <th>id</th>
+    <th>Language of Stream</th>
   </tr>
 
      </thead>
@@ -43,11 +47,13 @@
    	$.get("https://api.twitch.tv/kraken/streams/?game=Halo 5: Guardians&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
         for (var i = 0; i <data["streams"].length; i++){
         	var row_data = [];
-        	row_data.push("<img src ="+data["streams"][i]["channel"]["logo"]+ " " + "width=" + "100% " + "height=" + "50%"+">");
+        row_data.push("<img src ="+data["streams"][i]["channel"]["logo"]+ " " + "width=" + "100% " + "height=" + "50%"+">");
 			row_data.push(data["streams"][i]["channel"]["display_name"]);
       row_data.push(data["streams"][i]["viewers"]);
 			row_data.push(data["streams"][i]["channel"]["followers"]);
 			row_data.push(data["streams"][i]["channel"]["_id"]);
+      row_data.push(data["streams"][i]["channel"]["language"]);
+
 			t.row.add(row_data).draw();
 
   }; });
