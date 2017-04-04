@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id = 'title'>Street Fighter V</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="boot.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+   <ul id = "navbar">
+    <li id = "nav"><a href ="../index.html">Streamer Surf</a></li>
+    <li id = "nav"><a href ="../model/streamers.html">Streamers</a></li>
+    <li id = "nav"><a href ="../model/games.html">Games</a></li>
+    <li id = "nav"><a href ="../model/genres.html">Genres</a></li>
+    <li id = "nav" style="float:right;"><a href = "../about/about.html">About</a></li>
+  </ul>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <table>
+        <tr>
+        <td>
+            <img id = "gameimg" src="images/streetfighterv.jpg", alt ="fallout4" style ="float:left;width:228px;height:200px;">
+        </td>
+        </tr>
+        </table>
+        <table style="width: 175px;">
+          
+        <th style="text-align: center;font-size: 150%">Street Fighter V</th>
+        </table>
+        
+        
+       
+
+      
+
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>About Game</h1>
+      <p>The legendary fighting franchise returns with STREET FIGHTER V. Stunning visuals depict the next generation of World Warriors in unprecedented detail, while exciting and accessible battle mechanics deliver endless fighting fun that both beginners and veterans can enjoy.</p>
+      <hr>
+      <table id = "secondblock">
+      <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Live Streams</th>
+  
+
+      <tr>
+      <td>
+
+      <table id ="streamtable">
+
+    
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td align="right"><a href="t1.html">More streamers</a></td>
+    </tr>
+    </table>
+    <script id = "populatestream">
+    
+
+    $(document).ready(function(){
+      $.get("https://api.twitch.tv/kraken/streams/?game=Street Fighter V&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
+              if(data["streams"].length == 3){
+               var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+              }
+              else if(data["streams"].length == 2){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+              }
+
+              else if(data["streams"].length == 1){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+
+              }
+              else{
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][3]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+              };
+
+
+
+
+
+
+
+        });
+            
+      });
+
+    </script>
+
+    <table style="margin-bottom:50px;">
+    
+    <th style="text-align: center; font-size:200%;color:black; font-family: Poppins;">Tweets/Trailer</th>
+    <tr>
+    <td>
+  <div id ="twitter">
+                        <a class="twitter-timeline"  href="https://twitter.com/hashtag/streetfighterv" data-widget-id="849379290525388800">#streetfighterv Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+  </div>
+
+  </td>
+  <td>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fJAuNd7cuu4" frameborder="0" allowfullscreen></iframe>
+  </td>
+  </tr>
+</table>
+
+    <table id = "thirdblock">
+<th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images<hr></th>
+
+
+<tr>
+<td>
+<div class="w3-content w3-display-container" style="max-width:900px">
+  <img class="mySlides" src="images/streetfighterv.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/sfv1.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/sfv2.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/sfv3.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/sfv4.jpg" style="width:800px;height: 400px;">
+
+
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+   
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+    
+</td>
+</tr>
+</table>
+</div>
+
+
+    <div class="col-sm-2 sidenav">
+        <table style="width:175px;height: 300px;margin-bottom: 50px;">
+        <th style="text-align: center;"><u>Game information<u></th>
+        <tr>
+        <td><b>Release Date:</b></td>
+        </tr>
+        <tr>
+          <td>
+            February 16th, 2016
+          </td>
+        </tr>
+        <tr>
+        <td><b>Studio:</b></td>
+        </tr>
+        <tr>
+          <td>
+            Capcom
+          </td>
+        </tr>
+        <tr>
+        <td><b>Genre:</b></td>
+        </tr>
+        <tr>
+          <td>
+          <a href="#fighting">
+            Fighting 
+          </a>
+          </td>
+        </tr>
+        <tr>
+        <td><b>Platform(s):</b></td>
+        </tr>
+        <tr>
+          <td>
+            PS4, PC
+          </td>
+        </tr>
+        <tr>
+        <td><b>Rating:</b></td>
+        </tr>
+        <tr>
+          <td>
+           70
+          </td>
+        </tr>
+        
+        </table>
+        <table style="width: 175px;margin-bottom: 50px;">
+        <th style="text-align: center;"> <u>Live Streamers </u></th>
+        <tr>
+        <td>
+        <table style="right:1px;width: 175px;height: 200px;">
+        <th style="text-align: center;">Name</th>
+        <th style="text-align: center;">Fans</th>
+        <tr>
+        <td><a href="#streamer">Zisteau</a></td>
+        <td>47,135</td>
+        </tr>
+
+        <tr>
+        <td>CaffCast</td>
+        <td>9,463</td>
+        </tr>
+
+        <tr>
+        <td>tacticalbacon00</td>
+        <td>1,632</td>
+        </tr>
+
+        <tr>
+        <td>grizzlybeer77</td>
+        <td>303</td>
+        </tr>
+        
+        </table>
+        </td>
+        </tr>
+        </table>
+
+        <table style="width: 175px;">
+        <th style="text-align:center;"> Game Review:</th>
+        <tr>
+        <td>
+        <a href="http://www.ign.com/articles/2016/05/28/street-fighter-5-review"><img src="images/ign.jpg" width="100px;height100px;"></a>
+        </td>
+        </tr>
+        </table>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
