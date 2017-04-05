@@ -1,0 +1,86 @@
+/* Nav Bar*/
+ #navbar {
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #333;
+ }
+ #nav{
+ 	float: left;
+ }
+ 
+ #nav a {
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+ }
+ 
+ #nav a:hover {
+ 	background-color: #111;
+ }
+
+ #containerImage {
+ 	width: 198px;
+	height: 228.75px;
+ }
+
+ #gameTitle {
+ 	margin: 0;
+ 	text-align: center;
+ 	font-style: italic;
+ }
+
+.glyphicon {
+	background-color: gray;
+}
+
+#myCarousel-1 {
+	border-width: 2px;
+	border-color: red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #e6e6ed;
+
+}
+
+#infoimage{
+	width: 20px;
+	height: 20px;
+}
+
+#todisplay {
+
+  display: none;
+  font-size: 16px;
+  background-color: orange;
+
+}
+
+#info{
+	width: 100%;
+	margin: 0;
+}
+#info:hover #todisplay {
+  display: inline-block;
+}
+
+#header {
+	width: 20%;
+	border-bottom: 3px solid #5786bd;
+    overflow: hidden
+}
+
+h3{
+	
+	/*text-shadow: 0 1px 0 #2F4C63;*/
+}
+
+body{
+	font-family: Verdana,sans-serif;
+	background-color: #cccdd4;
+	height:100%;
+	display: table;
+}
