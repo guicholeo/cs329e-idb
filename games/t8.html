@@ -44,11 +44,11 @@
     <script type="text/javascript">
     $(document).ready(function() {
    	var t = $('#example').DataTable();
-   	$.get("https://api.twitch.tv/kraken/streams/?game=Street Fighter V&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
+   	$.get("https://api.twitch.tv/kraken/streams/?game=Halo Wars 2&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
         for (var i = 0; i <data["streams"].length; i++){
         	var row_data = [];
         row_data.push("<img src ="+data["streams"][i]["channel"]["logo"]+ " " + "width=" + "200 " + "height=" + "150"+">");
-			row_data.push("<a href=" +data["streams"][i]["channel"]["url"]+">"+data["streams"][i]["channel"]["display_name"]+"</a>");
+			row_data.push(data["streams"][i]["channel"]["display_name"]);
       row_data.push(data["streams"][i]["viewers"]);
 			row_data.push(data["streams"][i]["channel"]["followers"]);
       row_data.push(data["streams"][i]["channel"]["language"]);

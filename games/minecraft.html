@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title id = 'title'>Street Fighter V</title>
+  <title id = 'title'>Minecraft</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="boot.css">
@@ -29,13 +29,13 @@
       <table>
         <tr>
         <td>
-            <img id = "gameimg" src="images/streetfighterv.jpg", alt ="fallout4" style ="float:left;width:228px;height:200px;">
+            <img id = "gameimg" src="images/minecraft_cover.jpg", alt ="fallout4" style ="float:left;width:228px;height:200px;">
         </td>
         </tr>
         </table>
         <table style="width: 175px;">
           
-        <th style="text-align: center;font-size: 150%">Street Fighter V</th>
+        <th style="text-align: center;font-size: 150%">Minecraft</th>
         </table>
         
         
@@ -46,7 +46,7 @@
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>About Game</h1>
-      <p>The legendary fighting franchise returns with STREET FIGHTER V. Stunning visuals depict the next generation of World Warriors in unprecedented detail, while exciting and accessible battle mechanics deliver endless fighting fun that both beginners and veterans can enjoy.</p>
+      <p>Minecraft is an open world game that has no specific goals for the player to accomplish, allowing players a large amount of freedom in choosing how to play the game however, there is an achievement system. The gameplay by default is first person, but players have the option to play in third person mode. The core gameplay revolves around breaking and placing blocks. The game world is essentially composed of rough 3D objects—mainly cubes—that are arranged in a fixed grid pattern and represent different materials, such as dirt, stone, various ores, water, and tree trunks. While players can move freely across the world, objects and items can only be placed at fixed locations relative to the grid. Players can gather these material blocks and place them elsewhere, thus allowing for various constructions.</p>
       <hr>
       <table id = "secondblock">
       <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Live Streams</th>
@@ -62,14 +62,14 @@
     </td>
     </tr>
     <tr>
-    <td align="right"><a href="t1.html">More streamers</a></td>
+    <td align="right"><a href="t5.html">More streamers</a></td>
     </tr>
     </table>
     <script id = "populatestream">
     
 
     $(document).ready(function(){
-      $.get("https://api.twitch.tv/kraken/streams/?game=Street Fighter V&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
+      $.get("https://api.twitch.tv/kraken/streams/?game=Minecraft&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
               if(data["streams"].length == 3){
                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
                 $(html).appendTo($("#streamtable"));
@@ -121,30 +121,32 @@
     <tr>
     <td>
   <div id ="twitter">
-                        <a class="twitter-timeline"  href="https://twitter.com/hashtag/streetfighterv" data-widget-id="849379290525388800">#streetfighterv Tweets</a>
+              <a class="twitter-timeline"  href="https://twitter.com/hashtag/Minecraft" data-widget-id="849737663922012161">#Minecraft Tweets</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          
           
   </div>
 
   </td>
   <td>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/fJAuNd7cuu4" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MmB9b5njVbA" frameborder="0" allowfullscreen></iframe>
   </td>
   </tr>
 </table>
 
     <table id = "thirdblock">
-<th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images<hr></th>
+<th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images</th>
 
 
 <tr>
 <td>
 <div class="w3-content w3-display-container" style="max-width:900px">
-  <img class="mySlides" src="images/streetfighterv.jpg" style="width:800px;height: 400px;">
-  <img class="mySlides" src="images/sfv1.jpg" style="width:800px;height: 400px;">
-  <img class="mySlides" src="images/sfv2.jpg" style="width:800px;height: 400px;">
-  <img class="mySlides" src="images/sfv3.jpg" style="width:800px;height: 400px;">
-  <img class="mySlides" src="images/sfv4.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/mc1.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/mc2.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/mc3.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/mc4.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="images/mc5.jpg" style="width:800px;height: 400px;">
 
 
   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
@@ -204,7 +206,7 @@ function showDivs(n) {
         </tr>
         <tr>
           <td>
-            February 16th, 2016
+            October 7th, 2011
           </td>
         </tr>
         <tr>
@@ -212,7 +214,7 @@ function showDivs(n) {
         </tr>
         <tr>
           <td>
-            Capcom
+            Mojang AB
           </td>
         </tr>
         <tr>
@@ -220,8 +222,8 @@ function showDivs(n) {
         </tr>
         <tr>
           <td>
-          <a href="#fighting">
-            Fighting 
+          <a href="../genres/survival.html">
+            Survival
           </a>
           </td>
         </tr>
@@ -230,7 +232,7 @@ function showDivs(n) {
         </tr>
         <tr>
           <td>
-            PS4, PC
+           Mac,Android,PS3,iOS, Windows Phone, Playstation Vita, Xbox 360, Linux,PS4,Xbox One,PC,Nintendo Switch,Wii U
           </td>
         </tr>
         <tr>
@@ -238,7 +240,7 @@ function showDivs(n) {
         </tr>
         <tr>
           <td>
-           70
+           81
           </td>
         </tr>
         
@@ -279,7 +281,7 @@ function showDivs(n) {
         <th style="text-align:center;"> Game Review:</th>
         <tr>
         <td>
-        <a href="http://www.ign.com/articles/2016/05/28/street-fighter-5-review"><img src="images/ign.jpg" width="100px;height100px;"></a>
+        <a href="http://www.ign.com/articles/2011/11/24/minecraft-review"><img src="images/ign.jpg" width="100px;height100px;"></a>
         </td>
         </tr>
         </table>
