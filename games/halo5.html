@@ -61,89 +61,6 @@
 
     <table id ="streamtable">
 
-    <tr id = "vid">
-    <td>
-
-    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-    <div id="24790229072"></div>
-    <script type="text/javascript">
-    var options = {
-        autoplay: false,
-        width: 400,
-        height: 200,
-        channel: "Lxthul", 
-        //video: "{VIDEO_ID}"       
-    };
-    var player = new Twitch.Player("24790229072", options);
-    player.setVolume(0.5);
-    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
-
-
-    </script>
-    </div>
-    </td>
-    <td>
-    
-    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-    <div id="24788003312"></div>
-    <script type="text/javascript">
-    var options = {
-        autoplay: false,
-        width: 400,
-        height: 200,
-        channel: "wonderboyhalo", 
-        //video: "{VIDEO_ID}"       
-    };
-    var player = new Twitch.Player("24788003312", options);
-    player.setVolume(0.5);
-    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
-
-
-    </script>
-    
-    </tr>
-
-    <tr id = "vid">
-    <td>
-    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-    <div id="106961925"></div>
-    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-    <div id="66252977"></div>
-    <script type="text/javascript">
-    var options = {
-        autoplay: false,
-        width: 400,
-        height: 200,
-        channel: "mean_venommlg", 
-        //video: "{VIDEO_ID}"       
-    };
-    var player = new Twitch.Player("66252977", options);
-    player.setVolume(0.5);
-    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
-
-    
-     </script>
-   
-    </td>
-    <td>
-    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-    <div id="24791995712"></div>
-    <script type="text/javascript">
-    var options = {
-        autoplay: false,
-        width: 400,
-        height: 200,
-        channel: "MrcoLeK", 
-        //video: "{VIDEO_ID}"       
-    };
-    var player = new Twitch.Player("24791995712", options);
-    player.setVolume(0.5);
-    player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
-
-    
-     </script>
-    </td>
-    </tr>
     </table>
     </td>
     </tr>
@@ -151,6 +68,58 @@
     <td align="right"><a href="t.html">More streamers</a></td>
     </tr>
     </table>
+
+
+
+    <script id = "populatestream">
+    
+
+    $(document).ready(function(){
+      $.get("https://api.twitch.tv/kraken/streams/?game=Halo 5: Guardians&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
+              if(data["streams"].length == 3){
+               var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+              }
+              else if(data["streams"].length == 2){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+              }
+
+              else if(data["streams"].length == 1){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+
+              }
+              else{
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][3]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+              };
+
+
+
+
+
+
+
+        });
+            
+      });
+
+    </script>
 
 
     <table style="margin-bottom:50px;">
