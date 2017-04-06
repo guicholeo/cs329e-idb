@@ -1,52 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Zisteau</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
-<body>
-<nav id="nav_bar"></nav>
+<html>
+    <link rel="stylesheet" href="streamer_instance_style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+    <body>
+        
+        <!-- NAVIGATION BAR -->
+        <nav id="nav_bar"></nav>
         <script src="../navigation%20bar/nav_bar_script.js"></script>
-
-  <div class = "container-fluid" style = "padding-top: 10px;">
-  	<div class ="col-sm-2">
+        
+        <!-- TOP PROFILE -->
+        <table>
+            <tr>
+                <td>
                     <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/zisteau-profile_image-dd410b4a5eb52a60-300x300.jpeg">
-                </div>
-                <div class ="col-sm-8">
+                </td>
+                <td>
                     <h1 id="banner heading">Zisteau</h1>
                     <h2 id="banner_subheading">47,122 Followers</h2>
-                    <table class = "table" id="streamer_tbl">
+                    <table id="streamer_tbl">
                         <tr>
                             <th class="item_lbl">Bio:</th>
-                            <td style = "font-size: 16px;">Welcome! You somehow ended up here. I mostly play sandbox games like Minecraft, Terraria, Factorio, or role playing games like Elder Scrolls, Fallout, or Dark Souls. My main focus is Youtube at the moment but I still stream here on a semi-regular every once in a while basis.</td>
+                            <td>Welcome! You somehow ended up here. I mostly play sandbox games like Minecraft, Terraria, Factorio, or role playing games like Elder Scrolls, Fallout, or Dark Souls. My main focus is Youtube at the moment but I still stream here on a semi-regular every once in a while basis.</td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;">Adventure,
+                            <td>
+                                Adventure,
                                 <a href="../genres/rpg.html">RPG</a>,
                                 Indie,
-                                <a href="../genres/shooter.html">Shooter</a></td>
+                                <a href="../genres/shooter.html">Shooter</a>
+                            </td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
-                            <td style = "font-size: 16px;">[See stream below]</td>
+                            <td>[See stream below]</td>
                         </tr>
                     </table>
-                </div>
-  </div>
-   <div class="new_section">
+                </td>
+            </tr>
+        </table>
+        
+        <!-- LIVE STREAM -->
+        <div class="new_section">
             <h3 id="Live Streams banner">Live Streams</h3>
             <hr>
             <div id="live_video">
@@ -107,7 +103,6 @@
             <hr>
             <ul id="games_list">
                 <li class="game_item">
-                	<div class = "container-fluid">
                     <table class="game_item_table">
                         <tr>
                             <td>
@@ -165,9 +160,6 @@
         </div>
         
         <div id="space_at_bottom"></div>
+    </body>
 
-
-
-
-</body>
 </html>
