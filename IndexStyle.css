@@ -1,27 +1,57 @@
-function ShowHiddenText() {
-    document.getElementById("HiddenTextContainer").style.display = "block";
-}
+
 
 #streamer {
-	color:#000000;
+	color:#FFFFFF;
 	text-align:center;
+}
+
+#upcoming {
+	position:absolute;
+	left: 25px;
+	top: 60px;
+	
+}
+
+#event {
+	position:absolute;
+	left:0px;
+
+}
+#featured {
+	position:absolute;
+	right:25px;
+
 }
 
 #streamer:hover {
 	color:#A575C0;
+	position:absolute:
+	bottom:0px;
 }
 
 #streamer-info {
 	color: #000000;
-	float:right;
 	display: none;
 	font-size:14px;
 	position:absolute;
-	left:700px;
-	top:160px;
-	width:25%;
-	text-align: left;
-	font-size: 18px;
+	text-align:center;
+	top:400px;
+}
+#featured-stream {
+	position:absolute;
+	top:0px;
+	left:275px;
+
+}
+#slide-size{
+	position:absolute;
+	
+	width:725px;
+	height:500px;
+
+}
+#stream-thumbnail{
+
 }
 
 #streamer:hover #streamer-info {
