@@ -74,7 +74,7 @@ In Overwatch, heroes do battle in diverse locations around the world. From the t
     
 
     $(document).ready(function(){
-      $.get("https://api.twitch.tv/kraken/streams/?game=Halo Wars 2&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
+      $.get("https://api.twitch.tv/kraken/streams/?game=Overwatch&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
               if(data["streams"].length == 3){
                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
                 $(html).appendTo($("#streamtable"));
