@@ -1,3 +1,15 @@
+commit e44d2043f8106dcb2a17e8314b1b2adf1e5e7f4c
+Author: leosanchez16 <leosanchez16@live.com>
+Date:   Thu Apr 6 21:05:21 2017 -0500
+
+    fixed streamer link on genre page
+
+commit 98662817c9265f0cd017d62724475f9e4826dd0e
+Author: leosanchez16 <leosanchez16@live.com>
+Date:   Thu Apr 6 20:52:29 2017 -0500
+
+    adding git log file
+
 commit 3e946ce8d04852022043c601255237d1ede6ffe0
 Author: Nathan Caldwell <nathan.caldwell@utexas.edu>
 Date:   Thu Apr 6 20:48:10 2017 -0500
