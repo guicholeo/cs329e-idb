@@ -1,12 +1,13 @@
 
     #body{
 
-      width: 100%;
+     max-width: 1500px;
     }
 
     .col-sm-2{
       position: relative;
       top:0px;
+      max-width: 228px;
     }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
