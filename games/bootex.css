@@ -1,0 +1,50 @@
+.col-lg-2.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      
+    }
+
+#gameinfo{
+	text-align: center;
+		font-size: 120%;
+
+}
+#gametitle{
+
+	text-align: center;
+}
+#aboutgame{
+	padding-left: 5px;
+
+}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#featurestreamers{
+	font-size: 120%;
+	text-align:center;
+}
+
+#f_streamers{
+	text-align: center;
+	font-size: 120%;
+}
+
+#game_review{
+	text-align: center;
+	font-size: 120%;
+}
+
+#gameReview{
+	display: block;
+	margin: 0 auto;
+}
+
+#img{
+	display: block;
+	margin: auto;
+	
+}
