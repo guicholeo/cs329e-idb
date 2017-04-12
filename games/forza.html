@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title id = 'title'>Forza Horizon 3</title>
+  <title>Forza Horizon 3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="boot.css">
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" type="text/css" href="bootex.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+
+
+
 </head>
 <body>
+<nav id="nav_bar"></nav>
+  <script src="../navigation%20bar/nav_bar_script.js"></script>
 
-   <ul id = "navbar">
-    <li id = "nav"><a href ="../index.html">Streamer Surf</a></li>
-    <li id = "nav"><a href ="../model/streamers.html">Streamers</a></li>
-    <li id = "nav"><a href ="../model/games.html">Games</a></li>
-    <li id = "nav"><a href ="../model/genres.html">Genres</a></li>
-    <li id = "nav" style="float:right;"><a href = "../about/about.html">About</a></li>
-  </ul>
+
+<div class="container-fluid">
   
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <table>
-        <tr>
-        <td>
-            <img id = "gameimg" src="images/forza_cover.jpg", alt ="fallout4" style ="float:left;width:228px;height:200px;">
-        </td>
-        </tr>
-        </table>
-        <table style="width: 175px;">
-          
-        <th style="text-align: center;font-size: 200%">Forza Horizon 3</th>
-        </table>
-        
-        
-       
+  <div class="row">
+    <div class="col-lg-3 sidenav" style="background-color: #cccdd4;height: 100%;">
+       <img src="images/forza_cover.jpg" style="width: 100%;height: 150%;">
+    
 
-      
+    <h2 id = "gametitle">Forza Horizon 3</h2>
+    <hr style="height: 1px;background-color: black;">
+
+    <p id = "gameinfo"><b>Release Date:</b></p>
+    <p id = "gameinfo">September 27th,2016</p>
+    <p id = "gameinfo"><b>Studio:</b></p>
+    <p id = "gameinfo">Turn 10 Studio</p>
+
+    <p id = "gameinfo"><b>Genre:</b></p>
+    <p id = "gameinfo"><a href="../genres/racing.html">Racing</a></p>
+
+    <p id = "gameinfo"><b>Platform(s):</b></p>
+    <p id = "gameinfo">Xbox One, PC</p>
+
+    <p id = "gameinfo"><b>Rating:</b></p>
+    <p id = "gameinfo">E</p>
+
+    <hr style="height: 1px;background-color: black;">
+    <p id = "featurestreamers"><b><u>Featured Streamers</u></b></p>
+    <p id = "f_streamers"><a href="../streamers/streamer_mob5stertv.html">mob5stertv</a></p>
+    <p id = "f_streamers">20,502 Followers</p>
+        <br>
+
+    <p id = "f_streamers">DrYoMax38</p>
+    <p id = "f_streamers">105,041 Followers </p>
+        <br>
+
+    <p id = "f_streamers">JtunesGaming</p>
+    <p id = "f_streamers">20,798 Followers</p>
+        <br>
+
+    <p id = "f_streamers">Khalil922</p>
+    <p id = "f_streamers">462 Followers</p>
+
+    <hr style="height: 1px;background-color: black;">
+    <p id ="game_review"><b><u>Game Review</u></b></p>
+    <a href="http://www.ign.com/articles/2015/10/26/fifa-17-review"><img id ="gameReview" src="images/ign.jpg" width="100px;height100px;"></a>
+    
+    
+    
 
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>About Game</h1>
-      <p>You’re in charge of the Horizon Festival. Customize everything, hire and fire your friends, and explore Australia in over 350 of the world’s greatest cars. Make your Horizon the ultimate celebration of cars, music, and freedom of the open road. How you get there is up to you.</p>
-      <hr>
-      <table id = "secondblock">
+    <div class="col-lg-9" style="background-color: #f1f1f1;height: 100%"><h1 style="font-family: Poppins; font-weight: 900;">About Game</h1>
+    <p id = "aboutgame">You’re in charge of the Horizon Festival. Customize everything, hire and fire your friends, and explore Australia in over 350 of the world’s greatest cars. Make your Horizon the ultimate celebration of cars, music, and freedom of the open road. How you get there is up to you.</p>
+
+    <br>
+
+    <table id = "secondblock">
       <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Live Streams</th>
   
 
       <tr>
       <td>
 
-      <table id ="streamtable">
+    <table id ="streamtable">
 
-    
     </table>
     </td>
     </tr>
@@ -66,6 +93,9 @@
     <td align="right"><a href="t6.html">More streamers</a></td>
     </tr>
     </table>
+
+
+
     <script id = "populatestream">
     
 
@@ -116,7 +146,9 @@
 
     </script>
 
-    <table style="margin-bottom:50px;">
+    <br>
+
+     <table style="margin-bottom:50px;">
     
     <th style="text-align: center; font-size:200%;color:black; font-family: Poppins;">Tweets/Trailer</th>
     <tr>
@@ -137,7 +169,8 @@
   </tr>
 </table>
 
-    <table id = "thirdblock">
+
+<table id = "thirdblock">
 <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images</th>
 
 
@@ -199,107 +232,13 @@ function showDivs(n) {
 </td>
 </tr>
 </table>
-</div>
+<br>
+<br>
 
-
-    <div class="col-sm-2 sidenav">
-        <table style="width:175px;height: 300px;margin-bottom: 50px;">
-        <th style="text-align: center; font-size: 120%;"><u>Game Information<u></th>
-        <tr>
-        <td><b>Release Date:</b></td>
-        </tr>
-        <tr>
-          <td>
-            September 27th, 2016
-          </td>
-        </tr>
-        <tr>
-        <td><b>Studio:</b></td>
-        </tr>
-        <tr>
-          <td>
-           Turn 10 Studios
-          </td>
-        </tr>
-        <tr>
-        <td><b>Genre:</b></td>
-        </tr>
-        <tr>
-          <td>
-          <a href="../genres/racing.html">
-            Racing
-          </a>
-          </td>
-        </tr>
-        <tr>
-        <td><b>Platform(s):</b></td>
-        </tr>
-        <tr>
-          <td>
-           Xbox One, PC
-          </td>
-        </tr>
-        <tr>
-        <td><b>Rating:</b></td>
-        </tr>
-        <tr>
-          <td>
-           80
-          </td>
-        </tr>
-        
-        </table>
-        <table style="width: 175px;margin-bottom: 50px;">
-        <th style="text-align: center;"> <u>Featured Streamers </u></th>
-        <tr>
-        <td>
-        <table style="right:1px;width: 175px;height: 200px;">
-        <th style="text-align: center;">Name</th>
-        <th style="text-align: center;">Fans</th>
-        <tr>
-        <td><a href="../streamers/streamer_mob5stertv.html">mob5stertv</a></td>
-        <td>20,502</td>
-        </tr>
-
-        <tr>
-        <td>CaffCast</td>
-        <td>9,463</td>
-        </tr>
-
-        <tr>
-        <td>tacticalbacon00</td>
-        <td>1,632</td>
-        </tr>
-
-        <tr>
-        <td>grizzlybeer77</td>
-        <td>303</td>
-        </tr>
-        
-        </table>
-        </td>
-        </tr>
-        </table>
-
-        <table style="width: 175px;">
-        <th style="text-align:center;"> Game Review:</th>
-        <tr>
-        <td>
-        <a href="http://www.ign.com/articles/2016/09/20/forza-horizon-3-review"><img src="images/ign.jpg" width="100px;height100px;"></a>
-        </td>
-        </tr>
-        </table>
 
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
 
 </body>
 </html>
