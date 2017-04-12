@@ -1,0 +1,34 @@
+Our Website
+
+What did we do well?
+The sorting and individual games and genre pages were done very nicely. Each section provided adequate detail on their 
+respective subject and linked appropriately to the other model pages.
+
+What did we learn?
+We learned from our website how to implement a carousel for the main splash page. In addition, we figured out how to incorporate
+bootstrap to make our streamer pages look nice.
+
+What can we do better?
+We could have added more features on the splash page to make it more appealing. In addition, we could have added more features to
+the table pages. 
+
+What puzzles us?
+The javascript files we used were confusing due to the amount of code already written as well as our unfamiliarity with the 
+language.
+
+
+Their Website
+
+What did they do well?
+The splash and about page were done really nicely. The background image and the updated newsfeed on the splash page were very
+fitting for the theme of their project. In addition, the about page structure was really well done. We liked how they listed each
+team member and how click on their names lead to a personalized about section. 
+
+What did we learn from their website?
+We learned that you can incorporate updated news feeds to your website.
+
+What can they do better?
+They could have added more information on each subject page as well as add more features and links to showcase the place, people, and government seats.
+
+What puzzles us about their website?
+The navigation bar which had a dropdown feature when the window was reduced only worked for the splash page.
