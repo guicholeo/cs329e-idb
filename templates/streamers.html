@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <link rel="stylesheet" href="../static/css/ModelStyle.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="../static/js/dtable.js"></script>
+    <script type="text/javascript" src="../static/js/dtable11.js"></script>
+    <script type="text/javascript" src="../static/js/dtable2.js"></script>
+    <link href="../static/css/NavBar.css" rel="stylesheet">
+
+<title> Streamers </title>
+</head>
+
+<body>
+	<ul id = "navbar">
+        <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+        <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+        <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+        <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+        <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+    </ul>
+	
+
+<center style="font-size: 400%;font-family: Poppins;font-weight: 900;margin-top: 20px;">Streamers</center>
+
+  <div id = "tab" style="margin-top: 30px;font-family: sans-serif;max-width: 1200px;">
+  <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
+        <thead>
+            <tr>
+    <th>Display Name</th>
+    <th>Online/Offline</th> 
+    <th>Game</th>
+    <th>Number of Followers</th>
+    <th>Language</th>
+  </tr>
+
+        </thead>
+        
+        <tbody>
+    <tr>
+    <td><a href = {{url_for('streamer_curse')}}>Curse</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('overwatch')}}>Overwatch</a></td>
+    <td>27,201</td>
+    <td>English</td>
+  </tr>
+  </tr>
+    <tr>
+    <td><a href = {{url_for('streamer_lxthul')}}>Lxthul</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('halo5')}}>Halo 5</a></td>
+    <td>44,990</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td><a href = {{url_for('streamer_nick28t')}}>Nick28T</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('fifa17')}}>FIFA 17</a></td>
+    <td>644,334</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td><a href = {{url_for('streamer_wonderboyhalo')}}>WonderboyHalo</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('halo5')}}>Halo 5</a></td>
+    <td>2,013</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td><a href = {{url_for('streamer_zisteau')}}>Zisteau</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('fallout4')}}>Fallout 4</a></td>
+    <td>47,122</td>
+    <td>English</td>
+  </tr>
+
+  <tr>
+    <td><a href = {{url_for('streamer_imaqtpie')}}>Imaqtpie</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('lol')}}>League of Legends</a></td>
+    <td>1,638,136</td>
+    <td>English</td>
+  </tr>
+
+  <tr>
+    <td><a href = {{url_for('streamer_mob5stertv')}}>Mob5stertv</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('forza')}}>Forza Horizon 3</a></td>
+    <td>20,502</td>
+    <td>Russian</td>
+  </tr>
+
+  <tr>
+    <td><a href = {{url_for('streamer_nhfslickermo')}}>nhfslickermo</a></td>
+    <td>Online/Offline</td> 
+    <td><a href = {{url_for('mortal_kombat_x')}}>Mortal Kombat X</a></td>
+    <td>2,467</td>
+    <td>English</td>
+  </tr>
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+
+    </script>
+
+  </div>
+</body>
+</html>

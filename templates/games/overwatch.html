@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Overwatch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../static/css/bootex.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="../static/css/NavBar.css" rel="stylesheet">
+
+
+
+
+
+
+</head>
+<body>
+<ul id = "navbar">
+        <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+        <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+        <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+        <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+        <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+    </ul>
+
+
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-lg-3 sidenav" style="background-color: #cccdd4;height: 100%;">
+       <img src="../static/images/games_images/overwatch.jpg" style="width: 100%;height: 150%;">
+    
+
+    <h2 id = "gametitle">Overwatch</h2>
+    <hr style="height: 1px;background-color: black;">
+
+    <p id = "gameinfo"><b>Release Date:</b></p>
+    <p id = "gameinfo">May 24, 2016</p>
+    <p id = "gameinfo"><b>Studio:</b></p>
+    <p id = "gameinfo">NetherRealm Studios</p>
+
+    <p id = "gameinfo"><b>Genre:</b></p>
+    <p id = "gameinfo"><a href={{url_for('shooter')}}>Shooter</a></p>
+
+    <p id = "gameinfo"><b>Platform(s):</b></p>
+    <p id = "gameinfo">Xbox One,PS4,PC</p>
+
+    <p id = "gameinfo"><b>Rating:</b></p>
+    <p id = "gameinfo">T</p>
+
+    <hr style="height: 1px;background-color: black;">
+    <p id = "featurestreamers"><b><u>Featured Streamers</u></b></p>
+    <p id = "f_streamers"><a href={{url_for('streamer_curse')}}>Curse</a></p>
+    <p id = "f_streamers">27,750 Followers</p>
+        <br>
+
+    <p id = "f_streamers">DrYoMax38</p>
+    <p id = "f_streamers">105,041 Followers </p>
+        <br>
+
+    <p id = "f_streamers">JtunesGaming</p>
+    <p id = "f_streamers">20,798 Followers</p>
+        <br>
+
+    <p id = "f_streamers">Khalil922</p>
+    <p id = "f_streamers">462 Followers</p>
+
+    <hr style="height: 1px;background-color: black;">
+    <p id ="game_review"><b><u>Game Review</u></b></p>
+   <a href="http://www.ign.com/articles/2016/05/28/overwatch-review"><img id = "gameReview" src="../static/images/games_images/ign.jpg" width="100px;height100px;"></a>
+    
+    
+    
+
+    </div>
+    <div class="col-lg-9" style="background-color: #f1f1f1;height: 100%"><h1 style="font-family: Poppins; font-weight: 900;">About Game</h1>
+    <p id = "aboutgame">In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory.
+In Overwatch, heroes do battle in diverse locations around the world. From the technological marvel of Numbani to the manufacturing powerhouse of Volskaya, each map has a unique layout and specific win conditions that your team must meet in order to secure victory.</p>
+
+    <br>
+
+    <table id = "secondblock">
+      <th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Live Streams</th>
+  
+
+      <tr>
+      <td>
+
+    <table id ="streamtable">
+
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td align="right"><a href="t9.html">More streamers</a></td>
+    </tr>
+    </table>
+
+
+
+    <script id = "populatestream">
+    
+
+    $(document).ready(function(){
+      $.get("https://api.twitch.tv/kraken/streams/?game=Overwatch&limit=4&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3",function(data){
+              if(data["streams"].length == 3){
+               var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+              }
+              else if(data["streams"].length == 2){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+              }
+
+              else if(data["streams"].length == 1){
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+
+              }
+              else{
+
+                var html = "<tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][0]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][1]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe>"+"</td></tr><tr><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][2]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td><td><iframe src =" + "http://player.twitch.tv/?channel="+data["streams"][3]["channel"]["name"]+"&muted=true&autoplay=false"+ " height=" +"200 " + " width=" + "400 " + "frameborder=" +"1 " + "autoplay=" + "false " + "scrolling =" + "no " + "allowfullscreen=" + "true" + ">" + "</iframe></td></tr>";
+                $(html).appendTo($("#streamtable"));
+                
+
+
+
+              };
+
+
+
+
+
+
+
+        });
+            
+      });
+
+    </script>
+
+    <br>
+
+   <table style="margin-bottom:50px;">
+    
+    <th style="text-align: center; font-size:200%;color:black; font-family: Poppins;">Tweets/Trailer</th>
+    <tr>
+    <td>
+  <div id ="twitter">
+                        <a class="twitter-timeline"  href="https://twitter.com/hashtag/MortalKombatX" data-widget-id="849379071037505536">#MortalKombatX Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          
+          
+  </div>
+
+  </td>
+  <td>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jSi2LDkyKmI" frameborder="0" allowfullscreen></iframe>
+  </td>
+  </tr>
+</table>
+
+
+
+<table id = "thirdblock">
+<th style="text-align: left; font-size:200%;color:black;font-family: Poppins;">Images</th>
+
+
+<tr>
+<td>
+<div class="w3-content w3-display-container" style="max-width:900px">
+  <img class="mySlides" src="../static/images/games_images/overwatch1.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="../static/images/games_images/overwatch2.jpg" style="width:800px;height: 400px;">
+  <img class="mySlides" src="../static/images/games_images/overwatch3.png" style="width:800px;height: 400px;">
+  <img class="mySlides" src="../static/images/games_images/overwatch4.jpg" style="width:800px;height: 400px;">
+  
+
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    
+
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+    
+</td>
+</tr>
+</table>
+<br>
+<br>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
