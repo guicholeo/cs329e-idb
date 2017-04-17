@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -40,7 +40,7 @@
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href="../genres/shooter.html">Shooter</a></td>
+                            <td style = "font-size: 16px;"><a href={{url_for('shooter')}}>Shooter</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -117,16 +117,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href="../games/halo5.html">
+                                <a href={{url_for('halo5')}}>
                                     <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/rzjnrhuv5rozj52g9aq3.jpg">
                                 </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href="../games/halo5.html">Halo 5: Guardians</a></li>
+                                    <li class="game_data_line"><a href={{url_for('halo5')}}>Halo 5: Guardians</a></li>
                                     <li class="game_data_line">27th Oct, 2015</li>
                                     <li class="game_data_line">Xbox One</li>
-                                    <li class="game_data_line"><a href="../genres/shooter.html">Shooter</a></li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
                                 </ul>
                             </td>
                         </tr>

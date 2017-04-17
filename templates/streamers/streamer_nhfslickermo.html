@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">  
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -40,7 +40,7 @@
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href = "../genres/fighting.html">Fighting</a></td>
+                            <td style = "font-size: 16px;"><a href = {{url_for('fighting')}}>Fighting</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -118,16 +118,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href = "../games/mortal_kombat_x.html">
+                                <a href = {{url_for('mortal_kombat_x')}}>
                                 <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/e34ap4bqfcxn0ut3iqsd.jpg">
                             </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href ="../games/mortal_kombat_x.html">Mortal Kombat X</a></li>
+                                    <li class="game_data_line"><a href ={{url_for('mortal_kombat_x')}}>Mortal Kombat X</a></li>
                                     <li class="game_data_line">7th April, 2015</li>
                                     <li class="game_data_line">Android, iOS, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href = "../genres/fighting.html">Fighting</a></li>
+                                    <li class="game_data_line"><a href = {{url_for('fighting')}}>Fighting</a></li>
                                 </ul>
                             </td>
                         </tr>

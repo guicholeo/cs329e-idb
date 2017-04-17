@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -41,9 +41,9 @@
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
                             <td style = "font-size: 16px;">Adventure,
-                                <a href="../genres/rpg.html">RPG</a>,
+                                <a href={{url_for('rpg')}}>RPG</a>,
                                 Indie,
-                                <a href="../genres/shooter.html">Shooter</a></td>
+                                <a href={{url_for('shooter')}}>Shooter</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -120,13 +120,13 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href = "../games/minecraft.html">
+                                <a href = {{url_for('minecraft')}}>
                                 <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/ew1zwceoeho7lipjxi1n.jpg">
                             </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href = "../games/minecraft.html">Minecraft</a></li>
+                                    <li class="game_data_line"><a href = {{url_for('minecraft')}}>Minecraft</a></li>
                                     <li class="game_data_line">7th Oct, 2011</li>
                                     <li class="game_data_line">Xbox 360, Playstation3, PlayStation4, Xbox One, PC (Microsoft Windows), Mac, Linux, Android, iOS, PlayStation Vita, Windows Phone, Wii U, Nintendo Switch</li>
                                     <li class="game_data_line">Adventure, Indie</li>
@@ -146,7 +146,7 @@
                                     <li class="game_data_line">Dark Souls III</li>
                                     <li class="game_data_line">24th Mar, 2016</li>
                                     <li class="game_data_line">PlayStation4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line">Adventure, <a href="../genres/rpg.html">Role-Playing (RPG)</a></li>
+                                    <li class="game_data_line">Adventure, <a href={{url_for('rpg')}}>Role-Playing (RPG)</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -156,16 +156,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href="../games/fallout4.html">
+                                <a href={{url_for('fallout4')}}>
                                     <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/g82nr1m9xqr8wnp0xdrn.jpg">
                                 </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href="../games/fallout4.html">Fallout 4</a></li>
+                                    <li class="game_data_line"><a href={{url_for('fallout4')}}>Fallout 4</a></li>
                                     <li class="game_data_line">10th Nov, 2015</li>
                                     <li class="game_data_line">PlayStation4, Xbox One, PC (Microsoft Windows) </li>
-                                    <li class="game_data_line"><a href="../genres/rpg.html">Role-Playing (RPG)</a>, <a href="../genres/shooter.html">Shooter</a></li>
+                                    <li class="game_data_line"><a href={{url_for('rpg')}}>Role-Playing (RPG)</a>, <a href={{url_for('shooter')}}>Shooter</a></li>
                                 </ul>
                             </td>
                         </tr>

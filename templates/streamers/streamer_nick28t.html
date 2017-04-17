@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">  
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -41,7 +41,7 @@
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href="../genres/sports.html">Sport</a>, <a href="../genres/rpg.html">Role-Playing (RPG)</a></td>
+                            <td style = "font-size: 16px;"><a href={{url_for('sports')}}>Sports</a>, <a href={{url_for('rpg')}}>Role-Playing (RPG)</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -117,15 +117,15 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href="../games/fifa.html">
+                                <a href={{url_for('fifa17')}}>
                                     <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/cmtplicvdajycqx2vz6t.jpg">
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href="../games/fifa.html">FIFA 17</a></li>
+                                    <li class="game_data_line"><a href={{url_for('fifa17')}}>FIFA 17</a></li>
                                     <li class="game_data_line">27th Sep, 2016</li>
                                     <li class="game_data_line">PlayStation4, Xbox One, Xbox 360, PlayStation3, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href="../genres/sports.html">Sports</a></li>
+                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -135,16 +135,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href = "../games/h1z1.html">
+                                <a href = {{url_for('h1z1')}}>
                                 <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/kuwu7uppnixr5c5f7bz5.jpg">
                             </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href = "../games/h1z1.html">H1Z1: King of the Hill</a></li>
+                                    <li class="game_data_line"><a href = {{url_for('h1z1')}}>H1Z1: King of the Hill</a></li>
                                     <li class="game_data_line">20th Sep, 2016</li>
                                     <li class="game_data_line">PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href="../genres/rpg.html">Role-Playing (RPG)</a></li>
+                                    <li class="game_data_line"><a href={{url_for('rpg')}}>Role-Playing (RPG)</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -161,7 +161,7 @@
                                     <li class="game_data_line">Fifa 14</li>
                                     <li class="game_data_line">17th Sep, 2013</li>
                                     <li class="game_data_line">Android, PlayStation2, Wii, PlayStation3, PlayStation Portable, iOS, PlayStation Vita, Nintendo 3DS, Xbox 360, PlayStation4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href="../genres/sports.html">Sports</a></li>
+                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
                                 </ul>
                             </td>
                         </tr>

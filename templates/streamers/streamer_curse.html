@@ -4,8 +4,8 @@
   <title>Curse</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
 
   
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -42,7 +42,7 @@
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href="../genres/shooter.html">Shooter</a>, Adventure, Strategy</td>
+                            <td style = "font-size: 16px;"><a href={{url_for('shooter')}}>Shooter</a>, Adventure, <a href ={{url_for('strategy')}}>Strategy</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -119,16 +119,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href="../games/overwatch.html">
+                                <a href={{url_for('overwatch')}}>
                                     <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/yob05bs5ffigu3rmrni1.jpg">
                                 </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href="../games/overwatch.html">Overwatch</a></li>
+                                    <li class="game_data_line"><a href={{url_for('overwatch')}}>Overwatch</a></li>
                                     <li class="game_data_line">24th May, 2016</li>
                                     <li class="game_data_line">PlayStation4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href="../genres/shooter.html">Shooter</a></li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -162,7 +162,7 @@
                                     <li class="game_data_line">Hearthstone: Heroes of Warcraft</li>
                                     <li class="game_data_line">11th May, 2014</li>
                                     <li class="game_data_line">Mac,  Android, iOS, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href = "../genre/strategy.html">Strategy</a></li>
+                                    <li class="game_data_line"><a href ={{url_for('strategy')}}>Strategy</a></li>
                                 </ul>
                             </td>
                         </tr>

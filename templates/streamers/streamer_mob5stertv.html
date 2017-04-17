@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>mob5tertv</title>
+  <title>Mob5tertv</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="streamer_instance_style.css">
-  <link rel="stylesheet" href="boot.css" type="text/css"> 
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css"> 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -31,7 +31,7 @@
                     <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/mob5tertv-profile_image-695ed5e0a42064bb-300x300.png">
                 </td>
                 <td style="border-top: none;"> 
-                    <h1 id="banner heading">Mob5stertv</h1>
+                    <h1 id="banner heading">Mob5tertv</h1>
                     <h2 id="banner_subheading">20,502 Followers</h2>
                     <table class = "table" id="streamer_tbl">
                         <tr>
@@ -40,7 +40,7 @@
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href="../genres/racing.html">Racing</a>, <a href="../genres/rpg.html">Role-Playing (RPG)</a></td>
+                            <td style = "font-size: 16px;"><a href={{url_for('racing')}}>Racing</a>, <a href={{url_for('rpg')}}>Role-Playing (RPG)</a></td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Streaming Now?:</th>
@@ -116,16 +116,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href="../games/forza.html">
+                                <a href={{url_for('forza')}}>
                                     <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/olxhsw4djfakodpuedut.jpg">
                                 </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href="../games/forza.html">Forza Horizon 3</a></li>
+                                    <li class="game_data_line"><a href={{url_for('forza')}}>Forza Horizon 3</a></li>
                                     <li class="game_data_line">27th September, 2016</li>
                                     <li class="game_data_line">Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href="../genres/Racing.html">Racing</a></li>
+                                    <li class="game_data_line"><a href={{url_for('racing')}}>Racing</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -142,7 +142,7 @@
                                     <li class="game_data_line">Grand Theft Auto V</li>
                                     <li class="game_data_line">17th September, 2013</li>
                                     <li class="game_data_line">PlayStation 3, Xbox 360, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line">Adventure, <a href = "../genres/racing.html">Racing</a>, <a href = "../genres/shooter.html">Shooter</a>, Simulator</li>
+                                    <li class="game_data_line">Adventure, <a href = {{url_for('racing')}}>Racing</a>, <a href ={{url_for('shooter')}}>Shooter</a>, Simulator</li>
                                 </ul>
                             </td>
                         </tr>
