@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="IndexStyle.css">
+	<link rel="stylesheet" href="../static/css/IndexStyle.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="bootstrap.min.js"></script> 
+	<script src="../static/js/bootstrap.min.js"></script>	
 <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -20,11 +20,11 @@
 
 <body>
 	<ul id = "navbar">
-		<li id = "nav"><a href ="index.html">Streamer Surf</a></li>
-		<li id = "nav"><a href ="model/streamers.html">Streamers</a></li>
-		<li id = "nav"><a href ="model/games.html">Games</a></li>
-		<li id = "nav"><a href ="model/genres.html">Genres</a></li>
-		<li id = "nav" style="float:right;"><a href = "about/about.html">About</a></li>
+		<li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+		<li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+		<li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+		<li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+		<li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
 	</ul>
 	<div class="tophalf">
 		<div style ="float:right;overflow:hidden">
@@ -32,20 +32,25 @@
 				<p></p>
 				<th style = "overflow:hidden",width = "0">Featured Games</th>
 					<tr>
-						<td><a href="games/fallout4.html">Fallout 4</a></td>
-						<td width ="0"><a href="games/fallout4.html"><img src ="games/images/fallout4_5.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('fallout4')}}>Fallout 4</a></td>
+						<td width ="0"><a href={{url_for('fallout4')}}><img src ="../static/images/games_images/fallout4_5.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
-						<td><a href="games/fifa.html">FIFA</a></td>
-						<td width ="0"><a href="games/fifa.html"><img src ="games/images/fifa.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('fifa17')}}>FIFA</a></td>
+						<td width ="0"><a href={{url_for('fifa17')}}><img src ="../static/images/games_images/fifa_cover.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
-						<td><a href="games/halo5.html">Halo 5</a></td>
-						<td width ="0"><a href="games/halo5.html"><img src ="games/images/halo5.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('halo5')}}>Halo 5</a></td>
+						<td width ="0"><a href={{url_for('halo5')}}><img src ="../static/images/games_images/halo5_cover.jpg", style= "width:60px;height:60px;">
+						
 					</tr>
 					<tr>
-						<td width = "50"><a href="games/overwatch.html">Overwatch</a></td>
-						<td width ="0"><a href="games/overwatch.html"><img src ="games/images/overwatch.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('lol')}}>League of Legends</a></td>
+						<td width ="0"><a href={{url_for('lol')}}><img src ="/static/images/games_images/lol_cover.jpg", style= "width:60px;height:60px;">
+					</tr>
+					<tr>
+						<td width = "50"><a href={{url_for('overwatch')}}>Overwatch</a></td>
+						<td width ="0"><a href={{url_for('overwatch')}}><img src ="../static/images/games_images/overwatch.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
 						<td><p></p>
@@ -53,16 +58,16 @@
 					</tr>
 					<th style = "overflow:hidden",width = "0">Featured Genres</th>
 					<tr>
-						<td width = "50"><a href="genres/rpg.html">RPG</a></td>
-						<td width ="0"><a href="genres/rpg.html"><img src ="genres/images/destiny.jpg", style= "width:60px;height:60px;">
+						<td width = "50"><a href={{url_for('rpg')}}>RPG</a></td>
+						<td width ="0"><a href={{url_for('rpg')}}><img src ="../static/images/genres_images/destiny.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
-						<td><a href="genres/shooter.html">Shooter</a></td>
-						<td width ="0"><a href="genres/shooter.html"><img src ="genres/images/blackops3.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('shooter')}}>Shooter</a></td>
+						<td width ="0"><a href={{url_for('shooter')}}><img src ="../static/images/genres_images/blackops3.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
-						<td><a href="genres/sports.html">Sports</a></td>
-						<td width ="0"><a href="genres/sports.html"><img src ="genres/images/madden.jpg", style= "width:60px;height:60px;">
+						<td><a href={{url_for('sports')}}>Sports</a></td>
+						<td width ="0"><a href={{url_for('sports')}}><img src ="../static/images/genres_images/madden.jpg", style= "width:60px;height:60px;">
 					</tr>
 			</table>
 		</div>
@@ -72,20 +77,20 @@
 				<th style = "overflow:hidden",width = "0">Upcoming Games</th>
 					<tr>
 						<td><a href="https://www.dawnofwar.com/">Dawn of War 3</a></td>
-						<td width ="0"><a href="https://www.dawnofwar.com/"><img src ="games/images/DawnofWar.jpg", style= "width:60px;height:60px;">
+						<td width ="0"><a href="https://www.dawnofwar.com/"><img src ="../static/images/games_images/DawnofWar.jpg", style= "width:60px;height:60px;">
 					</tr>
 					
 					<tr>
 						<td><a href="http://www.redbarrelsgames.com/games/outlast-2/">Outlast 2</a></td>
-						<td width ="0"><a href="http://www.redbarrelsgames.com/games/outlast-2/"><img src ="games/images/Outlast2.jpg", style= "width:60px;height:60px;">
+						<td width ="0"><a href="http://www.redbarrelsgames.com/games/outlast-2/"><img src ="../static/images/games_images/Outlast2.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
 						<td><a href="http://sniperghostwarrior3.com/">Sniper 3 Ghost Warrior</a></td>
-						<td width ="0"><a href="http://sniperghostwarrior3.com/"><img src ="games/images/Sniper-Ghost-Warrior-3.jpg", style= "width:60px;height:60px;">
+						<td width ="0"><a href="http://sniperghostwarrior3.com/"><img src ="../static/images/games_images/Sniper-Ghost-Warrior-3.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
 						<td width = "50"><a href="http://www.playtonicgames.com/games/yooka-laylee/">Yooka-Laylee</a></td>
-						<td width ="0"><a href="http://www.playtonicgames.com/games/yooka-laylee/"><img src ="games/images/yooka.jpg", style= "width:60px;height:60px;">
+						<td width ="0"><a href="http://www.playtonicgames.com/games/yooka-laylee/"><img src ="../static/images/games_images/yooka.jpg", style= "width:60px;height:60px;">
 					</tr>
 					<tr>
 						<td><p></p>

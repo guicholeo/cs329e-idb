@@ -1,0 +1,19 @@
+ <link href="../static/css/NavBar.css" rel="stylesheet">
+
+
+<ul id = "navbar">
+        <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+        <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+        <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+        <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+        <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+    </ul>
+
+     <ul>
+        <a href={{url_for('rpg')}}><li>RPG</li></a>
+        <a href={{url_for('sports')}}><li>Sports</li></a>
+        <a href={{url_for('shooter')}}><li>Shooter</li></a>
+        <a href={{url_for('strategy')}}><li>Strategy</li></a>
+        <a href={{url_for('survival')}}><li>Survival</li></a>
+        <a href={{url_for('racing')}}><li>Racing</li></a>
+      </ul>

@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
         
         <!-- Theme CSS -->
-        <link href="about BS.min.css" rel="stylesheet">
+        <link href="../static/css/NavBar.css" rel="stylesheet">
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,8 +22,13 @@
 
     <body> 
         <!-- NAVIGATION BAR -->
-            <nav id="nav_bar"></nav>
-            <script src="../navigation%20bar/nav_bar_script.js"></script>
+    <ul id = "navbar">
+        <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+        <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+        <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+        <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+        <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+    </ul>
         
         <!-- BLANK SPACE -->
             <div id="top-div"></div>
