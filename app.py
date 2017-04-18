@@ -132,4 +132,4 @@ def survival():
     return render_template('/genres/survival.html')
 
 if __name__ == "__main__":
-    app.run()
+app.run('162.243.121.191','80')
