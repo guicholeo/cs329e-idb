@@ -131,6 +131,14 @@ def strategy():
 def survival():
     return render_template('/genres/survival.html')
 
+
+ #template for the streamers for to just have one page generated
+ #to call this function use this {{ url_for('callStreamer' ,streamer="streamer name goes here")
+@app.route('/streamer/<string:streamer>')
+def callStreamer(streamer):
+    #generates the template with the python api stuff....
+    return render_template('streamerTemplate.html')   
+
 if __name__ == "__main__":
     #app.run('162.243.121.191','80')
     app.run()
