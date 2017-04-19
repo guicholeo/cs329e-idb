@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Curse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../static/css/NavBar.css" rel="stylesheet">
+
+</head>
+<body>
+    <ul id = "navbar">
+        <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+        <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+        <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+        <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+        <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+    </ul>
+  <div class = "container-fluid" style = "padding-top: 10px;">
+  	<table class = "table">        
+        <tr>
+            <td style="border-top: none;">
+                    <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/normaldifficulty-profile_image-d599d5a0e542cc57-300x300.png">
+                 </td>
+                <td style="border-top: none;"> 
+                    <h1 id="banner heading">NormalDifficulty</h1>
+                    <h2 id="banner_subheading">35,297 Followers</h2>
+                    <table class = "table" id="streamer_tbl">
+                        <tr>
+                            <th class="item_lbl">Bio:</th>
+                            <td style = "font-size: 16px;">Experience an MMORPG legend! Get a month's full access to RuneScape, RuneScape Old School, and the legendary pet Prime Colosus</td>
+                        </tr>
+                        <tr>
+                            <th class="item_lbl">Preferred Genres:</th>
+                            <td style = "font-size: 16px;"><a href={{url_for('fighting')}}>Fighting</a>, <a href={{url_for('sports')}}>Sports</a>, Horror</td>
+                        </tr>
+                        <tr>
+                            <th class="item_lbl">Streaming Now?:</th>
+                            <td style = "font-size: 16px;">[See stream below]</td>
+                        </tr>
+                    </table>
+               </td>                    
+            </tr>           
+        </table>
+        
+  </div>
+   <div class="new_section">
+            <h3 id="Live Streams banner">Live Streams</h3>
+            <hr>
+            <div id="live_video">
+                <iframe
+                    src="http://player.twitch.tv/?channel=normaldifficulty&muted=true"
+                    height="360"
+                    width="640"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        
+        <!-- PAST VIDEOS -->
+        <div class="new_section">
+            <h3 id="Past Videos banner">Past Videos</h3>
+            <hr>
+            <ul class="video_list">
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v135867755&autoplay=false"
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v136089798&autoplay=false" 
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v135647589&autoplay=false" 
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+            <a href="https://www.twitch.tv/normaldifficulty/videos/all">and 104 more at Twitch.com...</a>
+        </div>
+        
+        <!-- STREAMED GAMES -->
+        <div class="new_section">
+            <h3>Streamed Games</h3>
+            <hr>
+            <ul id="games_list">
+                <li class="game_item">
+                	<div class = "container-fluid">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <a href={{url_for('ufc2')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/wdyw6k2rbbb4szuhuoio.jpg">
+                                </a>
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line"><a href={{url_for('ufc2')}}>EA Sports UFC 2</a></li>
+                                    <li class="game_data_line">15th March, 2016</li>
+                                    <li class="game_data_line">PlayStation4, Xbox One</li>
+                                    <li class="game_data_line"><a href={{url_for('fighter')}}>Fighter</a>, <a href={{url_for('sports')}}>Sports</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">PLAYERUNKNOWN'S BATTLEGROUNDS</li>
+                                    <li class="game_data_line">2017</li>
+                                    <li class="game_data_line">PC (Microsoft Windows)</li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/gbkfll3hr2jketntycw0.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">The Evil Within</li>
+                                    <li class="game_data_line">14th October, 2014</li>
+                                    <li class="game_data_line">PC (Microsoft Windows), PlayStation 3, PlayStation 4, Xbox 360, Xbox One</li>
+                                    <li class="game_data_line">Adventure</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+        </div>
+        
+        <div id="space_at_bottom"></div>
+
+
+
+
+</body>
+</html>
