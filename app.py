@@ -185,13 +185,13 @@ def fifa17():
 def fifa17_livestreams():
     return render_template('/livestreams/fifa17_livestreams.html')
 
-@app.route('/ffxv')
-def ffxv():
-    return render_template('/games/ffxv.html')
+@app.route('/ffvii')
+def ffvii():
+    return render_template('/games/ffvii.html')
 
-@app.route('/ffxv_livestreams')
-def ffxv_livestreams():
-    return render_template('/livestreams/ffxv_livestreams.html')
+@app.route('/ffvii_livestreams')
+def ffvii_livestreams():
+    return render_template('/livestreams/ffvii_livestreams.html')
 
 @app.route('/forza')
 def forza():
@@ -258,7 +258,7 @@ def nba2k17_livestreams():
     return render_template('/livestreams/nba2k17_livestreams.html')
 
 @app.route('/nfs')
-def nhs():
+def nfs():
     return render_template('/games/nfs.html')
 
 @app.route('/nfs_livestreams')
@@ -353,11 +353,11 @@ def WoW():
 def WoW_liststreams():
     return render_template('/livestreams/WoW_livestreams.html')
 
-@app.route('/wwe17')
+@app.route('/wwe2k17')
 def wwe17():
     return render_template('/games/wwe2k17.html')
 
-@app.route('/wwe17_livestreams')
+@app.route('/wwe2k17_livestreams')
 def wwe17_livestreams():
     return render_template('/livestreams/ww2ke17_livestreams.html')
 
