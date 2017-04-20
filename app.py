@@ -218,6 +218,6 @@ def survival():
 #     return render_template('streamerTemplate.html')   
 
 if __name__ == "__main__":
-    #app.run('162.243.121.191','80')
-    app.run()
+    app.run('162.243.121.191','80')
+    #app.run()
     #change comment to run on chrome or local.
