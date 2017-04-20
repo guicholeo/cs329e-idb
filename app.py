@@ -4,9 +4,11 @@ import requests
 
 app = Flask(__name__)
 
-StatusDict = {"curse":'', "imaqtpie": '', "lxthul": '', "mob5tertv": '',
-              "nhfslickermo": '', "nick28t": '', "wonderboyhalo": '', "zisteau": '' ,
-              "normaldifficulty": ''}
+StatusDict = {"actrollvision":'',"asmongold": '',"curse":'',"dontbesaad20": '',"esl_sc2":'',
+              "expertzone":'',"foxrun402":'',"freakhopper":'',"frost":'',"goldglove":'' ,
+              "imaqtpie": '',"itsthekellys":'' ,"jaysitty":'',"lobosjr":'' ,"lxthul": '', "mob5tertv": '',
+              "nhfslickermo": '', "nick28t": '',"normaldifficulty": '',"phillyboy7897":'',
+              "prettyboyfredo":'',"weiward":'',"wonderboyhalo": '', "zisteau": ''}
 StatusColorDict = StatusDict.copy()
 
 
@@ -61,6 +63,10 @@ def streamer_curse():
 def streamer_dontbesaad20():
     return render_template('/streamers/streamer_dontbesaad20.html')
 
+@app.route('/streamer_esl_sc2')
+def streamer_esl_sc2():
+    return render_template('/streamers/streamer_esl_sc2.html')
+
 @app.route('/streamer_expertzone')
 def streamer_expertzone():
     return render_template('/streamers/streamer_streamer_expertzone_community.html')
@@ -73,6 +79,10 @@ def streamer_foxrun402():
 def streamer_freakhopper():
     return render_template('/streamers/streamer_freakhopper.html')
 
+@app.route('/streamer_frost')
+def streamer_frost():
+    return render_template('/streamers/streamer_frost.html')
+
 @app.route('/streamer_goldglove')
 def streamer_goldglove():
     return render_template('/streamers/streamer_goldglove.html')
@@ -84,6 +94,12 @@ def streamer_imaqtpie():
 @app.route('/streamer_itsthekellys')
 def streamer_itsthekellys():
     return render_template('/streamers/streamer_itsthekellys.html')
+
+
+@app.route('/streamer_jaysitty')
+def streamer_jaysitty():
+    return render_template('/streamers/streamer_jaysitty.html')
+
 
 @app.route('/streamer_lobosjr')
 def streamer_lobosjr():
@@ -108,6 +124,10 @@ def streamer_nick28t():
 @app.route('/streamer_NormalDifficulty')
 def streamer_NormalDifficulty():
     return render_template('/streamers/streamer_NormalDifficulty.html')
+
+@app.route('/streamer_phillyboy7897')
+def streamer_phillyboy7897():
+    return render_template('/streamers/streamer_phillyboy7897.html')
 
 @app.route('/streamer_prettyboyfredo')
 def streamer_prettyboyfredo():
@@ -247,6 +267,14 @@ def ufc2():
 @app.route('/ufc2_livestreams')
 def ufc2_livestreams():
     return render_template('/livestreams/ufc2_livestreams.html')
+
+@app.route('/witcher3')
+def witcher3():
+    return render_template('/games/witcher3.html')
+
+@app.route('/witcher3_livestreams')
+def witcher3_livestreams():
+    return render_template('/livestreams/witcher3_livestreams.html')
     
 @app.route('/wwe17')
 def wwe17():
