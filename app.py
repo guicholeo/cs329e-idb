@@ -220,6 +220,14 @@ def mortal_kombat_x():
 def mortal_kombat_x_livestreams():
     return render_template('/livestreams/mortal_kombat_x_livestreams.html')
 
+@app.route('/nfs')
+def nhs():
+    return render_template('/games/nfs.html')
+
+@app.route('/nfs_livestreams')
+def nfs_livestreams():
+    return render_template('/livestreams/nfs_livestreams.html')
+
 @app.route('/overwatch')
 def overwatch():
     return render_template('/games/overwatch.html')
@@ -237,11 +245,11 @@ def projectcars_livestreams():
     return render_template('/livestreams/projectcars_livestreams.html')
 
 @app.route('/rocketleague')
-def rocketlel():
+def rocketleague():
     return render_template('/games/rl.html')
 
-@app.route('/rl_livestreams')
-def rl():
+@app.route('/rocketleague_livestreams')
+def rocketleague_livestreams():
     return render_template('/livestreams/rl_livestreams.html')
 
 @app.route('/rust')
@@ -275,7 +283,15 @@ def witcher3():
 @app.route('/witcher3_livestreams')
 def witcher3_livestreams():
     return render_template('/livestreams/witcher3_livestreams.html')
+
+@app.route('/WoW')
+def WoW():
+    return render_template('/games/WoW.html')
     
+@app.route('/WoW_livestreams')
+def WoW_liststreams():
+    return render_template('/livestreams/WoW_livestreams.html')
+
 @app.route('/wwe17')
 def wwe17():
     return render_template('/games/wwe17.html')
@@ -283,6 +299,7 @@ def wwe17():
 @app.route('/wwe17_livestreams')
 def wwe17_livestreams():
     return render_template('/livestreams/wwe17_livestreams.html')
+
 
 
 
