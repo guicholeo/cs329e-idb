@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Asmongold</title>
+  <title>ESL_SC2</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
@@ -26,22 +26,22 @@
             <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
         </ul>
         <div class = "container-fluid" style = "padding-top: 10px;">
-            <table class = "table">        
+      	    <table class = "table">        
                 <tr>
                     <td style="border-top: none;">
-                        <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/asmongold-profile_image-f7ddcbd0332f5d28-300x300.png">
+                        <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-profile_image-d6db9488cec97125-300x300.jpeg">
                     </td>
                     <td style="border-top: none;"> 
-                        <h1 id="banner heading">Asmongold</h1>
-                        <h2 id="banner_subheading">140,402 Followers</h2>
+                        <h1 id="banner heading">ESL_SC2</h1>
+                        <h2 id="banner_subheading">150,930 Followers</h2>
                         <table class = "table" id="streamer_tbl">
                             <tr>
                                 <th class="item_lbl">Bio:</th>
-                                <td style = "font-size: 16px;">I have been playing World of Warcraft since 2006 and have been playing the Warcraft series since 1997. I'm more of a PvE player but I also PvP on a regular basis. I am the recruitment officer for Indestructible of Kel'Thuzad and play a fury warrior for the guild. Outside of WoW, I also play Diablo 3 interrmitiently. In real life, I'm unemployed (hence the achievement points). I enjoy eating Taco Bell, gaming, and hanging out with my friends.</td>
+                                <td style = "font-size: 16px;">ESL encourages a respectful, enjoyable, and harassment-free viewing experience for everyone. Please avoid engaging in any of the following: * Harassing, stalking, or threatening of individuals * Hate speech (sexist, racist, homophobic, trans-phobic, etc.) * Spamming, raiding, hijacking, or disrupting streams or social media * Posting other people’s private information * Encouraging others to break any of these rules | Thanks for watching!</td>
                             </tr>
                             <tr>
                                 <th class="item_lbl">Preferred Genres:</th>
-                                <td style = "font-size: 16px;"><a href={{url_for('sports')}}>Sports</a>, Racing, Adventure, Simulator, <a href={{url_for('rpg')}}>Role-playing (RPG)</a></td>
+                                <td style = "font-size: 16px;">Adventure, <a href={{url_for('rpg')}}>Role-playing (RPG)</a></td>
                             </tr>                       
                         </table>
                    </td>                    
@@ -54,7 +54,7 @@
             <hr>
             <div id="live_video">
                 <iframe
-                    src="http://player.twitch.tv/?channel=asmongold&muted=true"
+                    src="http://player.twitch.tv/?channel=esl_sc2&muted=true"
                     height="360"
                     width="640"
                     frameborder="0"
@@ -71,7 +71,7 @@
             <ul class="video_list">
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v136762876&autoplay=false"
+                        src="https://player.twitch.tv/?video=v136712292&autoplay=false"
                         width="400"
                         height="225"
                         frameborder="0"
@@ -81,7 +81,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v136353741&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v136294679&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -91,7 +91,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v135929405&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v135569721&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -101,7 +101,7 @@
                 </li>
             </ul>
             <br/ style="clear:both">
-            <a href="https://www.twitch.tv/prettyboyfredo/videos/all">and 73 more at Twitch.com...</a>
+            <a href="https://www.twitch.tv/esl_sc2/videos/all">and 2,437 more at Twitch.com...</a>
         </div>
         
         <!-- STREAMED GAMES -->
@@ -113,50 +113,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href={{url_for('nba2k17')}}>
-                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/tfebzciucanpvkzsq6ot.jpg">
+                                <a href={{url_for('starcraft2')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/kgr11q9cngkn8bgutqph.jpg">
                                 </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href={{url_for('nba2k17')}}>NBA 2K17</a></li>
-                                    <li class="game_data_line">20th September, 2016</li>
-                                    <li class="game_data_line">PlayStation 3, Xbox 360, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </li>
-                <li class="game_item">
-                    <table class="game_item_table">
-                        <tr>
-                            <td>
-                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/vdzfsbissgp55fvfxccp.jpg">
-                            </td>
-                            <td>
-                                <ul class="game_info_table">
-                                    <li class="game_data_line">Grand Theft Auto V</li>
-                                    <li class="game_data_line">17th September, 2013</li>
-                                    <li class="game_data_line">PlayStation 3, Xbox 360, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line">Adventure, Racing, <a href={{url_for('shooter')}}>Shooter</a>, Simulator</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </li>
-                <li class="game_item">
-                    <table class="game_item_table">
-                        <tr>
-                            <td>
-                                <img class="game_image" src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/game-info/FH-game_info-Boxart_Tablet_205060.jpg">
-                            </td>
-                            <td>
-                                <ul class="game_info_table">
-                                    <li class="game_data_line">For Honor</li>
-                                    <li class="game_data_line">14th February, 2017</li>
-                                    <li class="game_data_line">PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line">Hack and slash/Beat 'em up</li>
+                                    <li class="game_data_line"><a href={{url_for('starcraft2')}}>StarCraft II</a></li>
+                                    <li class="game_data_line">27th July, 2010</li>
+                                    <li class="game_data_line">Mac, PC (Microsoft Windows)</li>
+                                    <li class="game_data_line">Real Time Strategy (RTS)</li>
                                 </ul>
                             </td>
                         </tr>
