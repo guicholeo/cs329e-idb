@@ -252,12 +252,8 @@ def survival():
 #     return render_template('streamerTemplate.html')   
 
 if __name__ == "__main__":
-<<<<<<< HEAD
+
     #app.run('162.243.121.191','80')
     StreamerStatus()
     app.run()
-=======
-    app.run('162.243.121.191','80')
-    #app.run()
->>>>>>> 076fe6f12a18d40f9f9ba4ba3e3657bbd56f9ec2
     #change comment to run on chrome or local.
