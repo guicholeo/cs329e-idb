@@ -1,8 +1,26 @@
 from flask import Flask, request, render_template
 from os import path
+import requests
 
 app = Flask(__name__)
 
+StatusDict = {"curse":'', "imaqtpie": '', "lxthul": '', "mob5tertv": '',
+              "nhfslickermo": '', "nick28t": '', "wonderboyhalo": '', "zisteau": '' ,
+              "normaldifficulty": ''}
+StatusColorDict = StatusDict.copy()
+
+
+def StreamerStatus():
+    for key in StatusDict:
+        streams = requests.get('https://api.twitch.tv/kraken/streams/' + key + '?client_id=e6xu67x7c493rmp1osdcrnivd3j8g3')
+        streams = streams.json()
+        if (streams["stream"] == None):
+            StatusDict[key]= "Offline"
+            StatusColorDict[key] = "#FF0000" 
+        else:
+            StatusDict[key]= "Online"
+            StatusColorDict[key] ="#00FF00"
+  
 @app.route('/')
 def index():
     return render_template('index.html') 
@@ -13,7 +31,7 @@ def about():
    
 @app.route('/streamers')
 def streamers():
-    return render_template('streamers.html')
+    return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
 
 @app.route('/games')
 def games():
@@ -144,6 +162,22 @@ def overwatch():
 def overwatch_livestreams():
     return render_template('/livestreams/overwatch_livestreams.html')
 
+@app.route('/projectcars')
+def projectcars():
+    return render_template('/games/projectcars.html')
+
+@app.route('/projectcars_livestreams')
+def projectcars_livestreams():
+    return render_template('/livestreams/projectcars_livestreams.html')
+
+@app.route('/rocketleague')
+def rocketlel():
+    return render_template('/games/rl.html')
+
+@app.route('/rl_livestreams')
+def rl():
+    return render_template('/livestreams/rl_livestreams.html')
+
 @app.route('/rust')
 def rust():
     return render_template('/games/rust.html')
@@ -219,5 +253,6 @@ def survival():
 
 if __name__ == "__main__":
     #app.run('162.243.121.191','80')
+    StreamerStatus()
     app.run()
     #change comment to run on chrome or local.
