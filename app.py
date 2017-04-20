@@ -45,13 +45,49 @@ def genres():
 
 ####-----STREAMERS-----####
 
+@app.route('/streamer_actrollvision')
+def streamer_actrollvision():
+    return render_template('/streamers/streamer_actrollvision.html')
+
+@app.route('/streamer_asmongold')
+def streamer_asmongold():
+    return render_template('/streamers/streamer_asmongold.html')
+
 @app.route('/streamer_curse')
 def streamer_curse():
     return render_template('/streamers/streamer_curse.html')
 
+@app.route('/streamer_dontbesaad20')
+def streamer_dontbesaad20():
+    return render_template('/streamers/streamer_dontbesaad20.html')
+
+@app.route('/streamer_expertzone')
+def streamer_expertzone():
+    return render_template('/streamers/streamer_streamer_expertzone_community.html')
+
+@app.route('/streamer_foxrun402')
+def streamer_foxrun402():
+    return render_template('/streamers/streamer_foxrun402.html')
+
+@app.route('/streamer_freakhopper')
+def streamer_freakhopper():
+    return render_template('/streamers/streamer_freakhopper.html')
+
+@app.route('/streamer_goldglove')
+def streamer_goldglove():
+    return render_template('/streamers/streamer_goldglove.html')
+
 @app.route('/streamer_imaqtpie')
 def streamer_imaqtpie():
     return render_template('/streamers/streamer_imaqtpie.html')
+
+@app.route('/streamer_itsthekellys')
+def streamer_itsthekellys():
+    return render_template('/streamers/streamer_itsthekellys.html')
+
+@app.route('/streamer_lobosjr')
+def streamer_lobosjr():
+    return render_template('/streamers/streamer_lobosjr.html')
 
 @app.route('/streamer_lxthul')
 def streamer_lxthul():
@@ -69,6 +105,18 @@ def streamer_nhfslickermo():
 def streamer_nick28t():
     return render_template('/streamers/streamer_nick28t.html')
 
+@app.route('/streamer_NormalDifficulty')
+def streamer_NormalDifficulty():
+    return render_template('/streamers/streamer_NormalDifficulty.html')
+
+@app.route('/streamer_prettyboyfredo')
+def streamer_prettyboyfredo():
+    return render_template('/streamers/streamer_prettyboyfredo.html')
+
+@app.route('/streamer_weiward')
+def streamer_weiward():
+    return render_template('/streamers/streamer_weiward.html')
+
 @app.route('/streamer_wonderboyhalo')
 def streamer_wonderboyhalo():
     return render_template('/streamers/streamer_wonderboyhalo.html')
@@ -77,12 +125,8 @@ def streamer_wonderboyhalo():
 def streamer_zisteau():
     return render_template('/streamers/streamer_zisteau.html')
 
-@app.route('/streamer_NormalDifficulty')
-def streamer_NormalDifficulty():
-    return render_template('/streamers/streamer_NormalDifficulty.html')
 
 ####-----GAMES AND LIVESTREAMS FOR SAID GAMES-----####
-
 
 @app.route('/fallout4')
 def fallout4():
