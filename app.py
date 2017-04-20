@@ -155,7 +155,7 @@ def civ6_livestreams():
 
 @app.route('/darksouls')
 def darksouls():
-    return render_template('/games/darksouls.html')
+    return render_template('/games/darksouls3.html')
 
 @app.route('/darksouls_livestreams')
 def darksouls_livestreams():
@@ -187,10 +187,10 @@ def fifa17_livestreams():
 
 @app.route('/ffvii')
 def ffvii():
-    return render_template('/games/ffvii.html')
+    return render_template('/games/finalfantasy7.html')
 
-@app.route('/ffvii_livestreams')
-def ffvii_livestreams():
+@app.route('/FinalFantasy_livestreams')
+def FinalFantasy_livestreams():
     return render_template('/livestreams/ffvii_livestreams.html')
 
 @app.route('/forza')
@@ -347,19 +347,19 @@ def witcher3_livestreams():
 
 @app.route('/WoW')
 def WoW():
-    return render_template('/games/WoW.html')
+    return render_template('/games/wow.html')
     
-@app.route('/WoW_livestreams')
-def WoW_liststreams():
+@app.route('/wow_livestreams')
+def wow_livestreams():
     return render_template('/livestreams/WoW_livestreams.html')
 
 @app.route('/wwe2k17')
 def wwe2k17():
-    return render_template('/games/wwe2k17.html')
+    return render_template('/games/wwe17.html')
 
 @app.route('/wwe2k17_livestreams')
 def wwe2k17_livestreams():
-    return render_template('/livestreams/ww2ke17_livestreams.html')
+    return render_template('/livestreams/wwe2k17_livestreams.html')
 
 
 

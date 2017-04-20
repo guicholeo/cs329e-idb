@@ -21,7 +21,7 @@
         <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
         <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
     </ul>
-<center style="font-size: 400%;font-family: Poppins;font-weight: 900;margin-top: 20px;"><a href = {{url_for('ffxv')}}>Final Fantasy XV</a> Live Streams</center>
+<center style="font-size: 400%;font-family: Poppins;font-weight: 900;margin-top: 20px;"><a href = {{url_for('ffvii')}}>Final Fantasy VII</a> Live Streams</center>
 
   <div id = "tab" style="margin-top: 30px;font-family: sans-serif;max-width: 1000px;">
   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
@@ -45,7 +45,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
    	var t = $('#example').DataTable();
-   	$.get("https://api.twitch.tv/kraken/streams/?game=Final Fantasy XV&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
+   	$.get("https://api.twitch.tv/kraken/streams/?game=Final Fantasy VII&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
         for (var i = 0; i <data["streams"].length; i++){
         	var row_data = [];
         row_data.push("<img src ="+data["streams"][i]["channel"]["logo"]+ " " + "width=" + "200 " + "height=" + "150"+">");
