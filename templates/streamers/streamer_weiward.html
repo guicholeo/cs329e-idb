@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Nick28T</title>
+  <title>weiward</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
-  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">  
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -28,32 +29,33 @@
   	<table class = "table ">        
         <tr>
             <td style="border-top: none;">
-                    <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/nick28t-profile_image-4ea18513137e1c90-300x300.png">
-                </div>
+                 <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/weiward-profile_image-74b712d5fc6dd161-300x300.png">
                 </td>
-                <td style="border-top: none;">  
-                    <h1 id="banner heading">Nick28T</h1>
-                    <h2 id="banner_subheading">644,334 Followers</h2>
+                <td style="border-top: none;">                    
+                    <h1 id="banner heading">weiward</h1>
+                    <h2 id="banner_subheading">585 Followers</h2>
                     <table class = "table" id="streamer_tbl">
                         <tr>
                             <th class="item_lbl">Bio:</th>
-                            <td style = "font-size: 16px;">FIFA 17 ULTIMATE TEAM streamer. I also dabble in a few other games because I am such a variety streamer</td>
+                            <td style = "font-size: 16px;">Lali-ho, traveler! My name is Raven, but you can call me weiward (pronounced "wayward"), my FFXIV name Spiral, or.. Supreme Overlord!!! /|\ ( •＞,,,＜• ) /|\ I'm a cosplayer, gamer, foodie, and all-around neeerd from the East Coast. I love good stories, clever arguments, bad jokes, and TENTACLE MONSTERS! One day, I'll lead a life of adventure and intrigue. For now, I'll just dress up and play around as fictional people who do... Welcome to my channel!</td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href={{url_for('sports')}}>Sports</a>, <a href={{url_for('rpg')}}>Role-Playing (RPG)</a></td>
+                            <td style = "font-size: 16px;">Adventure, <a href = {{url_for('rpg')}}>Role-playing (RPG)</a></td>
                         </tr>
                     </table>
                 </td>                    
             </tr>           
         </table>
+        
+                
   </div>
    <div class="new_section">
             <h3 id="Live Streams banner">Live Streams</h3>
             <hr>
             <div id="live_video">
                 <iframe
-                    src="http://player.twitch.tv/?channel=nick28T&muted=true"
+                    src="http://player.twitch.tv/?channel=weiward&muted=true"
                     height="360"
                     width="640"
                     frameborder="0"
@@ -70,7 +72,7 @@
             <ul class="video_list">
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129526884&autoplay=false"
+                        src="https://player.twitch.tv/?video=v136748445&autoplay=false"
                         width="400"
                         height="225"
                         frameborder="0"
@@ -80,7 +82,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129291360&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v136534599&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -90,7 +92,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129075805&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v136323825&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -100,7 +102,7 @@
                 </li>
             </ul>
             <br/ style="clear:both">
-            <a href="https://www.twitch.tv/nick28T/videos/all">and 61 more at Twitch.com...</a>
+            <a href="https://www.twitch.tv/weiward/videos/all">and 62 more at Twitch.com...</a>
         </div>
         
         <!-- STREAMED GAMES -->
@@ -113,51 +115,52 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href={{url_for('fifa17')}}>
-                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/cmtplicvdajycqx2vz6t.jpg">
+                                <a href = {{url_for('ffvii')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/ojgpxt0ewfsyfukxesra.jpg">
+                                </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href={{url_for('fifa17')}}>FIFA 17</a></li>
-                                    <li class="game_data_line">27th Sep, 2016</li>
-                                    <li class="game_data_line">PlayStation4, Xbox One, Xbox 360, PlayStation3, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
+                                    <li class="game_data_line"><a href ={{url_for('ffvii')}}>Final Fantasy VII</a></li>
+                                    <li class="game_data_line">31st January, 1997</li>
+                                    <li class="game_data_line">PC (Microsoft Windows), PlayStation</li>
+                                    <li class="game_data_line">Adventure, <a href = {{url_for('rpg')}}>Role-playing (RPG)</a></li>
                                 </ul>
                             </td>
                         </tr>
                     </table>
                 </li>
                 <li class="game_item">
+                    <div class = "container-fluid">
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href = {{url_for('h1z1')}}>
-                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/kuwu7uppnixr5c5f7bz5.jpg">
-                            </a>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/tfnl5g6ist9rtlswomqp.jpg">
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href = {{url_for('h1z1')}}>H1Z1: King of the Hill</a></li>
-                                    <li class="game_data_line">20th Sep, 2016</li>
+                                    <li class="game_data_line">Final Fantasy XIV</li>
+                                    <li class="game_data_line">30th September, 2010</li>
                                     <li class="game_data_line">PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('rpg')}}>Role-Playing (RPG)</a></li>
+                                    <li class="game_data_line"><a href = {{url_for('rpg')}}>Role-playing (RPG)</a></li>
                                 </ul>
                             </td>
                         </tr>
                     </table>
                 </li>
                 <li class="game_item">
+                    <div class = "container-fluid">
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/etn5hmoke3spyxmlhoty.jpg">
+                                <img class="game_image" src="http://pcgames-download.net/wp-content/uploads/2015/12/Final_Fantasy_VI_pc-2015.jpg">
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line">Fifa 14</li>
-                                    <li class="game_data_line">17th Sep, 2013</li>
-                                    <li class="game_data_line">Android, PlayStation2, Wii, PlayStation3, PlayStation Portable, iOS, PlayStation Vita, Nintendo 3DS, Xbox 360, PlayStation4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
+                                    <li class="game_data_line">Final Fantasy VI</li>
+                                    <li class="game_data_line">2nd April, 1994</li>
+                                    <li class="game_data_line">PlayStation Network, Super Famicom, PlayStation, Game Boy Advance, Super Nintendo Entertainment System (SNES), Virtual Console (Nintendo), PC (Microsoft Windows)</li>
+                                    <li class="game_data_line">Adventure, <a href = {{url_for('rpg')}}>Role-playing (RPG)</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -168,9 +171,5 @@
         </div>
         
         <div id="space_at_bottom"></div>
-
-
-
-
 </body>
 </html>

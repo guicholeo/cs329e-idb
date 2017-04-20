@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Nick28T</title>
+  <title>ExpertZone_Community</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
-  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">  
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
+
+  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -14,6 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="../static/css/NavBar.css" rel="stylesheet">
+
 </head>
 <body>
     <ul id = "navbar">
@@ -23,37 +26,36 @@
         <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
         <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
     </ul>
-
   <div class = "container-fluid" style = "padding-top: 10px;">
-  	<table class = "table ">        
+  	<table class = "table">        
         <tr>
             <td style="border-top: none;">
-                    <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/nick28t-profile_image-4ea18513137e1c90-300x300.png">
-                </div>
-                </td>
-                <td style="border-top: none;">  
-                    <h1 id="banner heading">Nick28T</h1>
-                    <h2 id="banner_subheading">644,334 Followers</h2>
+                    <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/expertzone_community-profile_image-940222ccb431f96c-300x300.png">
+                 </td>
+                <td style="border-top: none;"> 
+                    <h1 id="banner heading">ExpertZone_Community</h1>
+                    <h2 id="banner_subheading">18,648 Followers</h2>
                     <table class = "table" id="streamer_tbl">
                         <tr>
                             <th class="item_lbl">Bio:</th>
-                            <td style = "font-size: 16px;">FIFA 17 ULTIMATE TEAM streamer. I also dabble in a few other games because I am such a variety streamer</td>
+                            <td style = "font-size: 16px;">ExpertZone Twitch Channel has two distinct experiences for you to enjoy. 1. Play & Learn: Where we invite devs to come talk to you about the games they create. As well as a chance to win cool prizes. 2. GameMaster Streams: Where our ExpertZone pros stream games to play with the community.</td>
                         </tr>
                         <tr>
                             <th class="item_lbl">Preferred Genres:</th>
-                            <td style = "font-size: 16px;"><a href={{url_for('sports')}}>Sports</a>, <a href={{url_for('rpg')}}>Role-Playing (RPG)</a></td>
+                            <td style = "font-size: 16px;"><a href={{url_for('sports')}}>Sports</a>, Arcade, <a href={{url_for('strategy')}}>Strategy</a>, <a href={{url_for('shooter')}}>Shooter</a></td>
                         </tr>
                     </table>
-                </td>                    
+               </td>                    
             </tr>           
         </table>
+        
   </div>
    <div class="new_section">
             <h3 id="Live Streams banner">Live Streams</h3>
             <hr>
             <div id="live_video">
                 <iframe
-                    src="http://player.twitch.tv/?channel=nick28T&muted=true"
+                    src="http://player.twitch.tv/?channel=expertzone_community&muted=true"
                     height="360"
                     width="640"
                     frameborder="0"
@@ -70,7 +72,7 @@
             <ul class="video_list">
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129526884&autoplay=false"
+                        src="https://player.twitch.tv/?video=v136749028&autoplay=false"
                         width="400"
                         height="225"
                         frameborder="0"
@@ -80,7 +82,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129291360&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v136343361&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -90,7 +92,7 @@
                 </li>
                 <li class="video_item">
                     <iframe 
-                        src="https://player.twitch.tv/?video=v129075805&autoplay=false" 
+                        src="https://player.twitch.tv/?video=v136317835&autoplay=false" 
                         width="400"
                         height="225"
                         frameborder="0"
@@ -100,7 +102,7 @@
                 </li>
             </ul>
             <br/ style="clear:both">
-            <a href="https://www.twitch.tv/nick28T/videos/all">and 61 more at Twitch.com...</a>
+            <a href="https://www.twitch.tv/expertzone_community/videos/all">and 188 more at Twitch.com...</a>
         </div>
         
         <!-- STREAMED GAMES -->
@@ -113,14 +115,15 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href={{url_for('fifa17')}}>
-                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/cmtplicvdajycqx2vz6t.jpg">
+                                <a href={{url_for('wwe2k17')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/zbv9p9fw5dt761w1ojdv.jpg">
+                                </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href={{url_for('fifa17')}}>FIFA 17</a></li>
-                                    <li class="game_data_line">27th Sep, 2016</li>
-                                    <li class="game_data_line">PlayStation4, Xbox One, Xbox 360, PlayStation3, PC (Microsoft Windows)</li>
+                                    <li class="game_data_line"><a href={{url_for('wwe2k17')}}>WWE 2K17</a></li>
+                                    <li class="game_data_line">11th October, 2016</li>
+                                    <li class="game_data_line">PlayStation 3, Xbox 360, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
                                     <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
                                 </ul>
                             </td>
@@ -131,16 +134,14 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <a href = {{url_for('h1z1')}}>
-                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/kuwu7uppnixr5c5f7bz5.jpg">
-                            </a>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/tcdvtnmyybb4kvmrpbbv.jpg">
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line"><a href = {{url_for('h1z1')}}>H1Z1: King of the Hill</a></li>
-                                    <li class="game_data_line">20th Sep, 2016</li>
-                                    <li class="game_data_line">PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('rpg')}}>Role-Playing (RPG)</a></li>
+                                    <li class="game_data_line">World of Tanks</li>
+                                    <li class="game_data_line">12th April, 2011</li>
+                                    <li class="game_data_line">Xbox 360, PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
+                                    <li class="game_data_line">Arcade, <a href={{url_for('strategy')}}>Strategy</a></li>
                                 </ul>
                             </td>
                         </tr>
@@ -150,14 +151,16 @@
                     <table class="game_item_table">
                         <tr>
                             <td>
-                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/etn5hmoke3spyxmlhoty.jpg">
+                                <a href={{url_for('overwatch')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/yob05bs5ffigu3rmrni1.jpg">
+                                </a>
                             </td>
                             <td>
                                 <ul class="game_info_table">
-                                    <li class="game_data_line">Fifa 14</li>
-                                    <li class="game_data_line">17th Sep, 2013</li>
-                                    <li class="game_data_line">Android, PlayStation2, Wii, PlayStation3, PlayStation Portable, iOS, PlayStation Vita, Nintendo 3DS, Xbox 360, PlayStation4, Xbox One, PC (Microsoft Windows)</li>
-                                    <li class="game_data_line"><a href={{url_for('sports')}}>Sports</a></li>
+                                    <li class="game_data_line"><a href={{url_for('overwatch')}}>Overwatch</a></li>
+                                    <li class="game_data_line">24th May, 2016</li>
+                                    <li class="game_data_line">PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
                                 </ul>
                             </td>
                         </tr>

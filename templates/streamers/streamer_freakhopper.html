@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>freakhopper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/streamer_instance_style.css">
+  <link rel="stylesheet" href="../static/css/boot.css" type="text/css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../static/css/NavBar.css" rel="stylesheet">
+
+</head>
+    <body>
+        <ul id = "navbar">
+            <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
+            <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
+            <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
+            <li id = "nav"><a href ={{url_for('genres')}}>Genres</a></li>
+            <li id = "nav" style="float:right;"><a href = {{url_for('about')}}>About</a></li>
+        </ul>
+        <div class = "container-fluid" style = "padding-top: 10px;">
+      	    <table class = "table">        
+                <tr>
+                    <td style="border-top: none;">
+                        <img id="propic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/freakhopper-profile_image-0af2206d85977719-300x300.jpeg">
+                    </td>
+                    <td style="border-top: none;"> 
+                        <h1 id="banner heading">freakhopper</h1>
+                        <h2 id="banner_subheading">52,352 Followers</h2>
+                        <table class = "table" id="streamer_tbl">
+                            <tr>
+                                <th class="item_lbl">Bio:</th>
+                                <td style = "font-size: 16px;">Welcome To The Freakshow. | "If you don't love your self, how the hell you gonna love somebody else?" -RuPaul | INTJ: Introverted Intuitive Thinking Judging | I started streaming on 7 Dec 14 . I continue to stream because I love the crazy, awesome, frustrating conversations and interactions I have with people. I feel that even the faceless human interactions I have while gaming broaden my perspective and maturity as a gamer/consumer. Ultimately though, If you don't enjoy watching me don't lose sleep over it- I sure won't. | I am a 28yr old from New Hampshire...aka the shire (residing in MD) | Recent mother to the most amazing and lovely little girl in all current and alternative galaxies | Occupation: US Air Force for the last 8 years | History: My first gaming console was a super nintendo. After I started borrowing friend's gameboy ( I was poor), got a hand-me down original Xbox, and then became a grown up and bought my first laptop, Xbox 360, desktop, DS, 3DS, PSP, and now primarily play my PlayStation 4 named Sour Cream (won the Destiny bundle from Taco Bell) and my Macbook Pro named Eve. | When I am not gaming then I am spending time with my family, reading, playing soccer, or trolling comic book/card shops. | Random Note: I totally dig female gamers. The internet is overflowing with males of all variety... the ones who are shy, the knowledgeable, the funny man, the troll, the perv.... just not enough women in general. I legit respect other women who blaze way through the crowded male interwebs. Even more love to the gamers.! <3 <3 <3</td>
+                            </tr>
+                            <tr>
+                                <th class="item_lbl">Preferred Genres:</th>
+                                <td style = "font-size: 16px;">Adventure, <a href={{url_for('rpg')}}>Role-playing (RPG)</a></td>
+                            </tr>                       
+                        </table>
+                   </td>                    
+                </tr>           
+            </table>
+        </div>
+
+        <div class="new_section">
+            <h3 id="Live Streams banner">Live Streams</h3>
+            <hr>
+            <div id="live_video">
+                <iframe
+                    src="http://player.twitch.tv/?channel=freakhopper&muted=true"
+                    height="360"
+                    width="640"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        
+        <!-- PAST VIDEOS -->
+        <div class="new_section">
+            <h3 id="Past Videos banner">Past Videos</h3>
+            <hr>
+            <ul class="video_list">
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v136767928&autoplay=false"
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v136356682&autoplay=false" 
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+                <li class="video_item">
+                    <iframe 
+                        src="https://player.twitch.tv/?video=v136356632&autoplay=false" 
+                        width="400"
+                        height="225"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+            <a href="https://www.twitch.tv/freakhopper/videos/all">and 64 more at Twitch.com...</a>
+        </div>
+        
+        <!-- STREAMED GAMES -->
+        <div class="new_section">
+            <h3>Streamed Games</h3>
+            <hr>
+            <ul id="games_list">
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">PLAYERUNKNOWN'S BATTLEGROUNDS</li>
+                                    <li class="game_data_line">2017</li>
+                                    <li class="game_data_line">PC (Microsoft Windows)</li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/gare7ypeguuqmcsoatsu.jpg">
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line">Destiny</li>
+                                    <li class="game_data_line">9th September, 2014</li>
+                                    <li class="game_data_line">PlayStation 3, Xbox 360, PlayStation 4, Xbox One</li>
+                                    <li class="game_data_line"><a href={{url_for('rpg')}}>Role-playing (RPG)</a>, <a href={{url_for('shooter')}}>Shooter</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="game_item">
+                    <table class="game_item_table">
+                        <tr>
+                            <td>
+                                <a href={{url_for('titanfall2')}}>
+                                    <img class="game_image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/fhbeilnghyhhmjqhinqa.jpg">
+                                </a>
+                            </td>
+                            <td>
+                                <ul class="game_info_table">
+                                    <li class="game_data_line"><a href={{url_for('titanfall2')}}>Titanfall 2</a></li>
+                                    <li class="game_data_line">28th October, 2016</li>
+                                    <li class="game_data_line">PlayStation 4, Xbox One, PC (Microsoft Windows)</li>
+                                    <li class="game_data_line"><a href={{url_for('shooter')}}>Shooter</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <br/ style="clear:both">
+        </div>        
+        <div id="space_at_bottom"></div>
+    </body>
+</html>
