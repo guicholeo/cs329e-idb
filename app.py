@@ -8,7 +8,7 @@ StatusDict = {"actrollvision":'',"asmongold": '',"curse":'',"dontbesaad20": '',"
               "expertzone":'',"foxrun402":'',"freakhopper":'',"frost":'',"goldglove":'' ,
               "imaqtpie": '',"itsthekellys":'' ,"jaysitty":'',"lobosjr":'' ,"lxthul": '', "mob5tertv": '',
               "nhfslickermo": '', "nick28t": '',"normaldifficulty": '',"phillyboy7897":'',
-              "prettyboyfredo":'',"weiward":'',"wonderboyhalo": '', "zisteau": ''}
+              "pokimane":'', "prettyboyfredo":'',"weiward":'',"wonderboyhalo": '', "zisteau": ''}
 StatusColorDict = StatusDict.copy()
 
 
@@ -16,7 +16,7 @@ def StreamerStatus():
     for key in StatusDict:
         streams = requests.get('https://api.twitch.tv/kraken/streams/' + key + '?client_id=e6xu67x7c493rmp1osdcrnivd3j8g3')
         streams = streams.json()
-        #print(streams['stream'])
+        print(key)
         if (streams["stream"] == None):
             StatusDict[key]= "Offline"
             StatusColorDict[key] = '#e81212'#"#FF0000" 
@@ -34,6 +34,7 @@ def about():
    
 @app.route('/streamers')
 def streamers():
+    StreamerStatus()
     return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
 
 @app.route('/games')
@@ -125,6 +126,10 @@ def streamer_NormalDifficulty():
 @app.route('/streamer_phillyboy7897')
 def streamer_phillyboy7897():
     return render_template('/streamers/streamer_phillyboy7897.html')
+
+@app.route('/streamer_pokimane')
+def streamer_pokimane():
+    return render_template('/streamers/streamer_pokimane.html')
 
 @app.route('/streamer_prettyboyfredo')
 def streamer_prettyboyfredo():
@@ -405,9 +410,7 @@ def survival():
 
 if __name__ == "__main__":
 
-    #StreamerStatus()
-    #app.run('162.243.121.191','80')
-    StreamerStatus()
-    app.run()
-    StreamerStatus()
+    
+    app.run('162.243.121.191','80')
+    #app.run()    
     #change comment to run on chrome or local.
