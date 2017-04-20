@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <link rel="stylesheet" href="../static/css/ModelStyle.css">
+	   <link rel="stylesheet" href="../static/css/ModelStyle.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script type="text/javascript" src="../static/js/dtable.js"></script>
-    <script type="text/javascript" src="../static/js/dtable11.js"></script>
+   <script type="text/javascript" src="../static/js/dtable11.js"></script>
     <script type="text/javascript" src="../static/js/dtable2.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="../static/css/NavBar.css" rel="stylesheet">
-
+     <link href="../static/css/NavBar.css" rel="stylesheet">
 
 <title> Genres </title>
 </head>
 
 <body>
-	<ul id = "navbar">
+    <ul id = "navbar">
         <li id = "nav"><a href ={{url_for('index')}}>Streamer Surf</a></li>
         <li id = "nav"><a href ={{url_for('streamers')}}>Streamers</a></li>
         <li id = "nav"><a href ={{url_for('games')}}>Games</a></li>
@@ -24,19 +23,18 @@
     </ul>
 
 
-  <center style="font-size: 400%;font-family: Poppins;font-weight: 900;margin-top: 20px;"><a href = {{url_for('nfs')}}>Need for Speed</a> Live Streams</center>
-
+  <center style="font-size: 400%;font-family: Poppins;font-weight: 900;margin-top: 20px;"><a href = {{url_for('ufc2')}}>UFC 2</a> Live Streams</center>
 
   <div id = "tab" style="margin-top: 30px;font-family: sans-serif;max-width: 1000px;">
   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" >
         <thead>
             <tr>
-    <th style="text-align: center;">User_Image</th>
-   <th style="text-align: center;">Display_Name</th>
-    <th style="text-align: center;">Number of Live Viewers</th> 
-    <th style="text-align: center;">Number of Followers</th>
-    <th style="text-align: center;">Language of Stream</th>
-    <th style="text-align: center;">Live Stream</th>
+        <th>User_Image</th>
+   <th>Display_Name</th>
+    <th>Number of Live Viewers</th> 
+    <th>Number of Followers</th>
+    <th>Language of Stream</th>
+    <th>Live Stream</th>
   </tr>
 
      </thead>
@@ -49,11 +47,11 @@
     <script type="text/javascript">
     $(document).ready(function() {
    	var t = $('#example').DataTable();
-   	$.get("https://api.twitch.tv/kraken/streams/?game=Need for Speed&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
+   	$.get("https://api.twitch.tv/kraken/streams/?game=EA Sports UFC 2&limit=100&client_id=e6xu67x7c493rmp1osdcrnivd3j8g3", function(data){
         for (var i = 0; i <data["streams"].length; i++){
         	var row_data = [];
         row_data.push("<img src ="+data["streams"][i]["channel"]["logo"]+ " " + "width=" + "200 " + "height=" + "150"+">");
-			row_data.push(data["streams"][i]["channel"]["display_name"]);
+			row_data.push(data["streams"][i]["channel"]["name"]);
       row_data.push(data["streams"][i]["viewers"]);
 			row_data.push(data["streams"][i]["channel"]["followers"]);
       row_data.push(data["streams"][i]["channel"]["language"]);
