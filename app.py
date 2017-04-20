@@ -23,7 +23,6 @@ def StreamerStatus():
         else:
             StatusDict[key]= "Online"
             StatusColorDict[key] ="#00d100"
-
   
 @app.route('/')
 def index():
@@ -95,11 +94,9 @@ def streamer_imaqtpie():
 def streamer_itsthekellys():
     return render_template('/streamers/streamer_itsthekellys.html')
 
-
 @app.route('/streamer_jaysitty')
 def streamer_jaysitty():
     return render_template('/streamers/streamer_jaysitty.html')
-
 
 @app.route('/streamer_lobosjr')
 def streamer_lobosjr():
@@ -148,6 +145,30 @@ def streamer_zisteau():
 
 ####-----GAMES AND LIVESTREAMS FOR SAID GAMES-----####
 
+@app.route('/civ6')
+def civ6():
+    return render_template('/games/civ6.html')
+
+@app.route('/civ6_livestreams')
+def civ6_livestreams():
+    return render_template('/livestreams/civ6_livestreams.html')
+
+@app.route('/darksouls')
+def darksouls():
+    return render_template('/games/darksouls.html')
+
+@app.route('/darksouls_livestreams')
+def darksouls_livestreams():
+    return render_template('/livestreams/darksouls_livestreams.html')
+
+@app.route('/dayz')
+def dayz():
+    return render_template('/games/dayz.html')
+
+@app.route('/dayz_livestreams')
+def dayz_livestreams():
+    return render_template('/livestreams/dayz_livestreams.html')
+
 @app.route('/fallout4')
 def fallout4():
     return render_template('/games/fallout4.html')
@@ -163,6 +184,14 @@ def fifa17():
 @app.route('/fifa17_livestreams')
 def fifa17_livestreams():
     return render_template('/livestreams/fifa17_livestreams.html')
+
+@app.route('/ffxv')
+def ffxv():
+    return render_template('/games/ffxv.html')
+
+@app.route('/ffxv_livestreams')
+def ffxv_livestreams():
+    return render_template('/livestreams/ffxv_livestreams.html')
 
 @app.route('/forza')
 def forza():
@@ -220,6 +249,14 @@ def mortal_kombat_x():
 def mortal_kombat_x_livestreams():
     return render_template('/livestreams/mortal_kombat_x_livestreams.html')
 
+@app.route('/nba2k17')
+def nba2k17():
+    return render_template('/games/nba2k17.html')
+
+@app.route('/nba2k17_livestreams')
+def nba2k17_livestreams():
+    return render_template('/livestreams/nba2k17_livestreams.html')
+
 @app.route('/nfs')
 def nhs():
     return render_template('/games/nfs.html')
@@ -227,6 +264,14 @@ def nhs():
 @app.route('/nfs_livestreams')
 def nfs_livestreams():
     return render_template('/livestreams/nfs_livestreams.html')
+
+@app.route('/nhl')
+def nhl():
+    return render_template('/games/nhl.html')
+
+@app.route('/nhl_livestreams')
+def nhl_livestreams():
+    return render_template('/livestreams/nhl_livestreams.html')
 
 @app.route('/overwatch')
 def overwatch():
@@ -260,6 +305,14 @@ def rust():
 def rust_livestreams():
     return render_template('/livestreams/rust_livestreams.html')
 
+@app.route('/starcraft')
+def starcraft():
+    return render_template('/games/starcraft.html')
+
+@app.route('/starcraft_livestreams')
+def starcraft_livestreams():
+    return render_template('/livestreams/starcraft_livestreams.html')
+
 @app.route('/streetfighterv')
 def streetfighterv():
     return render_template('/games/streetfighterv.html')
@@ -267,6 +320,14 @@ def streetfighterv():
 @app.route('/streetfighterv_livestreams')
 def streetfighterv_livestreams():
     return render_template('/livestreams/streetfighterv_livestreams.html')
+
+@app.route('/titanfall')
+def titanfall():
+    return render_template('/games/titanfall2.html')
+
+@app.route('/titanfall_livestreams')
+def titanfall_livestreams():
+    return render_template('/livestreams/titanfall2_livestreams.html')
 
 @app.route('/ufc2')
 def ufc2():
@@ -294,11 +355,11 @@ def WoW_liststreams():
 
 @app.route('/wwe17')
 def wwe17():
-    return render_template('/games/wwe17.html')
+    return render_template('/games/wwe2k17.html')
 
 @app.route('/wwe17_livestreams')
 def wwe17_livestreams():
-    return render_template('/livestreams/wwe17_livestreams.html')
+    return render_template('/livestreams/ww2ke17_livestreams.html')
 
 
 
