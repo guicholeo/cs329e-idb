@@ -68,7 +68,7 @@ def streamer_esl_sc2():
 
 @app.route('/streamer_expertzone')
 def streamer_expertzone():
-    return render_template('/streamers/streamer_streamer_expertzone_community.html')
+    return render_template('/streamers/streamer_expertzone_community.html')
 
 @app.route('/streamer_foxrun402')
 def streamer_foxrun402():
@@ -80,7 +80,7 @@ def streamer_freakhopper():
 
 @app.route('/streamer_frost')
 def streamer_frost():
-    return render_template('/streamers/streamer_frost.html')
+    return render_template('/streamers/streamer_frost_.html')
 
 @app.route('/streamer_goldglove')
 def streamer_goldglove():
@@ -265,13 +265,13 @@ def nfs():
 def nfs_livestreams():
     return render_template('/livestreams/nfs_livestreams.html')
 
-@app.route('/nhl')
-def nhl():
-    return render_template('/games/nhl.html')
+@app.route('/nhl17')
+def nhl17():
+    return render_template('/games/nhl17.html')
 
-@app.route('/nhl_livestreams')
-def nhl_livestreams():
-    return render_template('/livestreams/nhl_livestreams.html')
+@app.route('/nhl17_livestreams')
+def nhl17_livestreams():
+    return render_template('/livestreams/nhl17_livestreams.html')
 
 @app.route('/overwatch')
 def overwatch():
@@ -321,12 +321,12 @@ def streetfighterv():
 def streetfighterv_livestreams():
     return render_template('/livestreams/streetfighterv_livestreams.html')
 
-@app.route('/titanfall')
-def titanfall():
+@app.route('/titanfall2')
+def titanfall2():
     return render_template('/games/titanfall2.html')
 
-@app.route('/titanfall_livestreams')
-def titanfall_livestreams():
+@app.route('/titanfall2_livestreams')
+def titanfall2_livestreams():
     return render_template('/livestreams/titanfall2_livestreams.html')
 
 @app.route('/ufc2')
@@ -354,11 +354,11 @@ def WoW_liststreams():
     return render_template('/livestreams/WoW_livestreams.html')
 
 @app.route('/wwe2k17')
-def wwe17():
+def wwe2k17():
     return render_template('/games/wwe2k17.html')
 
 @app.route('/wwe2k17_livestreams')
-def wwe17_livestreams():
+def wwe2k17_livestreams():
     return render_template('/livestreams/ww2ke17_livestreams.html')
 
 
