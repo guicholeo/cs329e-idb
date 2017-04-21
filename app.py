@@ -16,7 +16,6 @@ def StreamerStatus():
     for key in StatusDict:
         streams = requests.get('https://api.twitch.tv/kraken/streams/' + key + '?client_id=e6xu67x7c493rmp1osdcrnivd3j8g3')
         streams = streams.json()
-        print(key)
         if (streams["stream"] == None):
             StatusDict[key]= "Offline"
             StatusColorDict[key] = '#e81212'#"#FF0000" 
@@ -33,8 +32,7 @@ def about():
     return render_template('about.html')
    
 @app.route('/streamers')
-def streamers():
-    StreamerStatus()
+def streamers():    
     return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
 
 @app.route('/games')
@@ -409,8 +407,7 @@ def survival():
 #     return render_template('streamerTemplate.html')   
 
 if __name__ == "__main__":
-
-    
+    StreamerStatus()
     app.run('162.243.121.191','80')
     #app.run()    
     #change comment to run on chrome or local.
