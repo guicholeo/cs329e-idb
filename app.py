@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 from os import path
 import requests
+import threading
 
 app = Flask(__name__)
 
@@ -22,6 +23,13 @@ def StreamerStatus():
         else:
             StatusDict[key]= "Online"
             StatusColorDict[key] ="#00d100"
+    print("Update Complete!\n")
+
+def CheckStatus():
+	print("I am Updating Status.\n")
+	StreamerStatus()
+	threading.Timer(10.0,CheckStatus).start()
+	
   
 @app.route('/')
 def index():
@@ -29,11 +37,13 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+	return render_template('about.html')
    
 @app.route('/streamers')
-def streamers():    
-    return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
+def streamers():
+	#StreamerStatus()    
+	#CheckStatus()
+	return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
 
 @app.route('/games')
 def games():
@@ -404,10 +414,12 @@ def survival():
 # @app.route('/streamer/<string:streamer>')
 # def callStreamer(streamer):
 #     #generates the template with the python api stuff....
-#     return render_template('streamerTemplate.html')   
+#     return render_template('streamerTemplate.html')
+	   
 
 if __name__ == "__main__":
-    StreamerStatus()
-    app.run('162.243.121.191','80')
-    #app.run()    
+    #StreamerStatus()
+    CheckStatus()
+    #app.run('162.243.121.191','80')
+    app.run()    
     #change comment to run on chrome or local.
