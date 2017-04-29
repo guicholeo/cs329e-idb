@@ -2,6 +2,10 @@ from flask import Flask, request, render_template
 from os import path
 import requests
 import threading
+from apscheduler.schedulers.background import BackgroundScheduler
+from threading import Timer
+from time import sleep
+
 
 app = Flask(__name__)
 
@@ -15,7 +19,7 @@ StatusColorDict = StatusDict.copy()
 
 def StreamerStatus():
     for key in StatusDict:
-        streams = requests.get('https://api.twitch.tv/kraken/streams/' + key + '?client_id=e6xu67x7c493rmp1osdcrnivd3j8g3')
+        streams = requests.get('https://api.twitch.tv/kraken/streams/' + key + '?client_id=e6xu67x7c493rmp1osdcrnivd3j8g3')#cb6wmgy304gtm5v0j9nt9gih5xs0mk
         streams = streams.json()
         if (streams["stream"] == None):
             StatusDict[key]= "Offline"
@@ -26,14 +30,17 @@ def StreamerStatus():
     print("Update Complete!\n")
 
 def CheckStatus():
-	print("I am Updating Status.\n")
-	StreamerStatus()
-	threading.Timer(10.0,CheckStatus).start()
+	#print("I am Updating Status.\n")	
+	t = threading.Timer(0.0,StreamerStatus)
+	t.start()
+	#print(str(threading.activeCount()) + "\n")
+	#time.sleep(10)
+	t.cancel()
 	
   
 @app.route('/')
 def index():
-    return render_template('index.html') 
+	return render_template('index.html') 
 
 @app.route('/about')
 def about():
@@ -42,16 +49,16 @@ def about():
 @app.route('/streamers')
 def streamers():
 	#StreamerStatus()    
-	#CheckStatus()
+	CheckStatus()
 	return render_template('streamers.html', status = StatusDict, color = StatusColorDict)
 
 @app.route('/games')
 def games():
-    return render_template('games.html')
+	return render_template('games.html')
 
 @app.route('/genres')
 def genres():
-    return render_template('genres.html')
+	return render_template('genres.html')
 
 ####-----STREAMERS-----####
 
@@ -415,11 +422,15 @@ def survival():
 # def callStreamer(streamer):
 #     #generates the template with the python api stuff....
 #     return render_template('streamerTemplate.html')
-	   
+
+#sched = BackgroundScheduler()
+
 
 if __name__ == "__main__":
     #StreamerStatus()
-    CheckStatus()
+    #CheckStatus()
     #app.run('162.243.121.191','80')
+    #sched.add_job(StreamerStatus(), 'interval', seconds=10)
+    #sched.start()
     app.run()    
     #change comment to run on chrome or local.
