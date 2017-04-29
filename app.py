@@ -4,7 +4,11 @@ import requests
 import threading
 #from apscheduler.schedulers.background import BackgroundScheduler
 #from threading import Timer
+<<<<<<< HEAD
 from time import sleep
+=======
+#from time import sleep
+>>>>>>> db6cb4efdefcb3bea21edfa86327926371afa96b
 
 
 app = Flask(__name__)
@@ -429,6 +433,7 @@ def survival():
 if __name__ == "__main__":
     #StreamerStatus()
     CheckStatus()
+    #CheckStatus()
     app.run('162.243.121.191','80')
     #sched.add_job(StreamerStatus(), 'interval', seconds=10)
     #sched.start()
