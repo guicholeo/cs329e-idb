@@ -32,7 +32,7 @@ def CheckStatus():
 	#print("I am Updating Status.\n")	
 	t = threading.Timer(0.0,StreamerStatus)
 	t.start()
-	#print(str(threading.activeCount()) + "\n")
+	print(str(threading.activeCount()) + "\n")
 	#time.sleep(10)
 	t.cancel()
 	
@@ -429,8 +429,8 @@ if __name__ == "__main__":
     StreamerStatus()
     #CheckStatus()
     #CheckStatus()
-    #app.run('162.243.121.191','80')
+    app.run('162.243.121.191','80')
     #sched.add_job(StreamerStatus(), 'interval', seconds=10)
     #sched.start()
-    app.run()    
+   # app.run()    
     #change comment to run on chrome or local.
