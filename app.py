@@ -429,8 +429,8 @@ if __name__ == "__main__":
     StreamerStatus()
     #CheckStatus()
     #CheckStatus()
-    #app.run('162.243.121.191','80')
+    app.run('162.243.121.191','80')
     #sched.add_job(StreamerStatus(), 'interval', seconds=10)
     #sched.start()
-    app.run()    
+   # app.run()    
     #change comment to run on chrome or local.
