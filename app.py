@@ -32,7 +32,7 @@ def CheckStatus():
 	#print("I am Updating Status.\n")	
 	t = threading.Timer(0.0,StreamerStatus)
 	t.start()
-	#print(str(threading.activeCount()) + "\n")
+	print(str(threading.activeCount()) + "\n")
 	#time.sleep(10)
 	t.cancel()
 	
