@@ -4,12 +4,7 @@ import requests
 import threading
 #from apscheduler.schedulers.background import BackgroundScheduler
 #from threading import Timer
-<<<<<<< HEAD
-from time import sleep
-=======
 #from time import sleep
->>>>>>> db6cb4efdefcb3bea21edfa86327926371afa96b
-
 
 app = Flask(__name__)
 
