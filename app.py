@@ -2,9 +2,9 @@ from flask import Flask, request, render_template
 from os import path
 import requests
 import threading
-from apscheduler.schedulers.background import BackgroundScheduler
-from threading import Timer
-from time import sleep
+#from apscheduler.schedulers.background import BackgroundScheduler
+#from threading import Timer
+#from time import sleep
 
 
 app = Flask(__name__)
@@ -429,8 +429,8 @@ def survival():
 if __name__ == "__main__":
     #StreamerStatus()
     #CheckStatus()
-    #app.run('162.243.121.191','80')
+    app.run('162.243.121.191','80')
     #sched.add_job(StreamerStatus(), 'interval', seconds=10)
     #sched.start()
-    app.run()    
+    #app.run()    
     #change comment to run on chrome or local.
